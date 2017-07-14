@@ -94,7 +94,7 @@
                 </ul>
                 </sec:ifLoggedIn>
                 <div class="version">NEP v-${grails.util.Metadata.current.getApplicationVersion()} |
-                DHIS 2 API v-${ApiVersion.get(grailsApplication.config.dhis2.api.version)?.value() ?: ApiVersion.DHIS2_DEFAULT_VERSION.value()}</div>
+                DHIS 2 API v-${ApiVersion.get(grailsApplication.config.dhis2.api.version)?.value() ?: ApiVersion.DHIS2_VERSION_225.value()}</div>
             </header>
             </g:if>
             <g:layoutBody/>

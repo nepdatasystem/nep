@@ -26,6 +26,7 @@
   - SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   -
   --}%
+
 <ul class="checklist">
         <li><g:message code="aggregate.data.file.csv.headings" args="[aggregateDataCSVHeadings]" /></li>
         <li><g:message code="aggregate.data.help.missingValues" /></li>

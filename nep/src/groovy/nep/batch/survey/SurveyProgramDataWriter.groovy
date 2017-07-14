@@ -32,6 +32,7 @@ package nep.batch.survey
 import com.twopaths.dhis2.services.ResourceTableService
 import groovy.json.JsonOutput
 import groovy.util.logging.Log4j
+import nep.batch.AbstractBatchWriter
 import nep.batch.JobExecutionError
 import nep.services.survey.SurveyTrackedEntityInstanceService
 import org.springframework.batch.core.StepExecution
@@ -41,9 +42,7 @@ import org.springframework.batch.item.ItemWriter
  * Spring Batch writer of Program Data for import
  */
 @Log4j
-class SurveyProgramDataWriter implements ItemWriter<Map<String, Object>> {
-
-    StepExecution stepExecution
+class SurveyProgramDataWriter extends AbstractBatchWriter implements ItemWriter<Map<String, Object>> {
 
     SurveyTrackedEntityInstanceService surveyTrackedEntityInstanceService
     ResourceTableService resourceTableService
@@ -80,11 +79,12 @@ class SurveyProgramDataWriter implements ItemWriter<Map<String, Object>> {
                     }
                 }
             } catch (Exception e) {
-                createJobExecutionError("error.occurred", e.getMessage())
+                createJobExecutionError("error.text", e.getMessage())
             }
         }
         // Get the processed/read count plus the total count
         def writeCount = stepExecution.writeCount as Long
+        // this is the first step, so get the first item in the array
         def totalCount = stepExecution.jobExecution.jobParameters.getLong("totalCount[0]" as String)
         log.debug "writeCount/totalCount: " + writeCount + " / " + totalCount
 
@@ -103,27 +103,4 @@ class SurveyProgramDataWriter implements ItemWriter<Map<String, Object>> {
 
     }
 
-    /**
-     * Creates and saves a job execution error
-     *
-     * @param code The message bundle code of the job execution error
-     * @param args The message bundle args of the job execution error
-     * @return
-     */
-    private JobExecutionError createJobExecutionError(def code, def args = null) {
-
-        def jsonArgs = args ? JsonOutput.toJson(args) : null
-        def error = new JobExecutionError(
-                jobExecutionId: stepExecution.jobExecutionId,
-                stepExecutionId: stepExecution.id,
-                lineNumber: stepExecution.readCount + 1,
-                code: code,
-                args: jsonArgs
-        )
-        error.save()
-
-        if (error.hasErrors()) {
-            log.error "Could not save JobExecutionError, errors: " + error.errors
-        }
-    }
 }

@@ -72,7 +72,9 @@ class SurveyMetadataProcessorService {
                 jobData.programStageMetadata_2?.program?.name
 
         // Cant run job if data or metadata job is already running
-        if (!jobService.isRunning("surveyDataJob", dataSetId) && !jobService.isRunning("surveyMetadataJob", dataSetId)) {
+        if (!jobService.isRunning("surveyDataJob", dataSetId) &&
+                !jobService.isRunning("surveyMetadataJob", dataSetId) &&
+                !jobService.isRunning("surveyDeletionJob", dataSetId)) {
 
             // Job parameters
             def jobParametersBuilder = new JobParametersBuilder()
@@ -127,14 +129,21 @@ class SurveyMetadataProcessorService {
             // Run the job
             def jobExecution = jobLauncher.run(surveyMetadataJob, jobParametersBuilder.toJobParameters())
             result << [jobExecution: jobExecution]
+
         } else { // Job already running...return error message
             def errors = []
+
             if (jobService.isRunning("surveyDataJob", dataSetId)) {
                 errors << [code: "survey.dataJob.alreadyRunning", args: [dataSetId]]
+                errors << [code: "survey.dataJob.clickImportStatus"]
             } else if (jobService.isRunning("surveyMetadataJob", dataSetId)) {
                 errors << [code: "survey.metadataJob.alreadyRunning", args: [dataSetId]]
+                errors << [code: "survey.metadataJob.clickImportStatus"]
+            } else if (jobService.isRunning("surveyDeletionJob", dataSetId)) {
+                errors << [code: "survey.deletionJob.alreadyRunning", args: [dataSetId]]
+                errors << [code: "survey.deletionJob.clickDeletionStatus"]
             }
-            errors << [code: "survey.metadataJob.clickImportStatus"]
+
             result << [errors: errors]
         }
 

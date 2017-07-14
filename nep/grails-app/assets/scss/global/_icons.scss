@@ -10,6 +10,7 @@
 }
 
 [class^="icon-"], [class*=" icon-"] {
+    display: inline-block;
     font-family: 'icomoon';
     speak: none;
     font-style: normal;
@@ -17,6 +18,8 @@
     font-variant: normal;
     text-transform: none;
     line-height: 1;
+    margin-top: -2px;
+    vertical-align: middle;
 
     /* Better Font Rendering =========== */
     -webkit-font-smoothing: antialiased;

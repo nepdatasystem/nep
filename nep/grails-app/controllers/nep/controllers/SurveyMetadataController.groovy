@@ -275,7 +275,9 @@ class SurveyMetadataController extends NEPController {
         def model = [
                 surveyDataJobExecutions: jobService.getExecutions("surveyMetadataJob")
         ]
-        println "format: " + request.format
+
+        log.debug  "format: " + request.format
+
         request.withFormat {
             html {
                 render view: 'importStatus', model: model

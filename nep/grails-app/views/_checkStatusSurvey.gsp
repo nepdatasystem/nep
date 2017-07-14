@@ -34,4 +34,7 @@
     <li class="${(controllerName == 'surveyData' && (actionName == 'importStatus' || actionName == 'importErrors')) ? 'active' : ''}" >
         <g:link controller="surveyData" action="importStatus">${message(code: "dataImportStatus.title")}</g:link>
     </li>
+    <li class="${(controllerName == 'surveyData' && (actionName == 'deletionStatus' || actionName == 'deletionErrors')) ? 'active' : ''}" >
+        <g:link controller="surveyData" action="deletionStatus">${message(code: "survey.deletionStatus.title")}</g:link>
+    </li>
 </ol>

@@ -66,6 +66,7 @@ function downloadFiles(dataSetId, dataSetName) {
 <div class="actions">
     <div class="actions-create">
         <h1><g:message code="aggregate.data" /></h1>
+        <g:render template="/messages" />
         <g:render template="menu" />
     </div>
     <div class="actions-status">
@@ -88,6 +89,7 @@ function downloadFiles(dataSetId, dataSetName) {
                     <th><g:message code="dataset.disaggregations"/></th>
                     <th><g:message code="dataset.data"/></th>
                     <th><g:message code="common.otherFiles"/></th>
+                    <th><g:message code="common.delete" /></th>
                 </tr>
                 </thead>
                 <tbody>
@@ -173,6 +175,39 @@ function downloadFiles(dataSetId, dataSetName) {
                                 </select>
                             </g:if>
                         </td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary" data-trigger="dropdown">
+                                    <g:message code="common.delete" /><span class="caret">&#9660;</span>
+                                </button>
+                                <div class="dropdown-menu">
+                                    <input type="hidden" name="dataSetId" value="${dataSet.id}" data-trigger="dataSetId"/>
+                                    <input type="hidden" name="dataSetName" value="${dataSet.name}" data-trigger="dataSetName"/>
+                                    <div class="form-check">
+                                      <label class="form-check-label">
+                                        <input class="form-check-input" data-trigger="dataSet" type="checkbox" value="">
+                                          <g:message code="dataset.delete" />
+                                      </label>
+                                    </div>
+                                    <div class="form-check">
+                                      <label class="form-check-label">
+                                        <input class="form-check-input" data-trigger="dataSet-metadata" type="checkbox" value="">
+                                          <g:message code="dataset.delete.metadata" />
+                                      </label>
+                                    </div>
+                                    <div class="form-check">
+                                      <label class="form-check-label">
+                                        <input class="form-check-input" data-trigger="dataSet-data" type="checkbox" value="">
+                                          <g:message code="dataset.delete.data" />
+                                      </label>
+                                    </div>
+                                    <div class="dropdown-actions">
+                                        <a class="dropdown-close" data-trigger="dropdown" href="#"><i class="icon-close"></i> <g:message code="common.close" /></a>
+                                        <a class="dropdown-delete is-disabled" data-trigger="modal" href="#"><i class="icon-delete"></i> <g:message code="common.delete" /></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                     </tr>
                 </g:each>
                 </tbody>
@@ -182,9 +217,61 @@ function downloadFiles(dataSetId, dataSetName) {
             <h2><g:message code="dataset.noDataSets"/></h2>
         </g:else>
     </div>
+
+    <div class="modal" data-item="modal">
+        <div class="modal__inner">
+            <div class="close" data-trigger="close"></div>
+            <div class="modal__content">
+                <h2><g:message code="aggregate.dataset.deletion.warning.title" /> - <span id="dataSetNameModal"></span></h2>
+                <h3 class="modal-warning"><i class="icon-warning"></i><g:message code="common.warning" /></h3>
+                <div class="alert-warning" data-warning="dataSet" style="display:none">
+                    <p><span class="modal-warning__heading"><g:message code="aggregate.dataset.deletion.warning.dataset.intro" /></span>
+                        <ul>
+                            <li><g:message code="aggregate.dataset" /></li>
+                        </ul>
+                     </p>
+                </div>
+                <div class="alert-warning" data-warning="dataSet-metadata" style="display:none">
+                    <p><span class="modal-warning__heading"><g:message code="aggregate.dataset.deletion.warning.dataset.metadata.intro" /></span>
+                        <ul>
+                            <li><g:message code="aggregate.dataset.deletion.warning.dataset.metadata.list.indicators" /></li>
+                            <li><g:message code="aggregate.dataset.deletion.warning.dataset.metadata.list.data.set.elements" /></li>
+                            <li><g:message code="aggregate.dataset.deletion.warning.dataset.metadata.list.data.elements" /></li>
+                            <li><g:message code="aggregate.dataset.deletion.warning.dataset.metadata.list.data.element.category.combos" /></li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="alert-warning" data-warning="dataSet-data" style="display:none">
+                    <p><span class="modal-warning__heading"><g:message code="aggregate.dataset.deletion.warning.dataset.data.intro" /></span>
+                        <ul>
+                            <li><g:message code="aggregate.dataset.deletion.warning.dataset.data.list.data.values" /></li>
+                        </ul>
+                    </p>
+                </div>
+                <div>
+                    <p class="modal-warning"><strong><g:message code="common.deletion.warning.cannot.undo" /></strong></p>
+                    <p><g:message code="common.deletion.warning.confirm" /></p>
+                </div>
+                <g:form url="[action: 'delete', controller: 'aggregateData']">
+                    <input type="hidden" name="dataSetId" data-trigger="dataSetId"/>
+                    <input type="hidden" name="dataSetName" data-trigger="dataSetName"/>
+                    <input type="hidden" name="deleteType" data-trigger="deleteType"/>
+                    <button class="btn btn-primary" onclick="this.disabled=true;showSpinner();this.parentNode.submit();"><g:message code="common.delete" /></button>
+                    <button class="btn btn-secondary" data-trigger="close" onclick="return false;"><g:message code="common.cancel" /></button>
+                </g:form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal__overlay"></div>
+
+    <div class="loading">
+        <div class="spinner"></div>
+        <div class="loading-text">
+            <g:message code="common.delete.in.progress"/>
+        </div>
+    </div>
 </div>
-
-
 <asset:javascript src="jQuery-File-Upload-9.11.2/js/vendor/jquery.ui.widget.js"/>
 <asset:javascript src="jQuery-File-Upload-9.11.2/js/jquery.iframe-transport.js"/>
 <asset:javascript src="jQuery-File-Upload-9.11.2/js/jquery.fileupload.js"/>

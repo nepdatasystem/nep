@@ -26,6 +26,7 @@
   - SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   -
   --}%
+
 <ul class="checklist">
     <li><g:message code="survey.metadata.file.csv.headings" args="[trackedEntityName ?: message(code: 'survey.respondent'), programColumnHeadings]" /></li>
     <li><g:message code="survey.metadata.file.csv.variables" args="[trackedEntityName ?: message(code: 'survey.respondent'), programFields.required]" /></li>

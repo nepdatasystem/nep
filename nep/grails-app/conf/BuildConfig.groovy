@@ -26,6 +26,9 @@
  * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  *
  */
+
+import grails.util.Environment
+
 grails.servlet.version = "3.0" // Change depending on target container compliance (2.5 or 3.0)
 grails.project.class.dir = "target/classes"
 grails.project.test.class.dir = "target/test-classes"
@@ -54,6 +57,7 @@ if (System.getProperty("grails.debug")) {
     grails.project.fork.run = false
     grails.project.fork.test = false
 }
+
 grails.project.dependency.resolver = "maven" // or ivy
 grails.project.dependency.resolution = {
     // inherit Grails' default dependencies
@@ -111,7 +115,7 @@ grails.project.dependency.resolution = {
         compile ":spring-security-core:2.0-RC4"
 
         // DHIS2 Connector
-        compile ":dhis-2-connector:2.24.5"
+        compile ":dhis-2-connector:2.25.5"
 
         // plugins needed at runtime but not for compilation
         runtime ":hibernate4:4.3.6.1" // or ":hibernate:3.6.10.18"

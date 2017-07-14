@@ -77,9 +77,12 @@ class SurveyDataProcessorService {
                         jobData.programStageData_1?.programName ?:
                         jobData.programStageData_2?.programName
 
-        println "jobData: ${jobData}"
+        log.debug "jobData: ${jobData}"
+
         // Only allow one job of this type to run concurrently
-        if (!jobService.isRunning("surveyDataJob", dataSetId) && !jobService.isRunning("surveyMetadataJob", dataSetId)) {
+        if (!jobService.isRunning("surveyDataJob", dataSetId) &&
+                !jobService.isRunning("surveyMetadataJob", dataSetId) &&
+                !jobService.isRunning("surveyDeletionJob", dataSetId)) {
 
             // Get the tracked entity attribute lookup...this is a map of codes -> ids
             def trackedEntityAttributeLookup = trackedEntityAttributeService.getLookup(auth)
@@ -148,12 +151,18 @@ class SurveyDataProcessorService {
             result << [jobExecution: jobExecution]
         } else { // Job already running...return error message
             def errors = []
+
             if (jobService.isRunning("surveyDataJob", dataSetId)) {
                 errors << [code: "survey.dataJob.alreadyRunning", args: [dataSetId]]
+                errors << [code: "survey.dataJob.clickImportStatus"]
             } else if (jobService.isRunning("surveyMetadataJob", dataSetId)) {
                 errors << [code: "survey.metadataJob.alreadyRunning", args: [dataSetId]]
+                errors << [code: "survey.metadataJob.clickImportStatus"]
+            } else if (jobService.isRunning("surveyDeletionJob", dataSetId)) {
+                errors << [code: "survey.deletionJob.alreadyRunning", args: [dataSetId]]
+                errors << [code: "survey.deletionJob.clickDeletionStatus"]
             }
-            errors << [code: "survey.dataJob.clickImportStatus"]
+
             result << [errors: errors]
         }
 

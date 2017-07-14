@@ -30,6 +30,7 @@
 package nep.controllers
 
 import grails.converters.JSON
+import nep.services.aggregate.AggregateDataSetDeletionProcessorService
 import nep.services.aggregate.AggregateUploadService
 import nep.util.Utils
 import org.springframework.web.servlet.support.RequestContextUtils
@@ -42,6 +43,7 @@ import java.nio.file.Files
 class AggregateDataController extends NEPController {
 
     def dataSetService
+    def aggregateDataSetDeletionService
     def aggregateDataService
     def organisationUnitLevelService
     def organisationUnitService
@@ -53,6 +55,7 @@ class AggregateDataController extends NEPController {
     // Job stuff
     def jobService
     def aggregateDataProcessorService
+    AggregateDataSetDeletionProcessorService aggregateDataSetDeletionProcessorService
 
     /**
      * GET of the Upload Data page
@@ -281,7 +284,9 @@ class AggregateDataController extends NEPController {
         def model = [
                 aggregateDataJobExecutions: jobService.getExecutions("aggregateDataJob")
         ]
-        println "format: " + request.format
+
+        log.debug "format: " + request.format
+
         request.withFormat {
             html {
                 render view: 'importStatus', model: model
@@ -329,6 +334,65 @@ class AggregateDataController extends NEPController {
     }
 
     /**
+     * Returns the status of a batch deletion job
+     *
+     * @return
+     */
+    def deletionStatus() {
+
+        def model = [
+                dataSetDeletionJobExecutions: jobService.getExecutions("dataSetDeletionJob")
+        ]
+
+        log.debug "format: " + request.format
+
+        request.withFormat {
+            html {
+                render view: 'deletionStatus', model: model
+            }
+            json {
+                render model as JSON
+            }
+        }
+    }
+
+    /**
+     * Renders the batch deletion errors page
+     *
+     * @return
+     */
+    def deletionErrors() {
+        def model = [
+                params      : params,
+                importErrors: jobService.getExecutionErrors(params["jobExecutionId"], params["stepExecutionId"])
+        ]
+
+        render view: 'deletionErrors', model: model
+    }
+
+    /**
+     * Stops a batch deletion job
+     *
+     * @return
+     */
+    def deletionStop() {
+        jobService.stop(params.long("jobExecutionId"))
+
+        redirect action: "deletionStatus"
+    }
+
+    /**
+     * Removes an aggregate data deletion job
+     *
+     * @return
+     */
+    def deletionRemove() {
+        jobService.remove(params.long("jobExecutionId"))
+
+        redirect action: "deletionStatus"
+    }
+
+    /**
      * Processes the uploading of files
      *
      * @return
@@ -355,6 +419,70 @@ class AggregateDataController extends NEPController {
      * @return
      */
     def list() {
+        def model = getModelForDataSetList()
+
+        render view: 'list', model: model
+    }
+
+    /**
+     * Handles an Aggregate data deletion
+     *
+     * @return
+     */
+    def delete () {
+
+        def messages = []
+        def errors = []
+        def dataSetId = params["dataSetId"]
+        def dataSetName = params["dataSetName"]
+        // deleteTypes are DELETE_TYPE_DATA_SET, DELETE_TYPE_DATA_SET_METADATA, DELETE_TYPE_DATA_SET_DATA
+        // DELETE_TYPE_DATA_SET will delete data, metadata & data set (everything)
+        // DELETE_TYPE_DATA_SET_METADATA will delete data & metadata (not data set itself)
+        // DELETE_TYPE_DATA_SET_DATA (not metadata or survey)
+        def deleteType = params["deleteType"]
+
+        if (!dataSetId) {
+            errors << g.message(code: "aggregate.dataset.delete.dataSetId.missing")
+        } else {
+
+            def jobData = [dataSetId: dataSetId,
+                           deleteType: deleteType
+            ]
+
+            // Kick off the deletion job
+            def result = aggregateDataSetDeletionProcessorService.process(auth, jobData)
+
+            if (result.messages) {
+                result.messages.each { message ->
+                    messages << g.message(code: message.code, args: [message.args])
+                }
+            }
+            if (result.errors) {
+                result.errors.each { error ->
+                    errors << g.message(code: error.code, args: [error.args])
+                }
+            } else {
+                flash.messages = messages
+                flash.jobExecution = result.jobExecution
+                redirect controller: "aggregateData", action: "deletionStatus", params: params
+            }
+        }
+
+        def model = getModelForDataSetList()
+
+        model << [
+                errors: errors,
+                messages: messages
+        ]
+        render view: 'list', model: model
+    }
+
+    /**
+     * Retrieves the model map for listing data sets
+     *
+     * @return The model map
+     */
+    private Map getModelForDataSetList() {
         def model = [:]
         def dataSets = dataSetService.findAllWithReuploadInfo(getAuth())
         dataSets.each { dataSet ->
@@ -375,7 +503,7 @@ class AggregateDataController extends NEPController {
         }
         model << [uploadsData: uploadsData, otherUploadsData: otherUploadsData]
 
-        render view: 'list', model: model
+        return model
     }
 
     /**

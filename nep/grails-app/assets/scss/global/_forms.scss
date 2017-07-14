@@ -3,6 +3,7 @@ label {
     color: $grey-darker;
     text-align: left;
     font-weight: 700;
+    user-select: none;
 }
 
 input[type="search"] {
@@ -13,7 +14,7 @@ input[type="search"] {
 input[type="radio"],
 input[type="checkbox"] {
     width: auto;
-    margin: 4px 0 0;
+    margin: 4px 0.25rem 0 0;
     margin-top: 1px \9; // IE8-9
     line-height: normal;
 }
@@ -88,4 +89,12 @@ form {
 
 button[type="submit"] {
     margin-left: 10em;
+}
+
+.form-check {
+    margin-bottom: 0.25rem;
+}
+
+.form-check-label {
+    font-size: 0.9rem;
 }

@@ -158,6 +158,186 @@ $(function(){
         }
     });
 
+    $('[data-trigger="dropdown"]').click(function(e) {
+        var dropdown = $(this).closest('.dropdown');
+
+        e.preventDefault();
+
+        dropdown.find('.form-check-input').prop('checked', false).attr("disabled", false);
+        dropdown.find('.dropdown-delete').addClass('is-disabled');
+
+        if (dropdown.hasClass('is-open')) {
+            dropdown.removeClass('is-open');
+        } else {
+            $('.dropdown').removeClass('is-open');
+            dropdown.addClass('is-open');
+        }
+    });
+
+    /**
+     * Set the programId, programName and deleteType to be submitted to the controller for deleting the survey/metadata/data
+     *
+     * @param dropdown
+     * @param deleteType
+     */
+    function setSurveyDeletionParameters(dropdown, deleteType) {
+        var programId = dropdown.find('[data-trigger="programId"]').val();
+        var programName = dropdown.find('[data-trigger="programName"]').val();
+        var modal = $('[data-item="modal"]');
+        modal.find('[data-trigger="programId"]').val(programId);
+        modal.find('[data-trigger="programName"]').val(programName);
+        modal.find('[data-trigger="deleteType"]').val(deleteType);
+        modal.find('#programNameModal').text(programName);
+    }
+
+    /**
+     * Set the dataSetId, dataSetName and deleteType to be submitted to the controller for deleting the data set/metadata/data
+     *
+     * @param dropdown
+     * @param deleteType
+     */
+    function setDataSetDeletionParameters(dropdown, deleteType) {
+        var dataSetId = dropdown.find('[data-trigger="dataSetId"]').val();
+        var dataSetName = dropdown.find('[data-trigger="dataSetName"]').val();
+        var modal = $('[data-item="modal"]');
+        modal.find('[data-trigger="dataSetId"]').val(dataSetId);
+        modal.find('[data-trigger="dataSetName"]').val(dataSetName);
+        modal.find('[data-trigger="deleteType"]').val(deleteType);
+        modal.find('#dataSetNameModal').text(dataSetName);
+    }
+
+    $('[data-trigger="survey"]').on('change', function() {
+        var dropdown = $(this).closest('.dropdown');
+
+        if($(this).is(':checked')) {
+            dropdown.find('[data-trigger="survey-metadata"]').prop('checked', true).attr("disabled", true);
+            dropdown.find('[data-trigger="survey-data"]').prop('checked', true).attr("disabled", true);
+
+            $('[data-warning]').each(function() {
+                $(this).show();
+            });
+            setSurveyDeletionParameters(dropdown, "survey");
+        } else {
+            dropdown.find('[data-trigger="survey-metadata"]').prop('checked', false).attr("disabled", false);
+            dropdown.find('[data-trigger="survey-data"]').prop('checked', false).attr("disabled", false);
+
+            $('[data-warning]').each(function() {
+                $(this).hide();
+            });
+        }
+    });
+
+    $('[data-trigger="survey-metadata"]').on('change', function() {
+        var dropdown = $(this).closest('.dropdown');
+
+        if($(this).is(':checked')) {
+            dropdown.find('[data-trigger="survey-data"]').prop('checked', true).attr("disabled", true);
+            $('[data-warning="survey-metadata"]').show();
+            $('[data-warning="survey-data"]').show();
+            setSurveyDeletionParameters(dropdown, "survey-metadata");
+        } else {
+            dropdown.find('[data-trigger="survey-data"]').prop('checked', false).attr("disabled", false);
+            $('[data-warning="survey-metadata"]').hide();
+            $('[data-warning="survey-data"]').hide();
+        }
+    });
+
+      $('[data-trigger="survey-data"]').on('change', function() {
+        var dropdown = $(this).closest('.dropdown');
+
+        if($(this).is(':checked')) {
+          $('[data-warning="survey-data"]').show();
+            setSurveyDeletionParameters(dropdown, "survey-data");
+        } else {
+           $('[data-warning="survey-data"]').hide();
+        }
+    });
+
+    $('[data-trigger="dataSet"]').on('change', function() {
+        var dropdown = $(this).closest('.dropdown');
+
+        if($(this).is(':checked')) {
+            dropdown.find('[data-trigger="dataSet-metadata"]').prop('checked', true).attr("disabled", true);
+            dropdown.find('[data-trigger="dataSet-data"]').prop('checked', true).attr("disabled", true);
+
+            $('[data-warning]').each(function() {
+                $(this).show();
+            });
+            setDataSetDeletionParameters(dropdown, "dataSet");
+        } else {
+            dropdown.find('[data-trigger="dataSet-metadata"]').prop('checked', false).attr("disabled", false);
+            dropdown.find('[data-trigger="dataSet-data"]').prop('checked', false).attr("disabled", false);
+
+            $('[data-warning]').each(function() {
+                $(this).hide();
+            });
+        }
+    });
+
+    $('[data-trigger="dataSet-metadata"]').on('change', function() {
+        var dropdown = $(this).closest('.dropdown');
+
+        if($(this).is(':checked')) {
+            dropdown.find('[data-trigger="dataSet-data"]').prop('checked', true).attr("disabled", true);
+            $('[data-warning="dataSet-metadata"]').show();
+            $('[data-warning="dataSet-data"]').show();
+            setDataSetDeletionParameters(dropdown, "dataSet-metadata");
+        } else {
+            dropdown.find('[data-trigger="dataSet-data"]').prop('checked', false).attr("disabled", false);
+            $('[data-warning="dataSet-metadata"]').hide();
+            $('[data-warning="dataSet-data"]').hide();
+        }
+    });
+
+    $('[data-trigger="dataSet-data"]').on('change', function() {
+        var dropdown = $(this).closest('.dropdown');
+
+        if($(this).is(':checked')) {
+            $('[data-warning="dataSet-data"]').show();
+            setDataSetDeletionParameters(dropdown, "dataSet-data");
+        } else {
+            $('[data-warning="dataSet-data"]').hide();
+        }
+    });
+
+    $('.form-check-input').on('change', function() {
+        var checked = $(this).closest('.dropdown').find('.form-check-input:checked').length;
+
+        if(checked > 0) {
+            $(this).closest('.dropdown').find('.dropdown-delete').removeClass('is-disabled')
+        } else {
+            $(this).closest('.dropdown').find('.dropdown-delete').addClass('is-disabled')
+        }
+    });
+
+    $('[data-trigger="modal"]').click(function() {
+        $('[data-item="modal"]').addClass('is-visible');
+        $('body').addClass('is-locked').find('.modal__overlay').addClass('is-visible');
+        $('body').css('padding-right', window.getScrollbarWidth());
+    });
+
+    $('[data-trigger="close"]').click(function() {
+        setTimeout(function(){
+
+           $('.dropdown').removeClass('is-open');
+           $('.dropdown').find('.form-check-input').prop('checked', false);
+           $('.dropdown').find('.dropdown-delete').addClass('is-disabled');
+
+            $('[data-item="modal"]').removeClass('is-visible');
+            $('body').removeClass('is-locked').find('.modal__overlay').removeClass('is-visible');
+            $('body').removeAttr('style');
+
+           $('[data-warning]').each(function() {
+             $(this).hide();
+           });
+
+        }, 100);
+    });
+
+    $('.modal__overlay').click(function() {
+        $(this).removeClass('is-visible');
+        $('body').removeClass('is-locked').find('[data-item="modal"].is-visible').removeClass('is-visible');
+    });
 });
 
 function updateLinkDataSetId(anchorObject, dataSetId) {
@@ -169,3 +349,45 @@ function updateLinkDataSetId(anchorObject, dataSetId) {
 function showSpinner() {
 	$('.loading').addClass('visible');
 }
+
+(function() {
+  'use strict';
+  var getScrollbarWidth, scrollbarWidth;
+
+  scrollbarWidth = null;
+
+  getScrollbarWidth = function(recalculate) {
+    var div1, div2;
+    if (recalculate == null) {
+      recalculate = false;
+    }
+    if ((scrollbarWidth != null) && !recalculate) {
+      return scrollbarWidth;
+    }
+    if (document.readyState === 'loading') {
+      return null;
+    }
+    div1 = document.createElement('div');
+    div2 = document.createElement('div');
+    div1.style.width = div2.style.width = div1.style.height = div2.style.height = '100px';
+    div1.style.overflow = 'scroll';
+    div2.style.overflow = 'hidden';
+    document.body.appendChild(div1);
+    document.body.appendChild(div2);
+    scrollbarWidth = Math.abs(div1.scrollHeight - div2.scrollHeight);
+    document.body.removeChild(div1);
+    document.body.removeChild(div2);
+    return scrollbarWidth;
+  };
+
+  if (typeof define === 'function' && define.amd) {
+    define([], function() {
+      return getScrollbarWidth;
+    });
+  } else if (typeof exports !== 'undefined') {
+    module.exports = getScrollbarWidth;
+  } else {
+    this.getScrollbarWidth = getScrollbarWidth;
+  }
+
+}).call(this);

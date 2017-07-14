@@ -31,6 +31,7 @@ package nep.controllers
 
 import grails.converters.JSON
 import groovy.util.logging.Log4j
+import nep.services.survey.SurveyDeletionProcessorService
 import nep.services.survey.SurveyUploadService
 import nep.util.Utils
 import org.springframework.web.multipart.MultipartFile
@@ -45,6 +46,7 @@ class SurveyDataController extends NEPController {
 
     def surveyProgramService
     def surveyProgramStageService
+    def surveyProgramDeletionService
     def surveyValidationService
     def propertiesService
     def surveyUploadService
@@ -58,13 +60,11 @@ class SurveyDataController extends NEPController {
     // Job stuff
     def jobService
     def surveyDataProcessorService
+    SurveyDeletionProcessorService surveyDeletionProcessorService
 
-    /**
-     *
-     */
     def afterInterceptor = { model ->
 
-        if (params.action == "list") {
+        if (params.action == "list" || params.action == "delete") {
             // Contains programs and programStages
             def programAndStageData = surveyProgramService.listProgramAndStageData(getAuth())
             model << programAndStageData
@@ -223,6 +223,61 @@ class SurveyDataController extends NEPController {
         log.debug "list"
 
         render view: 'list'
+    }
+
+    /**
+     * Handles Survey Deletion
+     *
+     * @return
+     */
+    def delete () {
+
+        def messages = []
+        def errors = []
+        def programId = params["programId"]
+        def programName = params["programName"]
+
+        // deleteTypes are DELETE_TYPE_SURVEY, DELETE_TYPE_SURVEY_METADATA, DELETE_TYPE_SURVEY_DATA
+        // DELETE_TYPE_SURVEY will delete data, metadata & survey (everything)
+        // DELETE_TYPE_SURVEY_METADATA will delete data & metadata (not survey itself)
+        // DELETE_TYPE_SURVEY_DATA (not metadata or survey)
+        def deleteType = params["deleteType"]
+
+        if (!programId) {
+            errors << g.message(code: "survey.metadata.survey.delete.programId.missing")
+        } else {
+
+            log.debug "delete program ${programId}"
+
+            def jobData = [programId: programId,
+                           deleteType: deleteType
+            ]
+
+            // Kick off the deletion job
+            def result = surveyDeletionProcessorService.process(auth, jobData)
+
+            if (result.messages) {
+                result.messages.each { message ->
+                    messages << g.message(code: message.code, args: [message.args])
+                }
+            }
+            if (result.errors) {
+                result.errors.each { error ->
+                    errors << g.message(code: error.code, args: [error.args])
+                }
+            } else {
+                flash.messages = messages
+                flash.jobExecution = result.jobExecution
+                redirect controller: "surveyData", action: "deletionStatus", params: params
+            }
+
+        }
+
+        def model = [
+                errors: errors,
+                messages: messages
+        ]
+        render view: 'list', model: model
     }
 
     /**
@@ -438,7 +493,9 @@ class SurveyDataController extends NEPController {
         def model = [
                 surveyDataJobExecutions: jobService.getExecutions("surveyDataJob")
         ]
-        println "format: " + request.format
+
+        log.debug "format: " + request.format
+
         request.withFormat {
             html {
                 render view: 'importStatus', model: model
@@ -483,6 +540,65 @@ class SurveyDataController extends NEPController {
         jobService.remove(params.long("jobExecutionId"))
 
         redirect action: "importStatus"
+    }
+
+    /**
+     * Renders the Survey Deletion Status page
+     *
+     * @return
+     */
+    def deletionStatus() {
+
+        def model = [
+                surveyDeletionJobExecutions: jobService.getExecutions("surveyDeletionJob")
+        ]
+
+        log.debug "format: " + request.format
+
+        request.withFormat {
+            html {
+                render view: 'deletionStatus', model: model
+            }
+            json {
+                render model as JSON
+            }
+        }
+    }
+
+    /**
+     * Renders the survey deletion errors page
+     *
+     * @return
+     */
+    def deletionErrors() {
+        def model = [
+                params      : params,
+                importErrors: jobService.getExecutionErrors(params["jobExecutionId"], params["stepExecutionId"])
+        ]
+
+        render view: 'deletionErrors', model: model
+    }
+
+    /**
+     * Stops a survey deletion job
+     *
+     * @return
+     */
+    def deletionStop() {
+        jobService.stop(params.long("jobExecutionId"))
+
+        redirect action: "deletionStatus"
+    }
+
+    /**
+     * Removes a survey deletion job
+     *
+     * @return
+     */
+    def deletionRemove() {
+        jobService.remove(params.long("jobExecutionId"))
+
+        redirect action: "deletionStatus"
     }
 
     /**

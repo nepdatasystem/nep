@@ -67,6 +67,7 @@ function downloadFiles(programId, programName) {
     <div class="actions">
         <div class="actions-create">
             <h1><g:message code="survey.surveyData"/></h1>
+            <g:render template="/messages" />
             <g:render template="menu" />
         </div>
         <div class="actions-status">
@@ -95,6 +96,7 @@ function downloadFiles(programId, programName) {
                         <th><g:message code="survey.metadata"/></th>
                         <th><g:message code="survey.data"/></th>
                         <th><g:message code="common.otherFiles"/></th>
+                        <th><g:message code="common.delete" /></th>
                     </tr>
                 </thead>
                 <tbody>
@@ -130,7 +132,7 @@ function downloadFiles(programId, programName) {
                             </g:if>
                         </td>
                         <td class="repository">
-                            <span class="btn btn-success fileinput-button">
+                            <span class="btn btn-secondary fileinput-button">
                                 <i class="icon-plus icon-white"></i>
                                 <span><g:message code="common.upload"/></span>
                                 <input class="fileupload" type="file" name="files[]" data-url="<g:createLink action="uploadFiles" params="[programId: program.id]"/>" multiple/>
@@ -169,6 +171,40 @@ function downloadFiles(programId, programName) {
                                 </select>
                             </g:if>
                         </td>
+                        <td>
+                            <div class="dropdown">
+                                <button class="btn btn-secondary" data-trigger="dropdown">
+                                    <g:message code="common.delete" /><span class="caret">&#9660;</span>
+                                </button>
+
+                                <div class="dropdown-menu">
+                                    <input type="hidden" name="programId" value="${program.id}" data-trigger="programId"/>
+                                    <input type="hidden" name="programName" value="${program.name}" data-trigger="programName"/>
+                                    <div class="form-check">
+                                      <label class="form-check-label">
+                                        <input class="form-check-input" data-trigger="survey" type="checkbox" value="">
+                                          <g:message code="survey.delete" />
+                                      </label>
+                                    </div>
+                                    <div class="form-check">
+                                      <label class="form-check-label">
+                                        <input class="form-check-input" data-trigger="survey-metadata" type="checkbox" value="">
+                                          <g:message code="survey.delete.metadata" />
+                                      </label>
+                                    </div>
+                                    <div class="form-check">
+                                      <label class="form-check-label">
+                                        <input class="form-check-input" data-trigger="survey-data" type="checkbox" value="">
+                                          <g:message code="survey.delete.data" />
+                                      </label>
+                                    </div>
+                                    <div class="dropdown-actions">
+                                        <a class="dropdown-close" data-trigger="dropdown" href="#"><i class="icon-close"></i> <g:message code="common.close" /></a>
+                                        <a class="dropdown-delete is-disabled" data-trigger="modal" href="#"><i class="icon-delete"></i> <g:message code="common.delete" /></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </td>
                     </tr>
                     </g:each>
                 </tbody>
@@ -180,32 +216,104 @@ function downloadFiles(programId, programName) {
         </div>
     </div>
 
-<asset:javascript src="jQuery-File-Upload-9.11.2/js/vendor/jquery.ui.widget.js"/>
-<asset:javascript src="jQuery-File-Upload-9.11.2/js/jquery.iframe-transport.js"/>
-<asset:javascript src="jQuery-File-Upload-9.11.2/js/jquery.fileupload.js"/>
-<script>
-    $(function () {
-        $('.fileupload').each(function() {
-            $(this).fileupload({
-                dropZone: $(this),
-                dataType: 'json',
-                start: function() { // start is called before all files are uploaded
-                    // Hide the file input and show the progress
-                    $(this).parent().hide();
-                    $(this).parent().parent().find('.btn-progress').show();
-                },
-                progressall: function (e, data) { // progressall is called to show the upload progress for all files
-                    // Calculate the progress
-                    var progress = parseInt(data.loaded / data.total * 100, 10);
-                    $(this).parent().parent().find('.progress').html(progress + '%');
-                },
-                done: function (e, data) { // done uploading all files
-                    // Redirect to this page to refresh the dropdowns
-                    window.location.href = "<g:createLink action="list"/>";
-                }
+    <div class="modal" data-item="modal">
+        <div class="modal__inner">
+            <div class="close" data-trigger="close"></div>
+            <div class="modal__content">
+                <h2><g:message code="survey.deletion.warning.title" /> - <span id="programNameModal"></span></h2>
+                <h3 class="modal-warning"><i class="icon-warning"></i><g:message code="common.warning" /></h3>
+                <div class="alert-warning" data-warning="survey" style="display:none">
+                    <p><span class="modal-warning__heading"><g:message code="survey.deletion.warning.program.intro" /></span>
+                        <ul>
+                            <li><g:message code="survey.program" /></li>
+                            <li><g:message code="survey.deletion.warning.program.list.program.stages" /></li>
+                        </ul>
+                    </p>
+                </div>
+                <div class="alert-warning" data-warning="survey-metadata" style="display:none">
+                    <p><span class="modal-warning__heading"><g:message code="survey.deletion.warning.program.metadata.intro" /></span>
+                        <ul>
+                            <li><g:message code="survey.deletion.warning.program.metadata.list.program.indicators" /></li>
+                            <li><g:message code="survey.deletion.warning.program.metadata.list.indicators" /></li>
+                            <li><g:message code="survey.deletion.warning.program.metadata.list.program.rules" /></li>
+                            <li><g:message code="survey.deletion.warning.program.metadata.list.program.rule.variables" /></li>
+                            <li><g:message code="survey.deletion.warning.program.metadata.list.program.data.elements" /></li>
+                            <li><g:message code="survey.deletion.warning.program.metadata.list.program.stage.data.elements" /></li>
+                            <li><g:message code="survey.deletion.warning.program.metadata.list.program.stage.data.element.option.sets.options" /></li>
+                            <li><g:message code="survey.deletion.warning.program.metadata.list.program.tracked.entity.attributes" /></li>
+                            <li><g:message code="survey.deletion.warning.program.metadata.list.tracked.entity.attributes" /></li>
+                            <li><g:message code="survey.deletion.warning.program.metadata.list.tracked.entity.attribute.option.sets.options" /></li>
+                            <li><g:message code="survey.deletion.warning.program.metadata.list.reports" />:
+                                <ul>
+                                    <li><g:message code="survey.deletion.warning.program.metadata.list.pivot.tables" /></li>
+                                    <li><g:message code="survey.deletion.warning.program.metadata.list.charts" /></li>
+                                    <li><g:message code="survey.deletion.warning.program.metadata.list.maps" /></li>
+                                    <li><g:message code="survey.deletion.warning.program.metadata.list.event.reports" /></li>
+                                    <li><g:message code="survey.deletion.warning.program.metadata.list.event.charts" /></li>
+                                    <li><g:message code="survey.deletion.warning.program.metadata.list.dashboard.items" /></li>
+                                </ul>
+                            </li>
+                </ul>
+                    </p>
+                </div>
+                <div class="alert-warning" data-warning="survey-data" style="display:none">
+                    <p><span class="modal-warning__heading"><g:message code="survey.deletion.warning.program.data.intro" /></span>
+                        <ul>
+                            <li><g:message code="survey.deletion.warning.program.data.list.program.stage.events" /></li>
+                            <li><g:message code="survey.deletion.warning.program.data.list.program.tracked.entity.instances" /></li>
+                            <li><g:message code="survey.deletion.warning.program.data.list.enrollment.data" /></li>
+                        </ul>
+                    <p>
+                </div>
+                <div>
+                    <p class="modal-warning"><strong><g:message code="common.deletion.warning.cannot.undo" /></strong></p>
+                    <p><g:message code="common.deletion.warning.confirm" /></p>
+                </div>
+                <g:form url="[action: 'delete', controller: 'surveyData']">
+                    <input type="hidden" name="programId" data-trigger="programId"/>
+                    <input type="hidden" name="programName" data-trigger="programName"/>
+                    <input type="hidden" name="deleteType" data-trigger="deleteType"/>
+                    <button class="btn btn-primary" onclick="this.disabled=true;showSpinner();this.parentNode.submit();"><g:message code="common.delete" /></button>
+                    <button class="btn btn-secondary" data-trigger="close" onclick="return false;"><g:message code="common.cancel" /></button>
+                </g:form>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal__overlay"></div>
+
+    <div class="loading">
+        <div class="spinner"></div>
+        <div class="loading-text">
+            <g:message code="common.delete.in.progress"/>
+        </div>
+    </div>
+    <asset:javascript src="jQuery-File-Upload-9.11.2/js/vendor/jquery.ui.widget.js"/>
+    <asset:javascript src="jQuery-File-Upload-9.11.2/js/jquery.iframe-transport.js"/>
+    <asset:javascript src="jQuery-File-Upload-9.11.2/js/jquery.fileupload.js"/>
+    <script>
+        $(function () {
+            $('.fileupload').each(function() {
+                $(this).fileupload({
+                    dropZone: $(this),
+                    dataType: 'json',
+                    start: function() { // start is called before all files are uploaded
+                        // Hide the file input and show the progress
+                        $(this).parent().hide();
+                        $(this).parent().parent().find('.btn-progress').show();
+                    },
+                    progressall: function (e, data) { // progressall is called to show the upload progress for all files
+                        // Calculate the progress
+                        var progress = parseInt(data.loaded / data.total * 100, 10);
+                        $(this).parent().parent().find('.progress').html(progress + '%');
+                    },
+                    done: function (e, data) { // done uploading all files
+                        // Redirect to this page to refresh the dropdowns
+                        window.location.href = "<g:createLink action="list"/>";
+                    }
+                });
             });
         });
-    });
-</script>
+    </script>
 </body>
 </html>

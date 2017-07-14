@@ -47,7 +47,7 @@
     </div>
 </div>
 <div class="ui-container">
-    <h1>Data <g:message code="importStatus.title"/></h1>
+    <h1><g:message code="dataImportStatus.title"/></h1>
     <div class="ui-main ui-full-width">
         <g:render template="/messages" />
 

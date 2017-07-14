@@ -20,7 +20,11 @@ td, th {
 }
 
 td {
-    font-size: 0.9em;
+
+    a {
+        white-space: nowrap;
+    }
+
     &.repository {
         .form-control {
             width:10em;

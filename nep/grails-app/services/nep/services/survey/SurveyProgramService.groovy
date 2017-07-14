@@ -111,11 +111,18 @@ class SurveyProgramService {
      *
      * @param auth DHIS 2 Credentials
      * @param programId The id of the program to get
+     * @param fields The list of fields to return in the Program
      * @return The found program if any
      */
-    def getProgram(def auth, def programId) {
+    def getProgram(def auth, def programId, ArrayList<String> fields = [":all", "trackedEntity[id,name]", "programTrackedEntityAttributes[id,trackedEntityAttribute[id]]"]) {
 
-        def program = programService.get(auth, programId, ["fields" : ":all,trackedEntity[id,name],programTrackedEntityAttributes[id,trackedEntityAttribute[id]]"])
+        def queryParams = [:]
+
+        if (fields?.size() > 0) {
+            queryParams.put("fields", fields.join(','))
+        }
+
+        def program = programService.get(auth, programId, queryParams)
 
         log.debug "getProgram, program: " + program
 
@@ -324,7 +331,8 @@ class SurveyProgramService {
             def programStageMap = [programStage: programStage]
             def dataElements = programStage?.programStageDataElements?.collect { it.dataElement }?.sort { it.code }
 
-            println "dataElements:" + dataElements
+            log.debug "dataElements:" + dataElements
+
             programStageMap << [dataElements: dataElements]
             programStages << programStageMap
         }
@@ -338,12 +346,26 @@ class SurveyProgramService {
     }
 
     /**
+     * Determines if the specified program has data or not
+     *
+     * @param auth DHIS 2 Credentials
+     * @param programID The id of the program to check for data
+     * @return If the program has data or not (boolean)
+     */
+    boolean programHasData (def auth, def programID) {
+        def dbRows = findProgramsWithData (auth, ["uid" : programID])
+
+        return (dbRows?.size() > 0)
+    }
+
+    /**
      * Finds all programs that have data
      *
      * @param auth DHIS 2 Credentials
+     * @param criteria The map of criteria for this query
      * @return List of programs that contain data
      */
-    def findProgramsWithData (def auth) {
+    def findProgramsWithData (def auth, def criteria = [:]) {
 
         def sqlViewName = propertiesService.getProperties().getProperty('nep.sqlview.programs.with.data.name', null)
 
@@ -357,7 +379,7 @@ class SurveyProgramService {
         }
         // need to execute the view first in case the actual underlying db view was deleted
         sqlViewService.executeView(auth, sqlView.id)
-        def data = sqlViewService.getViewData(auth, sqlView.id)
+        def data = sqlViewService.getViewData(auth, sqlView.id, criteria)
 
         def programsWithData = data?.flatten { it as String}
 
@@ -367,12 +389,26 @@ class SurveyProgramService {
     }
 
     /**
+     * Determines if the specified program stage has data or not
+     *
+     * @param auth DHIS 2 Credentials
+     * @param programStageID The id of the program stage to check for data
+     * @return If the program stage has data or not (boolean)
+     */
+    boolean programStageHasData (def auth, def programStageID) {
+        def dbRows = findProgramStagesWithData (auth, ["uid" : programStageID])
+
+        return (dbRows?.size() > 0)
+    }
+
+    /**
      * Finds all program stages that have associated data
      *
      * @param auth DHIS 2 Credentials
+     * @param criteria The map of criteria for this query
      * @return A list of program stages that contain data
      */
-    def findProgramStagesWithData (def auth) {
+    def findProgramStagesWithData (def auth, def criteria = [:]) {
 
         def sqlViewName = propertiesService.getProperties().getProperty('nep.sqlview.program.stages.with.data.name', null)
 
@@ -386,7 +422,7 @@ class SurveyProgramService {
         }
         // need to execute the view first in case the actual underlying db view was deleted
         sqlViewService.executeView(auth, sqlView.id)
-        def data = sqlViewService.getViewData(auth, sqlView.id)
+        def data = sqlViewService.getViewData(auth, sqlView.id, criteria)
 
         def programStagesWithData = data?.flatten { it as String }
 
@@ -394,4 +430,6 @@ class SurveyProgramService {
 
         return programStagesWithData
     }
+
+
 }

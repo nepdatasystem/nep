@@ -157,7 +157,8 @@ log4j.main = {
 
     debug 'grails.app.services.nep',
           'grails.app.controllers.nep',
-          'nep.batch'
+          'nep.batch',
+          'grails.app.services.com.twopaths'
 
     root {
            info "stdout"

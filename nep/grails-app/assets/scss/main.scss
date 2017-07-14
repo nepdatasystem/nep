@@ -51,6 +51,7 @@
 @import "global/forms";
 @import "global/tooltip";
 @import "global/alerts";
+@import "global/modal";
 @import "global/loading-spinner";
 
 * {
@@ -58,6 +59,7 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box;
 }
+
 *:before,
 *:after {
   -webkit-box-sizing: border-box;
@@ -321,4 +323,87 @@ hr {
     font-size: 0.75em;
     margin-bottom: 0.5em;
     color: #888;
+}
+
+.caret {
+    font-size: 0.75rem;
+    padding-left: 0.5rem;
+}
+
+.dropdown {
+    display: inline-block;
+    position: relative;
+
+    .btn {
+
+        &:focus {
+            outline: none;
+        }
+    }
+
+    &.is-open {
+
+        .btn-secondary {
+            position: relative;
+            z-index: 300;
+            border-bottom: 2px solid $white;
+        }
+
+        .dropdown-menu {
+            display: block;
+        }
+    }
+}
+
+.dropdown-menu {
+    display: none;
+    width: 10rem;
+    position: absolute;
+    top: calc(100% - 2px);
+    right: 0;
+    z-index: 100;
+    padding: 0.5rem;
+    background: $white;
+    border: 2px solid $grey-light;
+}
+
+.dropdown-actions {
+    margin: 0.75rem 0 0.25rem 0;
+    font-weight: 700;
+
+    a {
+        display: inline-block;
+        text-decoration: none;
+    }
+}
+
+.dropdown-delete {
+    color: $color-negative-dark;
+}
+
+
+.dropdown-close {
+    margin-right: 0.5rem;
+}
+
+.is-disabled {
+    color: $grey-light;
+    pointer-events: none;
+}
+
+.modal-warning {
+    color: $color-negative-dark;
+
+    i {
+        padding-right: 0.25rem;
+        font-size: 1.5rem;
+    }
+}
+
+.modal-warning__heading {
+    font-weight: 700;
+
+    strong {
+        color: $color-negative-dark;
+    }
 }

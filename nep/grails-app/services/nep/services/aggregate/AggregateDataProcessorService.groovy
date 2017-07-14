@@ -76,8 +76,9 @@ class AggregateDataProcessorService {
 
         def errors = []
 
-        // Only allow one job of this type to run concurrently
-        if (!jobService.isRunning("aggregateDataJob", dataSetName)) {
+        // Cant run job if data or deletion job is already running
+        if (!jobService.isRunning("aggregateDataJob", dataSetName) &&
+                !jobService.isRunning("dataSetDeletionJob", dataSetName)) {
 
             // Job parameters
             def jobParametersBuilder = new JobParametersBuilder()
@@ -106,8 +107,13 @@ class AggregateDataProcessorService {
             def jobExecution = jobLauncher.run(aggregateDataJob, jobParametersBuilder.toJobParameters())
             result << [jobExecution: jobExecution]
         } else { // Job already running...return error message
-            errors << [code: "aggregate.dataJob.alreadyRunning", args: [dataSetName]]
-            errors << [code: "aggregate.dataJob.clickImportStatus"]
+            if (jobService.isRunning("aggregateDataJob", dataSetName)) {
+                errors << [code: "aggregate.dataJob.alreadyRunning", args: [dataSetName]]
+                errors << [code: "aggregate.dataJob.clickImportStatus"]
+            } else if (jobService.isRunning("dataSetDeletionJob", dataSetName)) {
+                errors << [code: "aggregate.deletionJob.alreadyRunning", args: [dataSetName]]
+                errors << [code: "aggregate.deletionJob.clickDeletionStatus"]
+            }
             result << [errors: errors]
         }
 

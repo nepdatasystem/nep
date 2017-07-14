@@ -57,8 +57,10 @@ class AggregateMetadataService {
 
     def dataElementService
     def dataSetService
-
+    def metadataService
+    def messageSource
     def propertiesService
+    def systemIdService
 
     /**
      * Processes a row from the aggregate data disaggregations import csv file for processing (upload / import)
@@ -102,9 +104,26 @@ class AggregateMetadataService {
 
         def errors = []
 
+        def dataElementIds = []
+
         reader.eachWithIndex {row, idx ->
-            errors.addAll(processMetadata(auth, row, idx+1, dataSet, csvHeadings))
+            errors.addAll(processMetadata(auth, row, idx+1, dataSet, csvHeadings, dataElementIds))
         }
+
+        log.debug "dataElementIds: " + dataElementIds
+
+        def addDataElementsToDataSetResult = addDataElementsToDataSet(auth, dataSet, dataElementIds)
+        if (!addDataElementsToDataSetResult?.success) {
+            if (addDataElementsToDataSetResult.errors) {
+                errors.addAll(addDataElementsToDataSetResult.errors)
+            } else {
+                // if no errors but not success, adding an unknown error
+                // this will be obscure to a user, but this is a strange edge case that we can't really recover from anyway.
+                // better than showing it was successful.
+                errors << [code: "dhis2.error", args: ["dataSetDataSetElements", messageSource.getMessage("error.title", null, Locale.default)]]
+            }
+        }
+
         return errors
     }
 
@@ -269,9 +288,10 @@ class AggregateMetadataService {
      * @param rowNum The row number of this row of metadata
      * @param dataSet The data set that this metadata will be imported into
      * @param csvHeadings The csv headings configured for the metadata import csv for reference from the rowMap
+     * @param dataElementIds List of data element ids
      * @return errors from the process if any
      */
-    private def processMetadata (def auth, def rowMap, def rowNum, def dataSet, def csvHeadings) {
+    private def processMetadata (def auth, def rowMap, def rowNum, def dataSet, def csvHeadings, dataElementIds) {
 
         def errors = []
 
@@ -395,6 +415,8 @@ class AggregateMetadataService {
             if (dataElementResult?.success) {
                 // it was successful
                 dataElement.id = dataElementResult.lastImported
+
+                dataElementIds << dataElement.id
             } else {
                 def details = "-"
                 if (dataElementResult?.conflicts) {
@@ -404,19 +426,6 @@ class AggregateMetadataService {
                 errors << [code: msgCode, args: [rowNum, dataElementName, details]]
                 return errors
             }
-
-            // not worth it to check to see if it's already been assigned, it can be assigned multiple times with no negative effects
-            def assignDataSetToDataElementResult = dataElementService.assignDataSetToDataElement(auth, dataElement.id, dataSet.id)
-            if (!assignDataSetToDataElementResult?.success) {
-                log.warn "could not assign ${dataSet} to ${dataElementName}"
-                def details = "-"
-                if (assignDataSetToDataElementResult?.conflicts) {
-                    details = assignDataSetToDataElementResult.conflicts.collect { it.value }.join(', ')
-                }
-                errors << [code: "aggregate.metadata.assign.dataSetToDataElement.error", args: [rowNum, dataSet, dataElementName, details]]
-                return errors
-            }
-
         } catch (Exception e) {
             def rowValues = ""
             if (row?.values()) {
@@ -426,6 +435,67 @@ class AggregateMetadataService {
         }
         return errors
     }
+
+    /**
+     * Adds the specified data elements to the specified data set
+     *
+     * @param auth DHIS 2 credentials
+     * @param dataSet The data set to add data elements to
+     * @param dataSetDataElementIds The Data set data element ids to add
+     * @return The parsed Result object from the DHIS 2 API
+     */
+    private def addDataElementsToDataSet(def auth, def dataSet, def dataSetDataElementIds) {
+
+        // metadata map to post to API
+        def metadata = [:]
+
+        // list of Data Set Elements to create
+        def newDataSetElements = []
+
+        // make a map that has the existing inner dataElementId as the key to match on to see if it exists,
+        // to be able to look up the existing dataSetDataElementId.
+        // eg: the dataSetDataElements look like this:
+        // [{"id":"u8EOgwUYb0a","dataElement":{"id":"jJuJ2pv8EXc"}},... ]
+        def existingDataSetDataElementsMap = dataSet.dataSetElements.collectEntries {[(it.dataElement?.id) : (it.id)]}
+
+        def dataElementIdsToAdd = []
+        dataSetDataElementIds.each { id ->
+            // if this data element doesn't already exist for the data set, we need to add it,
+            if (!existingDataSetDataElementsMap.get(id)) {
+                dataElementIdsToAdd.add(id)
+            }
+        }
+
+        // we only add any that are new, we do not delete any that may have been removed
+        // as that could cause corrupted data, and may not even be possible if there are associated data points
+
+        // auto-generate UIDs for the programTrackedEntityAttributes in order to assign them to the program in one Metadata API call
+        def generatedIds = dataElementIdsToAdd.size() > 0 ? systemIdService.getIds(auth, dataElementIdsToAdd.size()) : []
+
+        dataElementIdsToAdd.eachWithIndex { dataSetDataElementId, idx ->
+            // create a dataSetElement with an inner dataElement and dataSet
+            newDataSetElements << [
+                    id: generatedIds[idx],
+                    dataSet: [id: dataSet.id],
+                    dataElement: [id: dataSetDataElementId]
+            ]
+        }
+
+        def dataSetDataSetElements = dataSet.dataSetElements ?: []
+
+        if (newDataSetElements.size() > 0) {
+            dataSetDataSetElements.addAll(newDataSetElements)
+        }
+
+        dataSet << [dataSetElements: dataSetDataSetElements]
+
+        metadata.put ("dataSets", [dataSet])
+
+        def result = metadataService.createOrUpdate(auth, metadata, [mergeMode: ApiMergeMode.MERGE.value()])
+
+        return result
+    }
+
 
     /**
      * Retrieves the configured column headings for the disaggregations CSV
@@ -482,8 +552,8 @@ class AggregateMetadataService {
     /**
      * Get the DHIS 2 valueType based on the supplied valueType & numberType
      *
-     * @param valueType
-     * @param numberType
+     * @param valueType The value type
+     * @param numberType The number type
      * @return The DHIS 2 value type
      */
     private def getValueType(def valueType, def numberType) {
@@ -508,7 +578,7 @@ class AggregateMetadataService {
     /**
      * Get the DHIS 2 numberType (valueType)
      *
-     * @param numberType
+     * @param numberType The number type
      * @return The DHIS 2 numberType (valueType)
      */
     private def getValueTypeFromNumberType(def numberType) {

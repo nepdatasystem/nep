@@ -42,8 +42,28 @@ import nep.batch.survey.SurveyProgramStageDataReader
 import nep.batch.survey.SurveyProgramStageDataWriter
 import nep.batch.survey.SurveyProgramStageMetadataReader
 import nep.batch.survey.SurveyProgramStageMetadataWriter
-import nep.services.survey.SurveyProgramStageMetadataService
-import nep.services.survey.SurveyProgramStageService
+import nep.batch.survey.SurveyProgramDataDeletionReader
+import nep.batch.survey.SurveyProgramDataDeletionWriter
+import nep.batch.survey.SurveyProgramStageDataDeletionReader
+import nep.batch.survey.SurveyProgramStageDataDeletionWriter
+import nep.batch.survey.SurveyProgramReportAndSupportingMetadataDeletionReader
+import nep.batch.survey.SurveyProgramReportAndSupportingMetadataDeletionWriter
+import nep.batch.survey.SurveyProgramMetadataDeletionReader
+import nep.batch.survey.SurveyProgramMetadataDeletionWriter
+import nep.batch.survey.SurveyProgramStageMetadataDeletionReader
+import nep.batch.survey.SurveyProgramStageMetadataDeletionWriter
+import nep.batch.survey.SurveyProgramStageDeletionReader
+import nep.batch.survey.SurveyProgramStageDeletionWriter
+import nep.batch.survey.SurveyProgramDeletionReader
+import nep.batch.survey.SurveyProgramDeletionWriter
+import nep.batch.aggregate.DataSetDataDeletionReader
+import nep.batch.aggregate.DataSetDataDeletionWriter
+import nep.batch.aggregate.DataSetDataElementDeletionReader
+import nep.batch.aggregate.DataSetDataElementDeletionWriter
+import nep.batch.aggregate.DataSetCategoryComboDeletionReader
+import nep.batch.aggregate.DataSetCategoryComboDeletionWriter
+import nep.batch.aggregate.DataSetDeletionReader
+import nep.batch.aggregate.DataSetDeletionWriter
 import nep.springsecurity.CustomAuthenticationProvider
 import org.springframework.web.servlet.i18n.SessionLocaleResolver
 
@@ -61,7 +81,9 @@ beans = {
             break
     }
 
-    // Aggregate Job
+    // ------------------------------------------
+    // AGGREGATE JOB
+    // ------------------------------------------
     batch.job(id: 'aggregateDataJob') {
         batch.step(id: 'importAggregateData') {
             batch.tasklet() {
@@ -85,8 +107,14 @@ beans = {
         resourceTableService = ref('resourceTableService')
     }
 
-    // Survey Jobs
-    // Survey Data
+    // ------------------------------------------
+    // SURVEY JOBS
+    // ------------------------------------------
+
+    // ------------------------------------------
+    // Survey Data Import
+    // ------------------------------------------
+
     batch.job(id: 'surveyDataJob') {
         batch.step(id: 'importProgramData', next: 'importProgramStageData_0') {
             batch.tasklet() {
@@ -180,7 +208,10 @@ beans = {
         programStage = 2
     }
 
-    // Survey Metadata
+    // ------------------------------------------
+    // Survey Metadata Import
+    // ------------------------------------------
+
     batch.job(id: 'surveyMetadataJob') {
         batch.step(id: 'importProgramMetadata', next: 'importProgramStageMetadata_0') {
             batch.tasklet() {
@@ -277,7 +308,472 @@ beans = {
         programStageNumber = 2
     }
 
+
+    // ------------------------------------------
+    // Survey Deletion
+    // ------------------------------------------
+    batch.job(id: 'surveyDeletionJob') {
+        // -------------
+        // Survey Data Deletion
+        // -------------
+        // Program Stage Data Deletion
+        batch.step(id: 'deleteProgramStageData_0') {
+            batch.fail(
+                on: 'FAILED'
+            )
+            batch.next(
+                    on: '*',
+                    to: 'deleteProgramStageData_1'
+            )
+            batch.tasklet() {
+                batch.chunk(
+                        reader: 'surveyProgramStageDataDeletionReader_0',
+                        writer: 'surveyProgramStageDataDeletionWriter_0',
+                        'commit-interval': '1' ,
+                        'retry-policy': 'neverRetryPolicy',
+                        'skip-policy': 'alwaysSkipItemSkipPolicy'
+                )
+            }
+        }
+        batch.step(id: 'deleteProgramStageData_1') {
+            batch.fail(
+                    on: 'FAILED'
+            )
+            batch.next(
+                    on: '*',
+                    to: 'deleteProgramStageData_2'
+            )
+            batch.tasklet() {
+                batch.chunk(
+                        reader: 'surveyProgramStageDataDeletionReader_1',
+                        writer: 'surveyProgramStageDataDeletionWriter_1',
+                        'commit-interval': '1' ,
+                        'retry-policy': 'neverRetryPolicy',
+                        'skip-policy': 'alwaysSkipItemSkipPolicy'
+                )
+            }
+        }
+        batch.step(id: 'deleteProgramStageData_2') {
+            batch.fail(
+                    on: 'FAILED'
+            )
+            batch.next(
+                    on: '*',
+                    to: 'deleteProgramData'
+            )
+            batch.tasklet() {
+                batch.chunk(
+                        reader: 'surveyProgramStageDataDeletionReader_2',
+                        writer: 'surveyProgramStageDataDeletionWriter_2',
+                        'commit-interval': '1' ,
+                        'retry-policy': 'neverRetryPolicy',
+                        'skip-policy': 'alwaysSkipItemSkipPolicy'
+                )
+            }
+        }
+        // Program Data Deletion
+        batch.step(id: 'deleteProgramData') {
+            batch.fail(
+                    on: 'FAILED'
+            )
+            batch.next(
+                    on: '*',
+                    to: 'deleteProgramReports'
+            )
+            batch.tasklet() {
+                batch.chunk(
+                        reader: 'surveyProgramDataDeletionReader',
+                        writer: 'surveyProgramDataDeletionWriter',
+                        'commit-interval': '1' ,
+                        'retry-policy': 'neverRetryPolicy',
+                        'skip-policy': 'alwaysSkipItemSkipPolicy'
+                )
+            }
+        }
+
+        // -------------
+        // Survey Metadata Deletion
+        // -------------
+
+        batch.step(id: 'deleteProgramReports') {
+            batch.fail(
+                    on: 'FAILED'
+            )
+            batch.next(
+                    on: '*',
+                    to: 'deleteProgramStageMetadata_0'
+            )
+            batch.tasklet() {
+                batch.chunk(
+                        reader: 'surveyProgramReportAndSupportingMetadataDeletionReader',
+                        writer: 'surveyProgramReportAndSupportingMetadataDeletionWriter',
+                        'commit-interval': '1' ,
+                        'retry-policy': 'neverRetryPolicy',
+                        'skip-policy': 'alwaysSkipItemSkipPolicy'
+                )
+            }
+        }
+
+        batch.step(id: 'deleteProgramStageMetadata_0') {
+            batch.fail(
+                    on: 'FAILED'
+            )
+            batch.next(
+                    on: '*',
+                    to: 'deleteProgramStageMetadata_1'
+            )
+            batch.tasklet() {
+                batch.chunk(
+                        reader: 'surveyProgramStageMetadataDeletionReader_0',
+                        writer: 'surveyProgramStageMetadataDeletionWriter_0',
+                        'commit-interval': '1' ,
+                        'retry-policy': 'neverRetryPolicy',
+                        'skip-policy': 'alwaysSkipItemSkipPolicy'
+                )
+            }
+        }
+
+        batch.step(id: 'deleteProgramStageMetadata_1') {
+            batch.fail(
+                    on: 'FAILED'
+            )
+            batch.next(
+                    on: '*',
+                    to: 'deleteProgramStageMetadata_2'
+            )
+            batch.tasklet() {
+                batch.chunk(
+                        reader: 'surveyProgramStageMetadataDeletionReader_1',
+                        writer: 'surveyProgramStageMetadataDeletionWriter_1',
+                        'commit-interval': '1' ,
+                        'retry-policy': 'neverRetryPolicy',
+                        'skip-policy': 'alwaysSkipItemSkipPolicy'
+                )
+            }
+        }
+
+        batch.step(id: 'deleteProgramStageMetadata_2') {
+            batch.fail(
+                    on: 'FAILED'
+            )
+            batch.next(
+                    on: '*',
+                    to: 'deleteProgramMetadata'
+            )
+            batch.tasklet() {
+                batch.chunk(
+                        reader: 'surveyProgramStageMetadataDeletionReader_2',
+                        writer: 'surveyProgramStageMetadataDeletionWriter_2',
+                        'commit-interval': '1' ,
+                        'retry-policy': 'neverRetryPolicy',
+                        'skip-policy': 'alwaysSkipItemSkipPolicy'
+                )
+            }
+        }
+
+        batch.step(id: 'deleteProgramMetadata') {
+            batch.fail(
+                    on: 'FAILED'
+            )
+            batch.next(
+                    on: '*',
+                    to: 'deleteProgramStages'
+            )
+            batch.tasklet() {
+                batch.chunk(
+                        reader: 'surveyProgramMetadataDeletionReader',
+                        writer: 'surveyProgramMetadataDeletionWriter',
+                        'commit-interval': '1' ,
+                        'retry-policy': 'neverRetryPolicy',
+                        'skip-policy': 'alwaysSkipItemSkipPolicy'
+                )
+            }
+        }
+        // -------------
+        // Survey Deletion
+        // -------------
+
+        batch.step(id: 'deleteProgramStages') {
+            batch.fail(
+                    on: 'FAILED'
+            )
+            batch.next(
+                    on: '*',
+                    to: 'deleteProgram'
+            )
+            batch.tasklet() {
+                batch.chunk(
+                        reader: 'surveyProgramStageDeletionReader',
+                        writer: 'surveyProgramStageDeletionWriter',
+                        'commit-interval': '1' ,
+                        'retry-policy': 'neverRetryPolicy',
+                        'skip-policy': 'alwaysSkipItemSkipPolicy'
+                )
+            }
+        }
+
+        batch.step(id: 'deleteProgram') {
+            batch.tasklet() {
+                batch.chunk(
+                        reader: 'surveyProgramDeletionReader',
+                        writer: 'surveyProgramDeletionWriter',
+                        'commit-interval': '1' ,
+                        'retry-policy': 'neverRetryPolicy',
+                        'skip-policy': 'alwaysSkipItemSkipPolicy'
+                )
+            }
+        }
+
+    }
+
+    // Program Stage Deletion
+    surveyProgramStageDeletionReader (SurveyProgramStageDeletionReader) { bean ->
+    }
+    surveyProgramStageDeletionWriter (SurveyProgramStageDeletionWriter) { bean ->
+        bean.scope = 'step'
+        stepExecution = '#{stepExecution}'
+        surveyProgramDeletionService = ref('surveyProgramDeletionService')
+    }
+
+    // Program Deletion
+    surveyProgramDeletionReader (SurveyProgramDeletionReader) { bean ->
+    }
+    surveyProgramDeletionWriter (SurveyProgramDeletionWriter) { bean ->
+        bean.scope = 'step'
+        stepExecution = '#{stepExecution}'
+        surveyProgramDeletionService = ref('surveyProgramDeletionService')
+    }
+
+    // Program Report Deletion
+    surveyProgramReportAndSupportingMetadataDeletionReader (SurveyProgramReportAndSupportingMetadataDeletionReader) { bean ->
+    }
+
+    surveyProgramReportAndSupportingMetadataDeletionWriter (SurveyProgramReportAndSupportingMetadataDeletionWriter) { bean ->
+        bean.scope = 'step'
+        stepExecution = '#{stepExecution}'
+        surveyProgramDeletionService = ref('surveyProgramDeletionService')
+        surveyProgramService = ref('surveyProgramService')
+    }
+
+    // Program Stage 0 Metadata Deletion
+    surveyProgramStageMetadataDeletionReader_0 (SurveyProgramStageMetadataDeletionReader) { bean ->
+        programStageNumber = 0
+    }
+    surveyProgramStageMetadataDeletionWriter_0 (SurveyProgramStageMetadataDeletionWriter) { bean ->
+        bean.scope = 'step'
+        stepExecution = '#{stepExecution}'
+        surveyProgramDeletionService = ref('surveyProgramDeletionService')
+        programStageNumber = 0
+    }
+
+    // Program Stage 1 Metadata Deletion
+    surveyProgramStageMetadataDeletionReader_1 (SurveyProgramStageMetadataDeletionReader) { bean ->
+        programStageNumber = 1
+    }
+    surveyProgramStageMetadataDeletionWriter_1 (SurveyProgramStageMetadataDeletionWriter) { bean ->
+        bean.scope = 'step'
+        stepExecution = '#{stepExecution}'
+        surveyProgramDeletionService = ref('surveyProgramDeletionService')
+        programStageNumber = 1
+    }
+
+    // Program Stage 2 Metadata Deletion
+    surveyProgramStageMetadataDeletionReader_2 (SurveyProgramStageMetadataDeletionReader) { bean ->
+        programStageNumber = 2
+    }
+    surveyProgramStageMetadataDeletionWriter_2 (SurveyProgramStageMetadataDeletionWriter) { bean ->
+        bean.scope = 'step'
+        stepExecution = '#{stepExecution}'
+        surveyProgramDeletionService = ref('surveyProgramDeletionService')
+        programStageNumber = 2
+    }
+
+    // Program Metadata Deletion
+    surveyProgramMetadataDeletionReader (SurveyProgramMetadataDeletionReader) { bean ->
+        surveyProgramDeletionService = ref('surveyProgramDeletionService')
+    }
+    surveyProgramMetadataDeletionWriter (SurveyProgramMetadataDeletionWriter) { bean ->
+        bean.scope = 'step'
+        stepExecution = '#{stepExecution}'
+        surveyProgramDeletionService = ref('surveyProgramDeletionService')
+    }
+
+    // Program Stage 0 Data Deletion
+    surveyProgramStageDataDeletionReader_0 (SurveyProgramStageDataDeletionReader) { bean ->
+        surveyProgramDeletionService = ref('surveyProgramDeletionService')
+        programStageNumber = 0
+    }
+    surveyProgramStageDataDeletionWriter_0 (SurveyProgramStageDataDeletionWriter) { bean ->
+        bean.scope = 'step'
+        stepExecution = '#{stepExecution}'
+        surveyProgramDeletionService = ref('surveyProgramDeletionService')
+        programStageNumber = 0
+    }
+
+    // Program Stage 1 Data Deletion
+    surveyProgramStageDataDeletionReader_1 (SurveyProgramStageDataDeletionReader) { bean ->
+        surveyProgramDeletionService = ref('surveyProgramDeletionService')
+        programStageNumber = 1
+    }
+    surveyProgramStageDataDeletionWriter_1 (SurveyProgramStageDataDeletionWriter) { bean ->
+        bean.scope = 'step'
+        stepExecution = '#{stepExecution}'
+        surveyProgramDeletionService = ref('surveyProgramDeletionService')
+        programStageNumber = 1
+    }
+
+    // Program Stage 2 Data Deletion
+    surveyProgramStageDataDeletionReader_2 (SurveyProgramStageDataDeletionReader) { bean ->
+        surveyProgramDeletionService = ref('surveyProgramDeletionService')
+        programStageNumber = 2
+    }
+    surveyProgramStageDataDeletionWriter_2 (SurveyProgramStageDataDeletionWriter) { bean ->
+        bean.scope = 'step'
+        stepExecution = '#{stepExecution}'
+        surveyProgramDeletionService = ref('surveyProgramDeletionService')
+        programStageNumber = 2
+    }
+
+    // Program Data Deletion
+    surveyProgramDataDeletionReader (SurveyProgramDataDeletionReader) { bean ->
+        surveyProgramDeletionService = ref('surveyProgramDeletionService')
+    }
+    surveyProgramDataDeletionWriter (SurveyProgramDataDeletionWriter) { bean ->
+        bean.scope = 'step'
+        stepExecution = '#{stepExecution}'
+        surveyProgramDeletionService = ref('surveyProgramDeletionService')
+    }
+
+    // ------------------------------------------
+    // Data Set Deletion
+    // ------------------------------------------
+    batch.job(id: 'dataSetDeletionJob') {
+        // -------------
+        // Data Set Data Deletion
+        // -------------
+
+        // Data Set Data Deletion
+        batch.step(id: 'deleteDataSetData') {
+            batch.fail(
+                    on: 'FAILED'
+            )
+            batch.next(
+                    on: '*',
+                    to: 'deleteDataSetDataElements'
+            )
+            batch.tasklet() {
+                batch.chunk(
+                        reader: 'dataSetDataDeletionReader',
+                        writer: 'dataSetDataDeletionWriter',
+                        'commit-interval': '1' ,
+                        'retry-policy': 'neverRetryPolicy',
+                        'skip-policy': 'alwaysSkipItemSkipPolicy'
+                )
+            }
+        }
+
+        // -------------
+        // Data Set Metadata Deletion
+        // -------------
+
+        batch.step(id: 'deleteDataSetDataElements') {
+            batch.fail(
+                    on: 'FAILED'
+            )
+            batch.next(
+                    on: '*',
+                    to: 'deleteDataSetCategoryCombos'
+            )
+            batch.tasklet() {
+                batch.chunk(
+                        reader: 'dataSetDataElementDeletionReader',
+                        writer: 'dataSetDataElementDeletionWriter',
+                        'commit-interval': '1' ,
+                        'retry-policy': 'neverRetryPolicy',
+                        'skip-policy': 'alwaysSkipItemSkipPolicy'
+                )
+            }
+        }
+
+        batch.step(id: 'deleteDataSetCategoryCombos') {
+            batch.fail(
+                    on: 'FAILED'
+            )
+            batch.next(
+                    on: '*',
+                    to: 'deleteDataSet'
+            )
+            batch.tasklet() {
+                batch.chunk(
+                        reader: 'dataSetCategoryComboDeletionReader',
+                        writer: 'dataSetCategoryComboDeletionWriter',
+                        'commit-interval': '1' ,
+                        'retry-policy': 'neverRetryPolicy',
+                        'skip-policy': 'alwaysSkipItemSkipPolicy'
+                )
+            }
+        }
+
+
+        // -------------
+        // Data Set Deletion
+        // -------------
+
+        batch.step(id: 'deleteDataSet') {
+            batch.tasklet() {
+                batch.chunk(
+                        reader: 'dataSetDeletionReader',
+                        writer: 'dataSetDeletionWriter',
+                        'commit-interval': '1' ,
+                        'retry-policy': 'neverRetryPolicy',
+                        'skip-policy': 'alwaysSkipItemSkipPolicy'
+                )
+            }
+        }
+
+    }
+
+    // Data Set Deletion
+    dataSetDeletionReader (DataSetDeletionReader) { bean ->
+    }
+    dataSetDeletionWriter (DataSetDeletionWriter) { bean ->
+        bean.scope = 'step'
+        stepExecution = '#{stepExecution}'
+        aggregateDataSetDeletionService = ref('aggregateDataSetDeletionService')
+    }
+
+    // Data Set Metadata Deletion
+    // Data Elements Deletion
+    dataSetDataElementDeletionReader (DataSetDataElementDeletionReader) { bean ->
+    }
+    dataSetDataElementDeletionWriter (DataSetDataElementDeletionWriter) { bean ->
+        bean.scope = 'step'
+        stepExecution = '#{stepExecution}'
+        aggregateDataSetDeletionService = ref('aggregateDataSetDeletionService')
+    }
+
+    // Category Combos Deletion
+    dataSetCategoryComboDeletionReader (DataSetCategoryComboDeletionReader) { bean ->
+    }
+    dataSetCategoryComboDeletionWriter (DataSetCategoryComboDeletionWriter) { bean ->
+        bean.scope = 'step'
+        stepExecution = '#{stepExecution}'
+        aggregateDataSetDeletionService = ref('aggregateDataSetDeletionService')
+    }
+
+    // Data Set Data Deletion
+    dataSetDataDeletionReader (DataSetDataDeletionReader) { bean ->
+    }
+    dataSetDataDeletionWriter (DataSetDataDeletionWriter) { bean ->
+        bean.scope = 'step'
+        stepExecution = '#{stepExecution}'
+        aggregateDataSetDeletionService = ref('aggregateDataSetDeletionService')
+    }
+
+    // ------------------------------------------
     // Spring Security
+    // ------------------------------------------
+
     customAuthenticationProvider(CustomAuthenticationProvider) {
         loginService = ref('loginService')
         userService = ref('userService')
@@ -296,7 +792,9 @@ beans = {
         Locale.setDefault(Locale.ENGLISH)
     }
 
+    // ------------------------------------------
     // API Service
+    // ------------------------------------------
     apiService(ApiService) {
         apiResultParserFactoryService = ref('apiResultParserFactoryService')
         server = '${dhis2.server}'
@@ -304,6 +802,9 @@ beans = {
         globalApiVersion = (grailsApplication.config.dhis2.api.version) ? ApiVersion.get(grailsApplication.config.dhis2.api.version) : null
     }
 
+    // ------------------------------------------
+    // Login Service
+    // ------------------------------------------
     loginService(LoginService) {
         server = '${dhis2.server}'
         context = '${dhis2.context}'

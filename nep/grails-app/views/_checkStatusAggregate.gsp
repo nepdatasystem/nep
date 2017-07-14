@@ -26,9 +26,13 @@
   - SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
   -
   --}%
+
 <h2>${message(code: "common.check.status")}:</h2>
 <ol class="check-status-list">
     <li class="${(controllerName == 'aggregateData' && (actionName == 'importStatus' || actionName == 'importErrors')) ? 'active' : ''}" >
         <g:link controller="aggregateData" action="importStatus">${message(code: "dataImportStatus.title")}</g:link>
+    </li>
+    <li class="${(controllerName == 'aggregateData' && (actionName == 'deletionStatus' || actionName == 'deletionErrors')) ? 'active' : ''}" >
+        <g:link controller="aggregateData" action="deletionStatus">${message(code: "dataSet.deletionStatus.title")}</g:link>
     </li>
 </ol>

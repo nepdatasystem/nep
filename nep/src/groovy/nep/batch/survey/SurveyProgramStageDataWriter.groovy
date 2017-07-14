@@ -31,6 +31,7 @@ package nep.batch.survey
 
 
 import groovy.util.logging.Log4j
+import nep.batch.AbstractBatchWriter
 import nep.batch.JobExecutionError;
 
 import groovy.json.JsonOutput
@@ -46,9 +47,7 @@ import org.springframework.batch.item.ItemWriter
  * Spring Batch writer of Program Stage Data for import
  */
 @Log4j
-class SurveyProgramStageDataWriter implements ItemWriter<Map<String, Object>> {
-
-    StepExecution stepExecution
+class SurveyProgramStageDataWriter extends AbstractBatchWriter implements ItemWriter<Map<String, Object>> {
 
     SurveyProgramStageService surveyProgramStageService
     ResourceTableService resourceTableService
@@ -118,27 +117,4 @@ class SurveyProgramStageDataWriter implements ItemWriter<Map<String, Object>> {
 
     }
 
-    /**
-     * Creates and saves a job execution error
-     *
-     * @param code The message bundle code of the job execution error
-     * @param args The message bundle args of the job execution error
-     * @return
-     */
-    private JobExecutionError createJobExecutionError(def code, def args=null) {
-
-        def jsonArgs = args ? JsonOutput.toJson(args) : null
-        def error = new JobExecutionError(
-                jobExecutionId: stepExecution.jobExecutionId,
-                stepExecutionId: stepExecution.id,
-                lineNumber: stepExecution.readCount + 1,
-                code: code,
-                args: jsonArgs
-        )
-        error.save()
-
-        if (error.hasErrors()) {
-            log.error "Could not save JobExecutionError, errors: " + error.errors
-        }
-    }
 }

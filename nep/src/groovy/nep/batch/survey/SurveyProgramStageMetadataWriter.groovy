@@ -32,6 +32,7 @@ package nep.batch.survey
 import com.twopaths.dhis2.services.ResourceTableService
 import groovy.json.JsonOutput
 import groovy.util.logging.Log4j
+import nep.batch.AbstractBatchWriter
 import nep.batch.JobExecutionError
 import nep.services.survey.SurveyProgramStageMetadataService
 import nep.services.survey.SurveyProgramStageService
@@ -42,9 +43,7 @@ import org.springframework.batch.item.ItemWriter
  * Spring Batch writer of Program Stage Metadata for import
  */
 @Log4j
-class SurveyProgramStageMetadataWriter implements ItemWriter<Map<String, Object>> {
-
-    StepExecution stepExecution
+class SurveyProgramStageMetadataWriter extends AbstractBatchWriter implements ItemWriter<Map<String, Object>>  {
 
     SurveyProgramStageService surveyProgramStageService
     SurveyProgramStageMetadataService surveyProgramStageMetadataService
@@ -100,27 +99,4 @@ class SurveyProgramStageMetadataWriter implements ItemWriter<Map<String, Object>
         log.debug "writeCount/totalCount: " + writeCount + " / " + totalCount
     }
 
-    /**
-     * Creates and saves a job execution error
-     *
-     * @param code The message bundle code of the job execution error
-     * @param args The message bundle args of the job execution error
-     * @return
-     */
-    private JobExecutionError createJobExecutionError(def code, def args=null) {
-
-        def jsonArgs = args ? JsonOutput.toJson(args) : null
-        def error = new JobExecutionError(
-                jobExecutionId: stepExecution.jobExecutionId,
-                stepExecutionId: stepExecution.id,
-                lineNumber: stepExecution.readCount + 1,
-                code: code,
-                args: jsonArgs
-        )
-        error.save()
-
-        if (error.hasErrors()) {
-            log.error "Could not save JobExecutionError, errors: " + error.errors
-        }
-    }
 }

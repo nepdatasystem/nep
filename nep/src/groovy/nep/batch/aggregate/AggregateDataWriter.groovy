@@ -78,12 +78,13 @@ class AggregateDataWriter implements ItemWriter<Map<String, Object>> {
                     }
                 }
             } catch (Exception e) {
-                createJobExecutionError("error.occurred", e.getMessage())
+                createJobExecutionError("error.text", e.getMessage())
             }
         }
 
         // Get the processed/read count plus the total count
         def writeCount = stepExecution.writeCount as Long
+        // this is the first step, so get the first item in the array
         def totalCount =  stepExecution.jobExecution.jobParameters.getLong("totalCount[0]" as String)
         log.debug "writeCount/totalCount: " + writeCount + " / " + totalCount
 

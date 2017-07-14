@@ -47,7 +47,7 @@
     </div>
 </div>
 <div class="ui-container">
-    <h1>Data <g:message code="importErrors.title"/></h1>
+    <h1><g:message code="data.importErrors.title"/></h1>
     <div class="ui-main">
         <h2>${params.fileName}</h2>
         <g:if test="${importErrors}">

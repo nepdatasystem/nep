@@ -1,0 +1,122 @@
+@font-face {
+    font-family: 'icomoon';
+    src:url('../fonts/icomoon.eot?iwgefo');
+    src:url('../fonts/icomoon.eot?#iefixiwgefo') format('embedded-opentype'),
+        url('../fonts/icomoon.ttf?iwgefo') format('truetype'),
+        url('../fonts/icomoon.woff?iwgefo') format('woff'),
+        url('../fonts/icomoon.svg?iwgefo#icomoon') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+[class^="icon-"], [class*=" icon-"] {
+    font-family: 'icomoon';
+    speak: none;
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+
+    /* Better Font Rendering =========== */
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-stop:before {
+    content: "\e606";
+}
+.icon-autorenew:before {
+    content: "\e600";
+}
+.icon-keyboard-arrow-right:before {
+    content: "\e601";
+}
+.icon-check:before {
+    content: "\e602";
+}
+.icon-close:before {
+    content: "\e603";
+}
+.icon-sync:before {
+    content: "\e604";
+}
+.icon-sync-problem:before {
+    content: "\e605";
+}
+.icon-delete:before {
+    content: "\e607";
+}
+.icon-help:before {
+    content: "\e609";
+}
+.icon-history:before {
+    content: "\e608";
+}
+.icon-warning:before {
+    content: "\e60a";
+}
+
+.upload-started,
+.upload-completed,
+.upload-failed,
+.upload-stopped,
+.upload-stop,
+.upload-remove, {
+    display: inline-block;
+    vertical-align: middle;
+    font-weight: 700;
+    white-space: nowrap;
+    &:before {
+        display: inline-block;
+        vertical-align: middle;
+        margin-top: -5px;
+        font-size: 1.25em;
+        font-weight: 400;
+        font-family: 'icomoon';
+    }
+}
+
+.upload-started {
+    color: $color-positive-dark;
+    &:before {
+        content: "\e608";
+    }
+}
+
+.upload-completed {
+    color: $color-positive-dark;
+    &:before {
+        content: "\e602";
+    }
+}
+
+.upload-failed,
+.upload-stopped {
+    color: $color-negative-dark;
+    &:before {
+        content: "\e605";
+    }
+}
+
+.upload-remove {
+    color: $color-negative-dark;
+    &:before {
+        content: "\e607";
+        margin-top: -1px;
+    }
+    a {
+        color: $color-negative-dark;
+    }
+}
+
+.upload-stop {
+    color: $color-negative-dark;
+    &:before {
+        content: "\e60a";
+        margin-top: -1px;
+    }
+    a {
+        color: $color-negative-dark;
+    }
+}

@@ -1,0 +1,2019 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+  ~ Copyright (c) 2014-2017. Institute for International Programs at Johns Hopkins University.
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, with or without
+  ~ modification, are permitted provided that the following conditions are met:
+  ~ Redistributions of source code must retain the above copyright notice, this
+  ~ list of conditions and the following disclaimer.
+  ~ Redistributions in binary form must reproduce the above copyright notice,
+  ~ this list of conditions and the following disclaimer in the documentation
+  ~ and/or other materials provided with the distribution.
+  ~ Neither the name of the NEP project, Institute for International Programs,
+  ~ Johns Hopkins University nor the names of its contributors may
+  ~ be used to endorse or promote products derived from this software without
+  ~ specific prior written permission.
+  ~
+  ~ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+  ~ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+  ~ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+  ~ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+  ~ ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+  ~ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+  ~ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+  ~ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  ~ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+  ~ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  ~
+  -->
+
+<metaData xmlns="http://dhis2.org/schema/dxf/2.0" created="2015-07-09T21:05:46.275+0000">
+    <organisationUnits>
+        <organisationUnit name="Tanzania" created="2015-06-16T18:12:40.170+0000"
+                          lastUpdated="2015-06-16T18:12:40.214+0000" shortName="Tanzania"
+                          uuid="8f876be7-4bed-42f2-84c6-9cd4b42b1024" level="1" id="k3B5WZVfke3">
+            <externalAccess>false</externalAccess>
+            <user name="BAO Admin" created="2015-05-25T16:36:45.000+0000" lastUpdated="2015-06-16T18:09:21.804+0000"
+                  id="Kh7hGf2Sd4G">
+                <externalAccess>false</externalAccess>
+            </user>
+            <description></description>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="geita" name="Geita" created="2015-06-17T00:19:38.048+0000"
+                          lastUpdated="2015-06-17T00:19:38.704+0000" shortName="Geita"
+                          uuid="d2aabd2b-c2c4-4992-b2e0-8569a058c797" level="3" id="bdGyOlRS9sU">
+            <externalAccess>false</externalAccess>
+            <parent code="lake zone" name="Lake Zone" created="2015-06-17T00:18:32.668+0000"
+                    lastUpdated="2015-06-17T00:18:33.326+0000" id="PKE4kq9NNWn">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="iringa" name="Iringa" created="2015-06-17T00:19:38.048+0000"
+                          lastUpdated="2015-06-17T00:19:38.706+0000" shortName="Iringa"
+                          uuid="31ee858f-5819-4735-a995-5569095483c8" level="3" id="QoVm5AdCed1">
+            <externalAccess>false</externalAccess>
+            <parent code="southern highlands" name="Southern Highlands" created="2015-06-17T00:18:32.670+0000"
+                    lastUpdated="2015-06-17T00:18:33.332+0000" id="S5tLHqH0t3Y">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="bunda dc" name="Bunda DC" created="2015-06-17T00:40:08.584+0000"
+                          lastUpdated="2015-06-17T00:40:09.166+0000" shortName="Bunda DC"
+                          uuid="58c95aef-6240-4717-8718-3b6a069a2fa4" level="4" id="BXNesmebcIM">
+            <externalAccess>false</externalAccess>
+            <parent code="mara" name="Mara" created="2015-06-17T00:19:38.045+0000"
+                    lastUpdated="2015-06-17T00:19:38.693+0000" id="bJrOcj9ZvON">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="butiama dc" name="Butiama DC" created="2015-06-17T00:40:08.584+0000"
+                          lastUpdated="2015-06-17T00:40:09.166+0000" shortName="Butiama DC"
+                          uuid="1eafb613-1d47-4265-b497-c8f6e8ff8ab3" level="4" id="rf1y6K9KQFx">
+            <externalAccess>false</externalAccess>
+            <parent code="mara" name="Mara" created="2015-06-17T00:19:38.045+0000"
+                    lastUpdated="2015-06-17T00:19:38.693+0000" id="bJrOcj9ZvON">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="musoma dc" name="Musoma DC" created="2015-06-17T00:40:08.644+0000"
+                          lastUpdated="2015-06-17T00:40:09.251+0000" shortName="Musoma DC"
+                          uuid="c857241c-58f2-4dec-9045-3c36557b634b" level="4" id="jS6wnB9doZI">
+            <externalAccess>false</externalAccess>
+            <parent code="mara" name="Mara" created="2015-06-17T00:19:38.045+0000"
+                    lastUpdated="2015-06-17T00:19:38.693+0000" id="bJrOcj9ZvON">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="rorya dc" name="Rorya DC" created="2015-06-17T00:40:08.649+0000"
+                          lastUpdated="2015-06-17T00:40:09.260+0000" shortName="Rorya DC"
+                          uuid="1309dc8a-de28-4f48-8496-9ef8f09a519c" level="4" id="Y6E4daW8mEE">
+            <externalAccess>false</externalAccess>
+            <parent code="mara" name="Mara" created="2015-06-17T00:19:38.045+0000"
+                    lastUpdated="2015-06-17T00:19:38.693+0000" id="bJrOcj9ZvON">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="serengeti dc" name="Serengeti DC" created="2015-06-17T00:40:08.651+0000"
+                          lastUpdated="2015-06-17T00:40:09.263+0000" shortName="Serengeti DC"
+                          uuid="24baa232-73e3-4b8e-bda7-3e899f317845" level="4" id="uS5ySJ6wP2i">
+            <externalAccess>false</externalAccess>
+            <parent code="mara" name="Mara" created="2015-06-17T00:19:38.045+0000"
+                    lastUpdated="2015-06-17T00:19:38.693+0000" id="bJrOcj9ZvON">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="ileje dc" name="Ileje DC" created="2015-06-17T00:40:08.619+0000"
+                          lastUpdated="2015-06-17T00:40:09.175+0000" shortName="Ileje DC"
+                          uuid="6e548669-eb7e-4c54-b456-2196afc904a7" level="4" id="oA9SMxwrlv5">
+            <externalAccess>false</externalAccess>
+            <parent code="mbeya" name="Mbeya" created="2015-06-17T00:19:38.046+0000"
+                    lastUpdated="2015-06-17T00:19:38.695+0000" id="udKOZtQMSOp">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kyela dc" name="Kyela DC" created="2015-06-17T00:40:08.630+0000"
+                          lastUpdated="2015-06-17T00:40:09.215+0000" shortName="Kyela DC"
+                          uuid="27576232-4006-49cf-ad42-92b28e74375d" level="4" id="bEKjagOQm0V">
+            <externalAccess>false</externalAccess>
+            <parent code="mbeya" name="Mbeya" created="2015-06-17T00:19:38.046+0000"
+                    lastUpdated="2015-06-17T00:19:38.695+0000" id="udKOZtQMSOp">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="mbarali dc" name="Mbarali DC" created="2015-06-17T00:40:08.635+0000"
+                          lastUpdated="2015-06-17T00:40:09.228+0000" shortName="Mbarali DC"
+                          uuid="b15cbccb-c190-40a9-90be-383e64f2e4fd" level="4" id="pfqui7XzZ6U">
+            <externalAccess>false</externalAccess>
+            <parent code="mbeya" name="Mbeya" created="2015-06-17T00:19:38.046+0000"
+                    lastUpdated="2015-06-17T00:19:38.695+0000" id="udKOZtQMSOp">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="mbeya dc" name="Mbeya DC" created="2015-06-17T00:40:08.636+0000"
+                          lastUpdated="2015-06-17T00:40:09.230+0000" shortName="Mbeya DC"
+                          uuid="eda9e0c8-528f-4922-b4c0-9a3cacaf2581" level="4" id="gKvoA2RPLFd">
+            <externalAccess>false</externalAccess>
+            <parent code="mbeya" name="Mbeya" created="2015-06-17T00:19:38.046+0000"
+                    lastUpdated="2015-06-17T00:19:38.695+0000" id="udKOZtQMSOp">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="mbozi dc" name="Mbozi DC" created="2015-06-17T00:40:08.637+0000"
+                          lastUpdated="2015-06-17T00:40:09.233+0000" shortName="Mbozi DC"
+                          uuid="ff27ed0c-422a-414c-9733-983a6db6cd35" level="4" id="pJIeYAINRqP">
+            <externalAccess>false</externalAccess>
+            <parent code="mbeya" name="Mbeya" created="2015-06-17T00:19:38.046+0000"
+                    lastUpdated="2015-06-17T00:19:38.695+0000" id="udKOZtQMSOp">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="nkasi dc" name="Nkasi DC" created="2015-06-17T00:40:08.647+0000"
+                          lastUpdated="2015-06-17T00:40:09.257+0000" shortName="Nkasi DC"
+                          uuid="4e47c3a2-a5a8-4e2e-8fdd-183cb9332310" level="4" id="q3mCg007WrE">
+            <externalAccess>false</externalAccess>
+            <parent code="rukwa" name="Rukwa" created="2015-06-17T00:19:38.046+0000"
+                    lastUpdated="2015-06-17T00:19:38.697+0000" id="JraKAxGYz8u">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="sumbawanga dc" name="Sumbawanga DC" created="2015-06-17T00:40:08.654+0000"
+                          lastUpdated="2015-06-17T00:40:09.267+0000" shortName="Sumbawanga DC"
+                          uuid="7032717b-17b8-4c55-9db9-b138103521fa" level="4" id="at5IOP9ENTv">
+            <externalAccess>false</externalAccess>
+            <parent code="rukwa" name="Rukwa" created="2015-06-17T00:19:38.046+0000"
+                    lastUpdated="2015-06-17T00:19:38.697+0000" id="JraKAxGYz8u">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="sumbawanga mc" name="Sumbawanga MC" created="2015-06-17T00:40:08.654+0000"
+                          lastUpdated="2015-06-17T00:40:09.268+0000" shortName="Sumbawanga MC"
+                          uuid="2d07dec2-1571-455d-88c0-81964de8ea2f" level="4" id="SLptIsT83BW">
+            <externalAccess>false</externalAccess>
+            <parent code="rukwa" name="Rukwa" created="2015-06-17T00:19:38.046+0000"
+                    lastUpdated="2015-06-17T00:19:38.697+0000" id="JraKAxGYz8u">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="western" name="Western" created="2015-06-17T00:18:32.669+0000"
+                          lastUpdated="2015-06-17T00:18:33.328+0000" shortName="Western"
+                          uuid="7e01cef0-712a-466b-830d-c699ac0a0300" level="2" id="ruYN0HK5Vr5">
+            <externalAccess>false</externalAccess>
+            <parent name="Tanzania" created="2015-06-16T18:12:40.170+0000" lastUpdated="2015-06-16T18:12:40.214+0000"
+                    id="k3B5WZVfke3">
+                <externalAccess>false</externalAccess>
+                <user name="BAO Admin" created="2015-05-25T16:36:45.000+0000" lastUpdated="2015-06-16T18:09:21.804+0000"
+                      id="Kh7hGf2Sd4G">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="northern" name="Northern" created="2015-06-17T00:18:32.669+0000"
+                          lastUpdated="2015-06-17T00:18:33.329+0000" shortName="Northern"
+                          uuid="4ea5633c-22d3-4f5a-8788-8b3e4636da4d" level="2" id="BkFXXwri1E5">
+            <externalAccess>false</externalAccess>
+            <parent name="Tanzania" created="2015-06-16T18:12:40.170+0000" lastUpdated="2015-06-16T18:12:40.214+0000"
+                    id="k3B5WZVfke3">
+                <externalAccess>false</externalAccess>
+                <user name="BAO Admin" created="2015-05-25T16:36:45.000+0000" lastUpdated="2015-06-16T18:09:21.804+0000"
+                      id="Kh7hGf2Sd4G">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="eastern" name="Eastern" created="2015-06-17T00:18:32.669+0000"
+                          lastUpdated="2015-06-17T00:18:33.330+0000" shortName="Eastern"
+                          uuid="a3e1ed82-cccf-4d86-a81a-966fbd606d9f" level="2" id="oaIcLCAkLlJ">
+            <externalAccess>false</externalAccess>
+            <parent name="Tanzania" created="2015-06-16T18:12:40.170+0000" lastUpdated="2015-06-16T18:12:40.214+0000"
+                    id="k3B5WZVfke3">
+                <externalAccess>false</externalAccess>
+                <user name="BAO Admin" created="2015-05-25T16:36:45.000+0000" lastUpdated="2015-06-16T18:09:21.804+0000"
+                      id="Kh7hGf2Sd4G">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="central" name="Central" created="2015-06-17T00:18:32.670+0000"
+                          lastUpdated="2015-06-17T00:18:33.331+0000" shortName="Central"
+                          uuid="d2d6e790-b319-4eee-b61e-0499c71bb94a" level="2" id="Ao1IRegO22G">
+            <externalAccess>false</externalAccess>
+            <parent name="Tanzania" created="2015-06-16T18:12:40.170+0000" lastUpdated="2015-06-16T18:12:40.214+0000"
+                    id="k3B5WZVfke3">
+                <externalAccess>false</externalAccess>
+                <user name="BAO Admin" created="2015-05-25T16:36:45.000+0000" lastUpdated="2015-06-16T18:09:21.804+0000"
+                      id="Kh7hGf2Sd4G">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="southern highlands" name="Southern Highlands" created="2015-06-17T00:18:32.670+0000"
+                          lastUpdated="2015-06-17T00:18:33.332+0000" shortName="Southern Highlands"
+                          uuid="8a747425-f9f9-4d45-8000-2f4c6f8d13dd" level="2" id="S5tLHqH0t3Y">
+            <externalAccess>false</externalAccess>
+            <parent name="Tanzania" created="2015-06-16T18:12:40.170+0000" lastUpdated="2015-06-16T18:12:40.214+0000"
+                    id="k3B5WZVfke3">
+                <externalAccess>false</externalAccess>
+                <user name="BAO Admin" created="2015-05-25T16:36:45.000+0000" lastUpdated="2015-06-16T18:09:21.804+0000"
+                      id="Kh7hGf2Sd4G">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="southern" name="Southern" created="2015-06-17T00:18:32.671+0000"
+                          lastUpdated="2015-06-17T00:18:33.333+0000" shortName="Southern"
+                          uuid="873fde54-cac5-4deb-81ba-b5112f7e84d4" level="2" id="J4nnbbwZLNk">
+            <externalAccess>false</externalAccess>
+            <parent name="Tanzania" created="2015-06-16T18:12:40.170+0000" lastUpdated="2015-06-16T18:12:40.214+0000"
+                    id="k3B5WZVfke3">
+                <externalAccess>false</externalAccess>
+                <user name="BAO Admin" created="2015-05-25T16:36:45.000+0000" lastUpdated="2015-06-16T18:09:21.804+0000"
+                      id="Kh7hGf2Sd4G">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="lake zone" name="Lake Zone" created="2015-06-17T00:18:32.668+0000"
+                          lastUpdated="2015-06-17T00:18:33.326+0000" shortName="Lake Zone"
+                          uuid="57a631e0-4aed-4850-bbd3-3c45fbf89935" level="2" id="PKE4kq9NNWn">
+            <externalAccess>false</externalAccess>
+            <parent name="Tanzania" created="2015-06-16T18:12:40.170+0000" lastUpdated="2015-06-16T18:12:40.214+0000"
+                    id="k3B5WZVfke3">
+                <externalAccess>false</externalAccess>
+                <user name="BAO Admin" created="2015-05-25T16:36:45.000+0000" lastUpdated="2015-06-16T18:09:21.804+0000"
+                      id="Kh7hGf2Sd4G">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="southwest highlands" name="Southwest Highlands" created="2015-06-17T00:18:32.668+0000"
+                          lastUpdated="2015-06-17T00:18:33.327+0000" shortName="Southwest Highlands"
+                          uuid="80d058f8-f26f-4a42-b18e-cdbc9bf77e61" level="2" id="g2mIf98GTXz">
+            <externalAccess>false</externalAccess>
+            <parent name="Tanzania" created="2015-06-16T18:12:40.170+0000" lastUpdated="2015-06-16T18:12:40.214+0000"
+                    id="k3B5WZVfke3">
+                <externalAccess>false</externalAccess>
+                <user name="BAO Admin" created="2015-05-25T16:36:45.000+0000" lastUpdated="2015-06-16T18:09:21.804+0000"
+                      id="Kh7hGf2Sd4G">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kagera" name="Kagera" created="2015-06-17T00:19:38.049+0000"
+                          lastUpdated="2015-06-17T00:19:38.707+0000" shortName="Kagera"
+                          uuid="380a8219-d2a7-4967-b6b6-8da8cd796b00" level="3" id="GVqXoyT7C5K">
+            <externalAccess>false</externalAccess>
+            <parent code="lake zone" name="Lake Zone" created="2015-06-17T00:18:32.668+0000"
+                    lastUpdated="2015-06-17T00:18:33.326+0000" id="PKE4kq9NNWn">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="katavi" name="Katavi" created="2015-06-17T00:19:38.049+0000"
+                          lastUpdated="2015-06-17T00:19:38.709+0000" shortName="Katavi"
+                          uuid="971dad44-3070-4543-b2cd-eb1599a24206" level="3" id="AchFhGz5oZx">
+            <externalAccess>false</externalAccess>
+            <parent code="southwest highlands" name="Southwest Highlands" created="2015-06-17T00:18:32.668+0000"
+                    lastUpdated="2015-06-17T00:18:33.327+0000" id="g2mIf98GTXz">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kigoma" name="Kigoma" created="2015-06-17T00:19:38.049+0000"
+                          lastUpdated="2015-06-17T00:19:38.710+0000" shortName="Kigoma"
+                          uuid="71b60e86-b8d9-4564-afe7-42904dc1ad55" level="3" id="kCWsDrVUQbx">
+            <externalAccess>false</externalAccess>
+            <parent code="western" name="Western" created="2015-06-17T00:18:32.669+0000"
+                    lastUpdated="2015-06-17T00:18:33.328+0000" id="ruYN0HK5Vr5">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kilimanjaro" name="Kilimanjaro" created="2015-06-17T00:19:38.050+0000"
+                          lastUpdated="2015-06-17T00:19:38.712+0000" shortName="Kilimanjaro"
+                          uuid="1c64716c-25f3-4565-9824-d5c7017a01a1" level="3" id="jEA2tCIEUSJ">
+            <externalAccess>false</externalAccess>
+            <parent code="northern" name="Northern" created="2015-06-17T00:18:32.669+0000"
+                    lastUpdated="2015-06-17T00:18:33.329+0000" id="BkFXXwri1E5">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="lindi" name="Lindi" created="2015-06-17T00:19:38.050+0000"
+                          lastUpdated="2015-06-17T00:19:38.713+0000" shortName="Lindi"
+                          uuid="36e18f8c-148a-4e65-80d6-f733a804884b" level="3" id="tWXdjdfaxrQ">
+            <externalAccess>false</externalAccess>
+            <parent code="southern" name="Southern" created="2015-06-17T00:18:32.671+0000"
+                    lastUpdated="2015-06-17T00:18:33.333+0000" id="J4nnbbwZLNk">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="manyara" name="Manyara" created="2015-06-17T00:19:38.050+0000"
+                          lastUpdated="2015-06-17T00:19:38.715+0000" shortName="Manyara"
+                          uuid="23e86e1d-b9f8-469a-bea8-23b82e667df3" level="3" id="xN7MrFlwFo9">
+            <externalAccess>false</externalAccess>
+            <parent code="central" name="Central" created="2015-06-17T00:18:32.670+0000"
+                    lastUpdated="2015-06-17T00:18:33.331+0000" id="Ao1IRegO22G">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="morogoro" name="Morogoro" created="2015-06-17T00:19:38.051+0000"
+                          lastUpdated="2015-06-17T00:19:38.716+0000" shortName="Morogoro"
+                          uuid="29e57e79-7e00-4f06-9f32-8424f7d99d98" level="3" id="M59cfndNs6d">
+            <externalAccess>false</externalAccess>
+            <parent code="eastern" name="Eastern" created="2015-06-17T00:18:32.669+0000"
+                    lastUpdated="2015-06-17T00:18:33.330+0000" id="oaIcLCAkLlJ">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="mtwara" name="Mtwara" created="2015-06-17T00:19:38.051+0000"
+                          lastUpdated="2015-06-17T00:19:38.718+0000" shortName="Mtwara"
+                          uuid="38a2850f-7ddb-4a30-94e9-3f0e5391f741" level="3" id="oaNYZUiXlMe">
+            <externalAccess>false</externalAccess>
+            <parent code="southern" name="Southern" created="2015-06-17T00:18:32.671+0000"
+                    lastUpdated="2015-06-17T00:18:33.333+0000" id="J4nnbbwZLNk">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="mwanza" name="Mwanza" created="2015-06-17T00:19:38.051+0000"
+                          lastUpdated="2015-06-17T00:19:38.719+0000" shortName="Mwanza"
+                          uuid="683b249e-7b3e-4635-abbb-7fbc422224fe" level="3" id="IzOzVPNIh0c">
+            <externalAccess>false</externalAccess>
+            <parent code="lake zone" name="Lake Zone" created="2015-06-17T00:18:32.668+0000"
+                    lastUpdated="2015-06-17T00:18:33.326+0000" id="PKE4kq9NNWn">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="njombe" name="Njombe" created="2015-06-17T00:19:38.052+0000"
+                          lastUpdated="2015-06-17T00:19:38.720+0000" shortName="Njombe"
+                          uuid="5ca427a3-e101-4dc6-83cc-37e83b3a0932" level="3" id="spRdsijpf6s">
+            <externalAccess>false</externalAccess>
+            <parent code="southern highlands" name="Southern Highlands" created="2015-06-17T00:18:32.670+0000"
+                    lastUpdated="2015-06-17T00:18:33.332+0000" id="S5tLHqH0t3Y">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="mara" name="Mara" created="2015-06-17T00:19:38.045+0000"
+                          lastUpdated="2015-06-17T00:19:38.693+0000" shortName="Mara"
+                          uuid="6c0de927-c512-45b3-953c-4c8a7a860439" level="3" id="bJrOcj9ZvON">
+            <externalAccess>false</externalAccess>
+            <parent code="lake zone" name="Lake Zone" created="2015-06-17T00:18:32.668+0000"
+                    lastUpdated="2015-06-17T00:18:33.326+0000" id="PKE4kq9NNWn">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="igunga dc" name="Igunga DC" created="2015-06-17T00:40:08.588+0000"
+                          lastUpdated="2015-06-17T00:40:09.173+0000" shortName="Igunga DC"
+                          uuid="4011fbfe-c4b6-46ca-9059-117958ecc97e" level="4" id="TWWWn1XyN3V">
+            <externalAccess>false</externalAccess>
+            <parent code="tabora" name="Tabora" created="2015-06-17T00:19:38.046+0000"
+                    lastUpdated="2015-06-17T00:19:38.698+0000" id="mK76Tz6nqV5">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kaliua dc" name="Kaliua DC" created="2015-06-17T00:40:08.622+0000"
+                          lastUpdated="2015-06-17T00:40:09.179+0000" shortName="Kaliua DC"
+                          uuid="44adbd08-4fed-4250-80eb-2c7b0c7b2c05" level="4" id="LRETp0yLXfu">
+            <externalAccess>false</externalAccess>
+            <parent code="tabora" name="Tabora" created="2015-06-17T00:19:38.046+0000"
+                    lastUpdated="2015-06-17T00:19:38.698+0000" id="mK76Tz6nqV5">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="tabora mc" name="Tabora MC" created="2015-06-17T00:40:08.654+0000"
+                          lastUpdated="2015-06-17T00:40:09.268+0000" shortName="Tabora MC"
+                          uuid="692f6bfb-ee56-4801-9f33-ae3a92b747ae" level="4" id="RZcz8mvwtl7">
+            <externalAccess>false</externalAccess>
+            <parent code="tabora" name="Tabora" created="2015-06-17T00:19:38.046+0000"
+                    lastUpdated="2015-06-17T00:19:38.698+0000" id="mK76Tz6nqV5">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="arusha cc" name="Arusha CC" created="2015-06-17T00:40:08.579+0000"
+                          lastUpdated="2015-06-17T00:40:09.160+0000" shortName="Arusha CC"
+                          uuid="2e6cfa1f-f20b-43f4-b555-6c566c6ad1a3" level="4" id="qrpD1nvAzoy">
+            <externalAccess>false</externalAccess>
+            <parent code="arusha" name="Arusha" created="2015-06-17T00:19:38.047+0000"
+                    lastUpdated="2015-06-17T00:19:38.700+0000" id="HukszyC6rKB">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="arusha dc" name="Arusha DC" created="2015-06-17T00:40:08.580+0000"
+                          lastUpdated="2015-06-17T00:40:09.161+0000" shortName="Arusha DC"
+                          uuid="1826cd36-4955-493f-a857-dcac307882f2" level="4" id="wdYO8TRwXpb">
+            <externalAccess>false</externalAccess>
+            <parent code="arusha" name="Arusha" created="2015-06-17T00:19:38.047+0000"
+                    lastUpdated="2015-06-17T00:19:38.700+0000" id="HukszyC6rKB">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="karatu dc" name="Karatu DC" created="2015-06-17T00:40:08.623+0000"
+                          lastUpdated="2015-06-17T00:40:09.180+0000" shortName="Karatu DC"
+                          uuid="b858fcf5-0bdb-4749-bbcf-c2c4daca0baa" level="4" id="R873pDPvUwk">
+            <externalAccess>false</externalAccess>
+            <parent code="arusha" name="Arusha" created="2015-06-17T00:19:38.047+0000"
+                    lastUpdated="2015-06-17T00:19:38.700+0000" id="HukszyC6rKB">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="longido dc" name="Longido DC" created="2015-06-17T00:40:08.632+0000"
+                          lastUpdated="2015-06-17T00:40:09.217+0000" shortName="Longido DC"
+                          uuid="713c761d-18fb-4ab1-90b3-c36ff8a418e1" level="4" id="CqP5ggjzTiD">
+            <externalAccess>false</externalAccess>
+            <parent code="arusha" name="Arusha" created="2015-06-17T00:19:38.047+0000"
+                    lastUpdated="2015-06-17T00:19:38.700+0000" id="HukszyC6rKB">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="chamwino dc" name="Chamwino DC" created="2015-06-17T00:40:08.584+0000"
+                          lastUpdated="2015-06-17T00:40:09.167+0000" shortName="Chamwino DC"
+                          uuid="4c19f73c-e708-4595-9948-fe389582b7ec" level="4" id="ffLGc97Bolj">
+            <externalAccess>false</externalAccess>
+            <parent code="dodoma" name="Dodoma" created="2015-06-17T00:19:38.047+0000"
+                    lastUpdated="2015-06-17T00:19:38.703+0000" id="u999NPzd4LE">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="mbeya" name="Mbeya" created="2015-06-17T00:19:38.046+0000"
+                          lastUpdated="2015-06-17T00:19:38.695+0000" shortName="Mbeya"
+                          uuid="829803af-4422-4391-b397-91fed66b2926" level="3" id="udKOZtQMSOp">
+            <externalAccess>false</externalAccess>
+            <parent code="southwest highlands" name="Southwest Highlands" created="2015-06-17T00:18:32.668+0000"
+                    lastUpdated="2015-06-17T00:18:33.327+0000" id="g2mIf98GTXz">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="rukwa" name="Rukwa" created="2015-06-17T00:19:38.046+0000"
+                          lastUpdated="2015-06-17T00:19:38.697+0000" shortName="Rukwa"
+                          uuid="14a5da64-fc25-44d6-9826-ea6a37948c69" level="3" id="JraKAxGYz8u">
+            <externalAccess>false</externalAccess>
+            <parent code="southwest highlands" name="Southwest Highlands" created="2015-06-17T00:18:32.668+0000"
+                    lastUpdated="2015-06-17T00:18:33.327+0000" id="g2mIf98GTXz">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="tabora" name="Tabora" created="2015-06-17T00:19:38.046+0000"
+                          lastUpdated="2015-06-17T00:19:38.698+0000" shortName="Tabora"
+                          uuid="c83ed9e9-442f-4464-8f9e-cf0deacaa8d4" level="3" id="mK76Tz6nqV5">
+            <externalAccess>false</externalAccess>
+            <parent code="western" name="Western" created="2015-06-17T00:18:32.669+0000"
+                    lastUpdated="2015-06-17T00:18:33.328+0000" id="ruYN0HK5Vr5">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="arusha" name="Arusha" created="2015-06-17T00:19:38.047+0000"
+                          lastUpdated="2015-06-17T00:19:38.700+0000" shortName="Arusha"
+                          uuid="bff5ac34-62c3-4740-ba9a-cb78245bc425" level="3" id="HukszyC6rKB">
+            <externalAccess>false</externalAccess>
+            <parent code="northern" name="Northern" created="2015-06-17T00:18:32.669+0000"
+                    lastUpdated="2015-06-17T00:18:33.329+0000" id="BkFXXwri1E5">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="dar es salaam" name="Dar Es Salaam" created="2015-06-17T00:19:38.047+0000"
+                          lastUpdated="2015-06-17T00:19:38.701+0000" shortName="Dar Es Salaam"
+                          uuid="645dd096-21df-4ab7-844a-355dcf890f10" level="3" id="VYmA2sUaTHw">
+            <externalAccess>false</externalAccess>
+            <parent code="eastern" name="Eastern" created="2015-06-17T00:18:32.669+0000"
+                    lastUpdated="2015-06-17T00:18:33.330+0000" id="oaIcLCAkLlJ">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="dodoma" name="Dodoma" created="2015-06-17T00:19:38.047+0000"
+                          lastUpdated="2015-06-17T00:19:38.703+0000" shortName="Dodoma"
+                          uuid="f9f5f1a6-6ea2-42f3-b7da-f892119bf4ee" level="3" id="u999NPzd4LE">
+            <externalAccess>false</externalAccess>
+            <parent code="central" name="Central" created="2015-06-17T00:18:32.670+0000"
+                    lastUpdated="2015-06-17T00:18:33.331+0000" id="Ao1IRegO22G">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="pwani" name="Pwani" created="2015-06-17T00:19:38.052+0000"
+                          lastUpdated="2015-06-17T00:19:38.722+0000" shortName="Pwani"
+                          uuid="f888e476-e167-441b-ad70-751a4bb62066" level="3" id="pZt2uudfRQY">
+            <externalAccess>false</externalAccess>
+            <parent code="eastern" name="Eastern" created="2015-06-17T00:18:32.669+0000"
+                    lastUpdated="2015-06-17T00:18:33.330+0000" id="oaIcLCAkLlJ">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="ruvuma" name="Ruvuma" created="2015-06-17T00:19:38.052+0000"
+                          lastUpdated="2015-06-17T00:19:38.723+0000" shortName="Ruvuma"
+                          uuid="f58a898e-7738-41fe-b07c-6cc99a6c2b14" level="3" id="URe55jRkTXV">
+            <externalAccess>false</externalAccess>
+            <parent code="southern highlands" name="Southern Highlands" created="2015-06-17T00:18:32.670+0000"
+                    lastUpdated="2015-06-17T00:18:33.332+0000" id="S5tLHqH0t3Y">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="shinyanga" name="Shinyanga" created="2015-06-17T00:19:38.053+0000"
+                          lastUpdated="2015-06-17T00:19:38.725+0000" shortName="Shinyanga"
+                          uuid="5e5f25a8-4c7f-4c25-b530-fe39726f2ae7" level="3" id="umcaQ167e2t">
+            <externalAccess>false</externalAccess>
+            <parent code="lake zone" name="Lake Zone" created="2015-06-17T00:18:32.668+0000"
+                    lastUpdated="2015-06-17T00:18:33.326+0000" id="PKE4kq9NNWn">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="simiyu" name="Simiyu" created="2015-06-17T00:19:38.053+0000"
+                          lastUpdated="2015-06-17T00:19:38.726+0000" shortName="Simiyu"
+                          uuid="05191c29-f9e0-4596-bbaf-715ffe960704" level="3" id="t5hruFBve7d">
+            <externalAccess>false</externalAccess>
+            <parent code="lake zone" name="Lake Zone" created="2015-06-17T00:18:32.668+0000"
+                    lastUpdated="2015-06-17T00:18:33.326+0000" id="PKE4kq9NNWn">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="singida" name="Singida" created="2015-06-17T00:19:38.053+0000"
+                          lastUpdated="2015-06-17T00:19:38.728+0000" shortName="Singida"
+                          uuid="20b016c6-4345-43d8-b33e-8c73a3d30780" level="3" id="TNtd1DnVJ6M">
+            <externalAccess>false</externalAccess>
+            <parent code="central" name="Central" created="2015-06-17T00:18:32.670+0000"
+                    lastUpdated="2015-06-17T00:18:33.331+0000" id="Ao1IRegO22G">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="tanga" name="Tanga" created="2015-06-17T00:19:38.054+0000"
+                          lastUpdated="2015-06-17T00:19:38.729+0000" shortName="Tanga"
+                          uuid="3a8649cc-8919-41e9-81e8-b0ab05d60e9a" level="3" id="ZEDZWnl8ITK">
+            <externalAccess>false</externalAccess>
+            <parent code="northern" name="Northern" created="2015-06-17T00:18:32.669+0000"
+                    lastUpdated="2015-06-17T00:18:33.329+0000" id="BkFXXwri1E5">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kinondoni mc" name="Kinondoni MC" created="2015-06-17T00:40:08.628+0000"
+                          lastUpdated="2015-06-17T00:40:09.189+0000" shortName="Kinondoni MC"
+                          uuid="601c9f77-069f-41ef-a780-574a7a512865" level="4" id="ydTwZdjOKxn">
+            <externalAccess>false</externalAccess>
+            <parent code="dar es salaam" name="Dar Es Salaam" created="2015-06-17T00:19:38.047+0000"
+                    lastUpdated="2015-06-17T00:19:38.701+0000" id="VYmA2sUaTHw">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="temeke mc" name="Temeke MC" created="2015-06-17T00:40:08.655+0000"
+                          lastUpdated="2015-06-17T00:40:09.269+0000" shortName="Temeke MC"
+                          uuid="f2f26d01-df31-4b06-bb72-262d8683bbed" level="4" id="ndKB0DNUuBk">
+            <externalAccess>false</externalAccess>
+            <parent code="dar es salaam" name="Dar Es Salaam" created="2015-06-17T00:19:38.047+0000"
+                    lastUpdated="2015-06-17T00:19:38.701+0000" id="VYmA2sUaTHw">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="chemba dc" name="Chemba DC" created="2015-06-17T00:40:08.585+0000"
+                          lastUpdated="2015-06-17T00:40:09.168+0000" shortName="Chemba DC"
+                          uuid="a6d2afa2-5c69-499d-b41e-8bf717daa079" level="4" id="RawMdKb1Ofl">
+            <externalAccess>false</externalAccess>
+            <parent code="dodoma" name="Dodoma" created="2015-06-17T00:19:38.047+0000"
+                    lastUpdated="2015-06-17T00:19:38.703+0000" id="u999NPzd4LE">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="bahi dc" name="Bahi DC" created="2015-06-17T00:40:08.581+0000"
+                          lastUpdated="2015-06-17T00:40:09.163+0000" shortName="Bahi DC"
+                          uuid="7e65fefb-61e1-4ae2-b110-518a691cf4ba" level="4" id="yaLIL32WbKo">
+            <externalAccess>false</externalAccess>
+            <parent code="dodoma" name="Dodoma" created="2015-06-17T00:19:38.047+0000"
+                    lastUpdated="2015-06-17T00:19:38.703+0000" id="u999NPzd4LE">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="dodoma mc" name="Dodoma MC" created="2015-06-17T00:40:08.586+0000"
+                          lastUpdated="2015-06-17T00:40:09.169+0000" shortName="Dodoma MC"
+                          uuid="be7c73ce-b1d3-499b-8931-47718ae1a510" level="4" id="uuUO9JgwC9E">
+            <externalAccess>false</externalAccess>
+            <parent code="dodoma" name="Dodoma" created="2015-06-17T00:19:38.047+0000"
+                    lastUpdated="2015-06-17T00:19:38.703+0000" id="u999NPzd4LE">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="geita dc" name="Geita DC" created="2015-06-17T00:40:08.586+0000"
+                          lastUpdated="2015-06-17T00:40:09.170+0000" shortName="Geita DC"
+                          uuid="80a1aca3-0b74-407e-8555-0a9567ccdd36" level="4" id="wnnoqmaYjcG">
+            <externalAccess>false</externalAccess>
+            <parent code="geita" name="Geita" created="2015-06-17T00:19:38.048+0000"
+                    lastUpdated="2015-06-17T00:19:38.704+0000" id="bdGyOlRS9sU">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="mbogwe dc" name="Mbogwe DC" created="2015-06-17T00:40:08.637+0000"
+                          lastUpdated="2015-06-17T00:40:09.232+0000" shortName="Mbogwe DC"
+                          uuid="718d0caf-cadf-498a-a7e9-501d920cf510" level="4" id="EdNSqDzcxxS">
+            <externalAccess>false</externalAccess>
+            <parent code="geita" name="Geita" created="2015-06-17T00:19:38.048+0000"
+                    lastUpdated="2015-06-17T00:19:38.704+0000" id="bdGyOlRS9sU">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="bukoba dc" name="Bukoba DC" created="2015-06-17T00:40:08.583+0000"
+                          lastUpdated="2015-06-17T00:40:09.164+0000" shortName="Bukoba DC"
+                          uuid="adb262a8-19fa-43a0-a573-a00c148f99c3" level="4" id="OEsPypiYwqx">
+            <externalAccess>false</externalAccess>
+            <parent code="kagera" name="Kagera" created="2015-06-17T00:19:38.049+0000"
+                    lastUpdated="2015-06-17T00:19:38.707+0000" id="GVqXoyT7C5K">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kyerwa dc" name="Kyerwa DC" created="2015-06-17T00:40:08.631+0000"
+                          lastUpdated="2015-06-17T00:40:09.216+0000" shortName="Kyerwa DC"
+                          uuid="619640b1-a8f4-4d7c-9688-c10ad8318287" level="4" id="sjG3S5NRmtG">
+            <externalAccess>false</externalAccess>
+            <parent code="kagera" name="Kagera" created="2015-06-17T00:19:38.049+0000"
+                    lastUpdated="2015-06-17T00:19:38.707+0000" id="GVqXoyT7C5K">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="muleba dc" name="Muleba DC" created="2015-06-17T00:40:08.644+0000"
+                          lastUpdated="2015-06-17T00:40:09.250+0000" shortName="Muleba DC"
+                          uuid="e8c9bf18-81ac-485c-8b41-ffe11b3063fc" level="4" id="JqEaNPuXlHI">
+            <externalAccess>false</externalAccess>
+            <parent code="kagera" name="Kagera" created="2015-06-17T00:19:38.049+0000"
+                    lastUpdated="2015-06-17T00:19:38.707+0000" id="GVqXoyT7C5K">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="mpanda dc" name="Mpanda DC" created="2015-06-17T00:40:08.642+0000"
+                          lastUpdated="2015-06-17T00:40:09.245+0000" shortName="Mpanda DC"
+                          uuid="8ea13a58-ad9a-43dc-bc81-763e1d358efc" level="4" id="dEhH4qwOIWU">
+            <externalAccess>false</externalAccess>
+            <parent code="katavi" name="Katavi" created="2015-06-17T00:19:38.049+0000"
+                    lastUpdated="2015-06-17T00:19:38.709+0000" id="AchFhGz5oZx">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="mpanda tc" name="Mpanda TC" created="2015-06-17T00:40:08.642+0000"
+                          lastUpdated="2015-06-17T00:40:09.246+0000" shortName="Mpanda TC"
+                          uuid="96386df0-6c04-48e5-860f-89b2cfcb8c8f" level="4" id="Vie0ETRPp76">
+            <externalAccess>false</externalAccess>
+            <parent code="katavi" name="Katavi" created="2015-06-17T00:19:38.049+0000"
+                    lastUpdated="2015-06-17T00:19:38.709+0000" id="AchFhGz5oZx">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="buhingwe dc" name="Buhingwe DC" created="2015-06-17T00:40:08.582+0000"
+                          lastUpdated="2015-06-17T00:40:09.164+0000" shortName="Buhingwe DC"
+                          uuid="fe08865e-daed-42e1-8b17-1b28a3a84ff9" level="4" id="FMceGLd3iwb">
+            <externalAccess>false</externalAccess>
+            <parent code="kigoma" name="Kigoma" created="2015-06-17T00:19:38.049+0000"
+                    lastUpdated="2015-06-17T00:19:38.710+0000" id="kCWsDrVUQbx">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kakonko dc" name="Kakonko DC" created="2015-06-17T00:40:08.622+0000"
+                          lastUpdated="2015-06-17T00:40:09.179+0000" shortName="Kakonko DC"
+                          uuid="de2ef67f-4ae0-4090-9926-02964bef9be9" level="4" id="ZBFEELwxF7B">
+            <externalAccess>false</externalAccess>
+            <parent code="kigoma" name="Kigoma" created="2015-06-17T00:19:38.049+0000"
+                    lastUpdated="2015-06-17T00:19:38.710+0000" id="kCWsDrVUQbx">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kigoma dc" name="Kigoma DC" created="2015-06-17T00:40:08.625+0000"
+                          lastUpdated="2015-06-17T00:40:09.183+0000" shortName="Kigoma DC"
+                          uuid="d9ee22f4-7991-4385-bbec-2f03c203ad5f" level="4" id="yWz0zmp4YMZ">
+            <externalAccess>false</externalAccess>
+            <parent code="kigoma" name="Kigoma" created="2015-06-17T00:19:38.049+0000"
+                    lastUpdated="2015-06-17T00:19:38.710+0000" id="kCWsDrVUQbx">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="uvinza dc" name="Uvinza DC" created="2015-06-17T00:40:08.661+0000"
+                          lastUpdated="2015-06-17T00:40:09.271+0000" shortName="Uvinza DC"
+                          uuid="ffaaec30-f725-4dde-b980-dddd5f0c02cf" level="4" id="EENR7pOyqsA">
+            <externalAccess>false</externalAccess>
+            <parent code="kigoma" name="Kigoma" created="2015-06-17T00:19:38.049+0000"
+                    lastUpdated="2015-06-17T00:19:38.710+0000" id="kCWsDrVUQbx">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="moshi dc" name="Moshi DC" created="2015-06-17T00:40:08.641+0000"
+                          lastUpdated="2015-06-17T00:40:09.244+0000" shortName="Moshi DC"
+                          uuid="ec3e9583-ec45-4b31-a58f-5a585a480bbd" level="4" id="nKlJzqoyk1v">
+            <externalAccess>false</externalAccess>
+            <parent code="kilimanjaro" name="Kilimanjaro" created="2015-06-17T00:19:38.050+0000"
+                    lastUpdated="2015-06-17T00:19:38.712+0000" id="jEA2tCIEUSJ">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="mwanga dc" name="Mwanga DC" created="2015-06-17T00:40:08.645+0000"
+                          lastUpdated="2015-06-17T00:40:09.252+0000" shortName="Mwanga DC"
+                          uuid="d1ee5b61-12aa-4c89-83f8-26fbd8a32a36" level="4" id="aiI1SyIy6tQ">
+            <externalAccess>false</externalAccess>
+            <parent code="kilimanjaro" name="Kilimanjaro" created="2015-06-17T00:19:38.050+0000"
+                    lastUpdated="2015-06-17T00:19:38.712+0000" id="jEA2tCIEUSJ">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="rombo dc" name="Rombo DC" created="2015-06-17T00:40:08.649+0000"
+                          lastUpdated="2015-06-17T00:40:09.260+0000" shortName="Rombo DC"
+                          uuid="3adb6b4c-0fa2-4c4b-b82f-47ec7b81e176" level="4" id="Bdbm5mwt0Zs">
+            <externalAccess>false</externalAccess>
+            <parent code="kilimanjaro" name="Kilimanjaro" created="2015-06-17T00:19:38.050+0000"
+                    lastUpdated="2015-06-17T00:19:38.712+0000" id="jEA2tCIEUSJ">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="moshi mc" name="Moshi MC" created="2015-06-17T00:40:08.641+0000"
+                          lastUpdated="2015-06-17T00:40:09.245+0000" shortName="Moshi MC"
+                          uuid="4b6db2f6-c6cc-4205-90dd-9fbe8842022e" level="4" id="QeCaoaP3PoM">
+            <externalAccess>false</externalAccess>
+            <parent code="kilimanjaro" name="Kilimanjaro" created="2015-06-17T00:19:38.050+0000"
+                    lastUpdated="2015-06-17T00:19:38.712+0000" id="jEA2tCIEUSJ">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kilwa dc" name="Kilwa DC" created="2015-06-17T00:40:08.627+0000"
+                          lastUpdated="2015-06-17T00:40:09.188+0000" shortName="Kilwa DC"
+                          uuid="73f348d5-3c57-4d76-9757-f4a7898edc59" level="4" id="qtn8JfQnbDU">
+            <externalAccess>false</externalAccess>
+            <parent code="lindi" name="Lindi" created="2015-06-17T00:19:38.050+0000"
+                    lastUpdated="2015-06-17T00:19:38.713+0000" id="tWXdjdfaxrQ">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="lindi dc" name="Lindi DC" created="2015-06-17T00:40:08.631+0000"
+                          lastUpdated="2015-06-17T00:40:09.216+0000" shortName="Lindi DC"
+                          uuid="7172074a-184f-4933-a8d6-6c9d1b254d7c" level="4" id="XydVy05pG4X">
+            <externalAccess>false</externalAccess>
+            <parent code="lindi" name="Lindi" created="2015-06-17T00:19:38.050+0000"
+                    lastUpdated="2015-06-17T00:19:38.713+0000" id="tWXdjdfaxrQ">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="liwale dc" name="Liwale DC" created="2015-06-17T00:40:08.631+0000"
+                          lastUpdated="2015-06-17T00:40:09.217+0000" shortName="Liwale DC"
+                          uuid="fb543e58-7b16-4762-abbf-406ddb7e17a6" level="4" id="urYlOiYtNxG">
+            <externalAccess>false</externalAccess>
+            <parent code="lindi" name="Lindi" created="2015-06-17T00:19:38.050+0000"
+                    lastUpdated="2015-06-17T00:19:38.713+0000" id="tWXdjdfaxrQ">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="babati dc" name="Babati DC" created="2015-06-17T00:40:08.580+0000"
+                          lastUpdated="2015-06-17T00:40:09.161+0000" shortName="Babati DC"
+                          uuid="be4eb55f-6995-423b-9165-8d7616f251b9" level="4" id="vZfuVJU3DXE">
+            <externalAccess>false</externalAccess>
+            <parent code="manyara" name="Manyara" created="2015-06-17T00:19:38.050+0000"
+                    lastUpdated="2015-06-17T00:19:38.715+0000" id="xN7MrFlwFo9">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="tarime dc" name="Tarime DC" created="2015-06-17T00:40:08.655+0000"
+                          lastUpdated="2015-06-17T00:40:09.269+0000" shortName="Tarime DC"
+                          uuid="a8e69aec-0a07-46dd-a374-c71b1222c2ef" level="4" id="O4ApUlPls11">
+            <externalAccess>false</externalAccess>
+            <parent code="mara" name="Mara" created="2015-06-17T00:19:38.045+0000"
+                    lastUpdated="2015-06-17T00:19:38.693+0000" id="bJrOcj9ZvON">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="musoma mc" name="Musoma MC" created="2015-06-17T00:40:08.644+0000"
+                          lastUpdated="2015-06-17T00:40:09.251+0000" shortName="Musoma MC"
+                          uuid="fa83122e-77ff-47c9-9c5d-aa513d7b8f11" level="4" id="L3PrCxLXDex">
+            <externalAccess>false</externalAccess>
+            <parent code="mara" name="Mara" created="2015-06-17T00:19:38.045+0000"
+                    lastUpdated="2015-06-17T00:19:38.693+0000" id="bJrOcj9ZvON">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="mbeya cc" name="Mbeya CC" created="2015-06-17T00:40:08.636+0000"
+                          lastUpdated="2015-06-17T00:40:09.228+0000" shortName="Mbeya CC"
+                          uuid="dc7bde79-49ff-4653-86e5-e35d99543607" level="4" id="i1EnXlnv5Vy">
+            <externalAccess>false</externalAccess>
+            <parent code="mbeya" name="Mbeya" created="2015-06-17T00:19:38.046+0000"
+                    lastUpdated="2015-06-17T00:19:38.695+0000" id="udKOZtQMSOp">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="chunya dc" name="Chunya DC" created="2015-06-17T00:40:08.585+0000"
+                          lastUpdated="2015-06-17T00:40:09.168+0000" shortName="Chunya DC"
+                          uuid="11d75d79-8d80-4b79-9304-8e67936d0eac" level="4" id="HQYUpe4MCoZ">
+            <externalAccess>false</externalAccess>
+            <parent code="mbeya" name="Mbeya" created="2015-06-17T00:19:38.046+0000"
+                    lastUpdated="2015-06-17T00:19:38.695+0000" id="udKOZtQMSOp">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="momba dc" name="Momba DC" created="2015-06-17T00:40:08.640+0000"
+                          lastUpdated="2015-06-17T00:40:09.242+0000" shortName="Momba DC"
+                          uuid="eed8f2c1-358c-456a-a14f-761d5ebc88f6" level="4" id="MDs3y2l2Jxe">
+            <externalAccess>false</externalAccess>
+            <parent code="mbeya" name="Mbeya" created="2015-06-17T00:19:38.046+0000"
+                    lastUpdated="2015-06-17T00:19:38.695+0000" id="udKOZtQMSOp">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="rungwe dc" name="Rungwe DC" created="2015-06-17T00:40:08.650+0000"
+                          lastUpdated="2015-06-17T00:40:09.262+0000" shortName="Rungwe DC"
+                          uuid="e34bcb9e-4317-4a4f-b4dd-12737437ccdf" level="4" id="GnUBpPvS5nl">
+            <externalAccess>false</externalAccess>
+            <parent code="mbeya" name="Mbeya" created="2015-06-17T00:19:38.046+0000"
+                    lastUpdated="2015-06-17T00:19:38.695+0000" id="udKOZtQMSOp">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="tunduma tc" name="Tunduma TC" created="2015-06-17T00:40:08.656+0000"
+                          lastUpdated="2015-06-17T00:40:09.270+0000" shortName="Tunduma TC"
+                          uuid="a1ee70a3-3f7f-4af4-bb2f-98eadea7d949" level="4" id="Q4CrgnKxgUe">
+            <externalAccess>false</externalAccess>
+            <parent code="mbeya" name="Mbeya" created="2015-06-17T00:19:38.046+0000"
+                    lastUpdated="2015-06-17T00:19:38.695+0000" id="udKOZtQMSOp">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kalambo dc" name="Kalambo DC" created="2015-06-17T00:40:08.622+0000"
+                          lastUpdated="2015-06-17T00:40:09.179+0000" shortName="Kalambo DC"
+                          uuid="cbfdfd01-7a33-4e58-979c-51f2e6485866" level="4" id="Cl9DOo9FG7G">
+            <externalAccess>false</externalAccess>
+            <parent code="rukwa" name="Rukwa" created="2015-06-17T00:19:38.046+0000"
+                    lastUpdated="2015-06-17T00:19:38.697+0000" id="JraKAxGYz8u">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="nzega dc" name="Nzega DC" created="2015-06-17T00:40:08.649+0000"
+                          lastUpdated="2015-06-17T00:40:09.259+0000" shortName="Nzega DC"
+                          uuid="661d85ae-0248-4835-bb4d-929b8b446367" level="4" id="R3Ui9BbHQ8y">
+            <externalAccess>false</externalAccess>
+            <parent code="tabora" name="Tabora" created="2015-06-17T00:19:38.046+0000"
+                    lastUpdated="2015-06-17T00:19:38.698+0000" id="mK76Tz6nqV5">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="sikonge dc" name="Sikonge DC" created="2015-06-17T00:40:08.652+0000"
+                          lastUpdated="2015-06-17T00:40:09.265+0000" shortName="Sikonge DC"
+                          uuid="9a020665-0a05-42c1-8dc4-0a001dc6fbb3" level="4" id="SrhM1QcUFya">
+            <externalAccess>false</externalAccess>
+            <parent code="tabora" name="Tabora" created="2015-06-17T00:19:38.046+0000"
+                    lastUpdated="2015-06-17T00:19:38.698+0000" id="mK76Tz6nqV5">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="urambo dc" name="Urambo DC" created="2015-06-17T00:40:08.660+0000"
+                          lastUpdated="2015-06-17T00:40:09.271+0000" shortName="Urambo DC"
+                          uuid="6a9412ce-6859-489f-b95a-dd00cfad3240" level="4" id="s0qjCpa2MTr">
+            <externalAccess>false</externalAccess>
+            <parent code="tabora" name="Tabora" created="2015-06-17T00:19:38.046+0000"
+                    lastUpdated="2015-06-17T00:19:38.698+0000" id="mK76Tz6nqV5">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="uyui dc" name="Uyui DC" created="2015-06-17T00:40:08.661+0000"
+                          lastUpdated="2015-06-17T00:40:09.272+0000" shortName="Uyui DC"
+                          uuid="ded2e80f-7681-4d56-88e7-0c421656f7b2" level="4" id="bO1WAn5LJcl">
+            <externalAccess>false</externalAccess>
+            <parent code="tabora" name="Tabora" created="2015-06-17T00:19:38.046+0000"
+                    lastUpdated="2015-06-17T00:19:38.698+0000" id="mK76Tz6nqV5">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="hanang dc" name="Hanang DC" created="2015-06-17T00:40:08.587+0000"
+                          lastUpdated="2015-06-17T00:40:09.172+0000" shortName="Hanang DC"
+                          uuid="bf552f61-cd29-4bf1-9a77-a5cb2d66eb06" level="4" id="c7Ujhxf8AWh">
+            <externalAccess>false</externalAccess>
+            <parent code="manyara" name="Manyara" created="2015-06-17T00:19:38.050+0000"
+                    lastUpdated="2015-06-17T00:19:38.715+0000" id="xN7MrFlwFo9">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="simanjiro dc" name="Simanjiro DC" created="2015-06-17T00:40:08.652+0000"
+                          lastUpdated="2015-06-17T00:40:09.266+0000" shortName="Simanjiro DC"
+                          uuid="9a50b9b8-c6d2-4fd8-94fe-8ccc1275d5a1" level="4" id="pmj7kWfT8rn">
+            <externalAccess>false</externalAccess>
+            <parent code="manyara" name="Manyara" created="2015-06-17T00:19:38.050+0000"
+                    lastUpdated="2015-06-17T00:19:38.715+0000" id="xN7MrFlwFo9">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="babati tc" name="Babati TC" created="2015-06-17T00:40:08.581+0000"
+                          lastUpdated="2015-06-17T00:40:09.162+0000" shortName="Babati TC"
+                          uuid="1cb85457-1107-44d2-9c2e-76635f9b576e" level="4" id="RK5TczBv59E">
+            <externalAccess>false</externalAccess>
+            <parent code="manyara" name="Manyara" created="2015-06-17T00:19:38.050+0000"
+                    lastUpdated="2015-06-17T00:19:38.715+0000" id="xN7MrFlwFo9">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kilombero dc" name="Kilombero DC" created="2015-06-17T00:40:08.627+0000"
+                          lastUpdated="2015-06-17T00:40:09.186+0000" shortName="Kilombero DC"
+                          uuid="4e291030-5b4b-4c27-a130-037491cfead3" level="4" id="qVzfiF3uD0h">
+            <externalAccess>false</externalAccess>
+            <parent code="morogoro" name="Morogoro" created="2015-06-17T00:19:38.051+0000"
+                    lastUpdated="2015-06-17T00:19:38.716+0000" id="M59cfndNs6d">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kilosa dc" name="Kilosa DC" created="2015-06-17T00:40:08.627+0000"
+                          lastUpdated="2015-06-17T00:40:09.187+0000" shortName="Kilosa DC"
+                          uuid="0bf0e87e-7b93-4d2b-9f35-2e1d77661b8d" level="4" id="B2sWozeT68D">
+            <externalAccess>false</externalAccess>
+            <parent code="morogoro" name="Morogoro" created="2015-06-17T00:19:38.051+0000"
+                    lastUpdated="2015-06-17T00:19:38.716+0000" id="M59cfndNs6d">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="mvomero dc" name="Mvomero DC" created="2015-06-17T00:40:08.645+0000"
+                          lastUpdated="2015-06-17T00:40:09.252+0000" shortName="Mvomero DC"
+                          uuid="225f6fca-bc38-4028-8c56-d488f05e29e8" level="4" id="XML6Pq6bY1B">
+            <externalAccess>false</externalAccess>
+            <parent code="morogoro" name="Morogoro" created="2015-06-17T00:19:38.051+0000"
+                    lastUpdated="2015-06-17T00:19:38.716+0000" id="M59cfndNs6d">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="ulanga dc" name="Ulanga DC" created="2015-06-17T00:40:08.660+0000"
+                          lastUpdated="2015-06-17T00:40:09.271+0000" shortName="Ulanga DC"
+                          uuid="3368192f-77d0-4271-8ded-3a718c4fd14d" level="4" id="w11aJSqOYjl">
+            <externalAccess>false</externalAccess>
+            <parent code="morogoro" name="Morogoro" created="2015-06-17T00:19:38.051+0000"
+                    lastUpdated="2015-06-17T00:19:38.716+0000" id="M59cfndNs6d">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="morogoro mc" name="Morogoro MC" created="2015-06-17T00:40:08.641+0000"
+                          lastUpdated="2015-06-17T00:40:09.243+0000" shortName="Morogoro MC"
+                          uuid="e5b64c53-d39f-4e85-a773-4dd7d83857e2" level="4" id="ai71yqGWnaB">
+            <externalAccess>false</externalAccess>
+            <parent code="morogoro" name="Morogoro" created="2015-06-17T00:19:38.051+0000"
+                    lastUpdated="2015-06-17T00:19:38.716+0000" id="M59cfndNs6d">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="nanyumbu dc" name="Nanyumbu DC" created="2015-06-17T00:40:08.646+0000"
+                          lastUpdated="2015-06-17T00:40:09.254+0000" shortName="Nanyumbu DC"
+                          uuid="c1894c0f-f44b-40b5-bdeb-d0e464215ee1" level="4" id="p4fnWI7iUmq">
+            <externalAccess>false</externalAccess>
+            <parent code="mtwara" name="Mtwara" created="2015-06-17T00:19:38.051+0000"
+                    lastUpdated="2015-06-17T00:19:38.718+0000" id="oaNYZUiXlMe">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="masasi dc" name="Masasi DC" created="2015-06-17T00:40:08.634+0000"
+                          lastUpdated="2015-06-17T00:40:09.223+0000" shortName="Masasi DC"
+                          uuid="b020a562-f229-49b4-84f8-849efbcdc1c8" level="4" id="QIboymC7YTU">
+            <externalAccess>false</externalAccess>
+            <parent code="mtwara" name="Mtwara" created="2015-06-17T00:19:38.051+0000"
+                    lastUpdated="2015-06-17T00:19:38.718+0000" id="oaNYZUiXlMe">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="tandahimba dc" name="Tandahimba DC" created="2015-06-17T00:40:08.655+0000"
+                          lastUpdated="2015-06-17T00:40:09.268+0000" shortName="Tandahimba DC"
+                          uuid="09548890-7fbe-4539-8880-54cc8058b896" level="4" id="OHganMxwFUE">
+            <externalAccess>false</externalAccess>
+            <parent code="mtwara" name="Mtwara" created="2015-06-17T00:19:38.051+0000"
+                    lastUpdated="2015-06-17T00:19:38.718+0000" id="oaNYZUiXlMe">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="mtwara mc" name="Mtwara MC" created="2015-06-17T00:40:08.643+0000"
+                          lastUpdated="2015-06-17T00:40:09.247+0000" shortName="Mtwara MC"
+                          uuid="91f7aa3a-2ded-405a-8d67-6b1c3fb2ab49" level="4" id="BT73CMrqaGZ">
+            <externalAccess>false</externalAccess>
+            <parent code="mtwara" name="Mtwara" created="2015-06-17T00:19:38.051+0000"
+                    lastUpdated="2015-06-17T00:19:38.718+0000" id="oaNYZUiXlMe">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="masasi tc" name="Masasi TC" created="2015-06-17T00:40:08.635+0000"
+                          lastUpdated="2015-06-17T00:40:09.223+0000" shortName="Masasi TC"
+                          uuid="a1ed6fb5-8f0b-4cd4-b9c1-783d7735702d" level="4" id="Y6cj0QpgXWm">
+            <externalAccess>false</externalAccess>
+            <parent code="mtwara" name="Mtwara" created="2015-06-17T00:19:38.051+0000"
+                    lastUpdated="2015-06-17T00:19:38.718+0000" id="oaNYZUiXlMe">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kwimba dc" name="Kwimba DC" created="2015-06-17T00:40:08.630+0000"
+                          lastUpdated="2015-06-17T00:40:09.215+0000" shortName="Kwimba DC"
+                          uuid="4d91fdaa-8974-40a9-809b-a422efdd711b" level="4" id="UsVlzHez9qO">
+            <externalAccess>false</externalAccess>
+            <parent code="mwanza" name="Mwanza" created="2015-06-17T00:19:38.051+0000"
+                    lastUpdated="2015-06-17T00:19:38.719+0000" id="IzOzVPNIh0c">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="ukerewe dc" name="Ukerewe DC" created="2015-06-17T00:40:08.660+0000"
+                          lastUpdated="2015-06-17T00:40:09.270+0000" shortName="Ukerewe DC"
+                          uuid="30ef391c-5d95-4a94-8018-9b01f215166e" level="4" id="agbECSnKXAb">
+            <externalAccess>false</externalAccess>
+            <parent code="mwanza" name="Mwanza" created="2015-06-17T00:19:38.051+0000"
+                    lastUpdated="2015-06-17T00:19:38.719+0000" id="IzOzVPNIh0c">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="nyamagana mc" name="Nyamagana MC" created="2015-06-17T00:40:08.648+0000"
+                          lastUpdated="2015-06-17T00:40:09.257+0000" shortName="Nyamagana MC"
+                          uuid="27e0a79b-7697-47fd-a929-cc2e589a5845" level="4" id="tl9geKbeUtt">
+            <externalAccess>false</externalAccess>
+            <parent code="mwanza" name="Mwanza" created="2015-06-17T00:19:38.051+0000"
+                    lastUpdated="2015-06-17T00:19:38.719+0000" id="IzOzVPNIh0c">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="ilemela mc" name="Ilemela MC" created="2015-06-17T00:40:08.620+0000"
+                          lastUpdated="2015-06-17T00:40:09.175+0000" shortName="Ilemela MC"
+                          uuid="bc51a7bf-5161-4831-8f6d-48dec88eb037" level="4" id="oRRGueE0SrE">
+            <externalAccess>false</externalAccess>
+            <parent code="mwanza" name="Mwanza" created="2015-06-17T00:19:38.051+0000"
+                    lastUpdated="2015-06-17T00:19:38.719+0000" id="IzOzVPNIh0c">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="njombe tc" name="Njombe TC" created="2015-06-17T00:40:08.647+0000"
+                          lastUpdated="2015-06-17T00:40:09.256+0000" shortName="Njombe TC"
+                          uuid="63526cc4-59dc-40ca-acb9-817bd2b91a15" level="4" id="tZlymbCsGIO">
+            <externalAccess>false</externalAccess>
+            <parent code="njombe" name="Njombe" created="2015-06-17T00:19:38.052+0000"
+                    lastUpdated="2015-06-17T00:19:38.720+0000" id="spRdsijpf6s">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="bagamoyo dc" name="Bagamoyo DC" created="2015-06-17T00:40:08.581+0000"
+                          lastUpdated="2015-06-17T00:40:09.162+0000" shortName="Bagamoyo DC"
+                          uuid="c446f8d8-ea1c-4008-938d-03ae65926ce1" level="4" id="mhrHyhQ2loa">
+            <externalAccess>false</externalAccess>
+            <parent code="pwani" name="Pwani" created="2015-06-17T00:19:38.052+0000"
+                    lastUpdated="2015-06-17T00:19:38.722+0000" id="pZt2uudfRQY">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kibaha dc" name="Kibaha DC" created="2015-06-17T00:40:08.624+0000"
+                          lastUpdated="2015-06-17T00:40:09.182+0000" shortName="Kibaha DC"
+                          uuid="e5329ff2-4890-47b1-a248-5e5ad4b61350" level="4" id="LOmkSZOP8HC">
+            <externalAccess>false</externalAccess>
+            <parent code="pwani" name="Pwani" created="2015-06-17T00:19:38.052+0000"
+                    lastUpdated="2015-06-17T00:19:38.722+0000" id="pZt2uudfRQY">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kisarawe dc" name="Kisarawe DC" created="2015-06-17T00:40:08.628+0000"
+                          lastUpdated="2015-06-17T00:40:09.191+0000" shortName="Kisarawe DC"
+                          uuid="5fc2eccd-8110-4b45-a2d5-a755bbabe4b5" level="4" id="eZx3ckKPYaW">
+            <externalAccess>false</externalAccess>
+            <parent code="pwani" name="Pwani" created="2015-06-17T00:19:38.052+0000"
+                    lastUpdated="2015-06-17T00:19:38.722+0000" id="pZt2uudfRQY">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="mafia dc" name="Mafia DC" created="2015-06-17T00:40:08.633+0000"
+                          lastUpdated="2015-06-17T00:40:09.219+0000" shortName="Mafia DC"
+                          uuid="c340f24c-e105-4838-88af-538600540957" level="4" id="sGVBYNE94bj">
+            <externalAccess>false</externalAccess>
+            <parent code="pwani" name="Pwani" created="2015-06-17T00:19:38.052+0000"
+                    lastUpdated="2015-06-17T00:19:38.722+0000" id="pZt2uudfRQY">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="mkuranga dc" name="Mkuranga DC" created="2015-06-17T00:40:08.639+0000"
+                          lastUpdated="2015-06-17T00:40:09.241+0000" shortName="Mkuranga DC"
+                          uuid="9c4e348b-c103-4d8d-a489-a4d6fbadc2aa" level="4" id="hMMiCqYDQrs">
+            <externalAccess>false</externalAccess>
+            <parent code="pwani" name="Pwani" created="2015-06-17T00:19:38.052+0000"
+                    lastUpdated="2015-06-17T00:19:38.722+0000" id="pZt2uudfRQY">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="rufiji dc" name="Rufiji DC" created="2015-06-17T00:40:08.650+0000"
+                          lastUpdated="2015-06-17T00:40:09.261+0000" shortName="Rufiji DC"
+                          uuid="6402b6c0-7990-48e5-ac78-f6099b8c0b63" level="4" id="F7ZDCF0h6Uo">
+            <externalAccess>false</externalAccess>
+            <parent code="pwani" name="Pwani" created="2015-06-17T00:19:38.052+0000"
+                    lastUpdated="2015-06-17T00:19:38.722+0000" id="pZt2uudfRQY">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kibaha mc" name="Kibaha MC" created="2015-06-17T00:40:08.625+0000"
+                          lastUpdated="2015-06-17T00:40:09.182+0000" shortName="Kibaha MC"
+                          uuid="d74f1a44-1eb6-457f-b898-783ec752f101" level="4" id="HzpGBj1HRIh">
+            <externalAccess>false</externalAccess>
+            <parent code="pwani" name="Pwani" created="2015-06-17T00:19:38.052+0000"
+                    lastUpdated="2015-06-17T00:19:38.722+0000" id="pZt2uudfRQY">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="mbinga dc" name="Mbinga DC" created="2015-06-17T00:40:08.636+0000"
+                          lastUpdated="2015-06-17T00:40:09.231+0000" shortName="Mbinga DC"
+                          uuid="e46eb25a-08e9-437b-90dd-28db7c7cd58a" level="4" id="QxCvXLBycW8">
+            <externalAccess>false</externalAccess>
+            <parent code="ruvuma" name="Ruvuma" created="2015-06-17T00:19:38.052+0000"
+                    lastUpdated="2015-06-17T00:19:38.723+0000" id="URe55jRkTXV">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="songea dc" name="Songea DC" created="2015-06-17T00:40:08.653+0000"
+                          lastUpdated="2015-06-17T00:40:09.267+0000" shortName="Songea DC"
+                          uuid="571641a9-2383-4fd4-bb0d-2b85653e5c7f" level="4" id="EoMZO5x5UoZ">
+            <externalAccess>false</externalAccess>
+            <parent code="ruvuma" name="Ruvuma" created="2015-06-17T00:19:38.052+0000"
+                    lastUpdated="2015-06-17T00:19:38.723+0000" id="URe55jRkTXV">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="tunduru dc" name="Tunduru DC" created="2015-06-17T00:40:08.656+0000"
+                          lastUpdated="2015-06-17T00:40:09.270+0000" shortName="Tunduru DC"
+                          uuid="dfb1653e-653a-4ef8-9fd9-fced9fe75073" level="4" id="kqGY1BqdcaL">
+            <externalAccess>false</externalAccess>
+            <parent code="ruvuma" name="Ruvuma" created="2015-06-17T00:19:38.052+0000"
+                    lastUpdated="2015-06-17T00:19:38.723+0000" id="URe55jRkTXV">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="songea mc" name="Songea MC" created="2015-06-17T00:40:08.653+0000"
+                          lastUpdated="2015-06-17T00:40:09.267+0000" shortName="Songea MC"
+                          uuid="634fa213-20b3-403d-93be-fdf428074b8f" level="4" id="scrTZTyWqns">
+            <externalAccess>false</externalAccess>
+            <parent code="ruvuma" name="Ruvuma" created="2015-06-17T00:19:38.052+0000"
+                    lastUpdated="2015-06-17T00:19:38.723+0000" id="URe55jRkTXV">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kahama dc" name="Kahama DC" created="2015-06-17T00:40:08.621+0000"
+                          lastUpdated="2015-06-17T00:40:09.178+0000" shortName="Kahama DC"
+                          uuid="7b425312-884b-467a-932c-6323bbad6166" level="4" id="BnMDFFMW2yb">
+            <externalAccess>false</externalAccess>
+            <parent code="shinyanga" name="Shinyanga" created="2015-06-17T00:19:38.053+0000"
+                    lastUpdated="2015-06-17T00:19:38.725+0000" id="umcaQ167e2t">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kahama tc" name="Kahama TC" created="2015-06-17T00:40:08.621+0000"
+                          lastUpdated="2015-06-17T00:40:09.178+0000" shortName="Kahama TC"
+                          uuid="01e1c56a-790c-4cdb-bfe9-789b5ac8a7d1" level="4" id="GVZ4AvplExK">
+            <externalAccess>false</externalAccess>
+            <parent code="shinyanga" name="Shinyanga" created="2015-06-17T00:19:38.053+0000"
+                    lastUpdated="2015-06-17T00:19:38.725+0000" id="umcaQ167e2t">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="bariadi dc" name="Bariadi DC" created="2015-06-17T00:40:08.582+0000"
+                          lastUpdated="2015-06-17T00:40:09.163+0000" shortName="Bariadi DC"
+                          uuid="17d0448d-eeb7-46c6-88d1-b423b90ae7fc" level="4" id="PC6uURGJqfS">
+            <externalAccess>false</externalAccess>
+            <parent code="simiyu" name="Simiyu" created="2015-06-17T00:19:38.053+0000"
+                    lastUpdated="2015-06-17T00:19:38.726+0000" id="t5hruFBve7d">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="busega dc" name="Busega DC" created="2015-06-17T00:40:08.584+0000"
+                          lastUpdated="2015-06-17T00:40:09.166+0000" shortName="Busega DC"
+                          uuid="e1e50458-44ef-4047-b096-b9bc3ac37a96" level="4" id="llrLW0gdzbK">
+            <externalAccess>false</externalAccess>
+            <parent code="simiyu" name="Simiyu" created="2015-06-17T00:19:38.053+0000"
+                    lastUpdated="2015-06-17T00:19:38.726+0000" id="t5hruFBve7d">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="itilima dc" name="Itilima DC" created="2015-06-17T00:40:08.621+0000"
+                          lastUpdated="2015-06-17T00:40:09.177+0000" shortName="Itilima DC"
+                          uuid="7c638416-799c-459b-bdfe-13ced1355c42" level="4" id="XXbEo8SNQC4">
+            <externalAccess>false</externalAccess>
+            <parent code="simiyu" name="Simiyu" created="2015-06-17T00:19:38.053+0000"
+                    lastUpdated="2015-06-17T00:19:38.726+0000" id="t5hruFBve7d">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="manyoni dc" name="Manyoni DC" created="2015-06-17T00:40:08.634+0000"
+                          lastUpdated="2015-06-17T00:40:09.222+0000" shortName="Manyoni DC"
+                          uuid="b55e582d-7ccb-4fe4-976a-55f2cb69f545" level="4" id="LoS0eMSQoib">
+            <externalAccess>false</externalAccess>
+            <parent code="singida" name="Singida" created="2015-06-17T00:19:38.053+0000"
+                    lastUpdated="2015-06-17T00:19:38.728+0000" id="TNtd1DnVJ6M">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="ikungi dc" name="Ikungi DC" created="2015-06-17T00:40:08.588+0000"
+                          lastUpdated="2015-06-17T00:40:09.174+0000" shortName="Ikungi DC"
+                          uuid="d5b7a67b-70ef-44c7-8a4c-9755a77b27dc" level="4" id="xOOYmNF1x6l">
+            <externalAccess>false</externalAccess>
+            <parent code="singida" name="Singida" created="2015-06-17T00:19:38.053+0000"
+                    lastUpdated="2015-06-17T00:19:38.728+0000" id="TNtd1DnVJ6M">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="iramba dc" name="Iramba DC" created="2015-06-17T00:40:08.620+0000"
+                          lastUpdated="2015-06-17T00:40:09.176+0000" shortName="Iramba DC"
+                          uuid="67ec7fd7-f0a3-4b18-86aa-327281cf2ec2" level="4" id="UixLPFvRph3">
+            <externalAccess>false</externalAccess>
+            <parent code="singida" name="Singida" created="2015-06-17T00:19:38.053+0000"
+                    lastUpdated="2015-06-17T00:19:38.728+0000" id="TNtd1DnVJ6M">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="mkalama dc" name="Mkalama DC" created="2015-06-17T00:40:08.639+0000"
+                          lastUpdated="2015-06-17T00:40:09.239+0000" shortName="Mkalama DC"
+                          uuid="d2fe8216-7a36-4031-bd3c-5ee62a9c49fa" level="4" id="pWGUyfuVYeY">
+            <externalAccess>false</externalAccess>
+            <parent code="singida" name="Singida" created="2015-06-17T00:19:38.053+0000"
+                    lastUpdated="2015-06-17T00:19:38.728+0000" id="TNtd1DnVJ6M">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="tanga cc" name="Tanga CC" created="2015-06-17T00:40:08.655+0000"
+                          lastUpdated="2015-06-17T00:40:09.269+0000" shortName="Tanga CC"
+                          uuid="1d50f5c9-5b18-4094-b9fd-303416afe1b3" level="4" id="E0cz5f7ePow">
+            <externalAccess>false</externalAccess>
+            <parent code="tanga" name="Tanga" created="2015-06-17T00:19:38.054+0000"
+                    lastUpdated="2015-06-17T00:19:38.729+0000" id="ZEDZWnl8ITK">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="handeni dc" name="Handeni DC" created="2015-06-17T00:40:08.587+0000"
+                          lastUpdated="2015-06-17T00:40:09.172+0000" shortName="Handeni DC"
+                          uuid="4544c16f-a4c1-4e64-8870-48d8352e06a9" level="4" id="XWQmh3UwTnF">
+            <externalAccess>false</externalAccess>
+            <parent code="tanga" name="Tanga" created="2015-06-17T00:19:38.054+0000"
+                    lastUpdated="2015-06-17T00:19:38.729+0000" id="ZEDZWnl8ITK">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kilindi dc" name="Kilindi DC" created="2015-06-17T00:40:08.626+0000"
+                          lastUpdated="2015-06-17T00:40:09.184+0000" shortName="Kilindi DC"
+                          uuid="102e25e9-1398-4a15-a0aa-6b169fbb77bc" level="4" id="TPCwB1gZQ7B">
+            <externalAccess>false</externalAccess>
+            <parent code="tanga" name="Tanga" created="2015-06-17T00:19:38.054+0000"
+                    lastUpdated="2015-06-17T00:19:38.729+0000" id="ZEDZWnl8ITK">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="korogwe dc" name="Korogwe DC" created="2015-06-17T00:40:08.629+0000"
+                          lastUpdated="2015-06-17T00:40:09.212+0000" shortName="Korogwe DC"
+                          uuid="bef4118a-9f0c-4363-a234-6392a1e35410" level="4" id="so3G1TFx2vW">
+            <externalAccess>false</externalAccess>
+            <parent code="tanga" name="Tanga" created="2015-06-17T00:19:38.054+0000"
+                    lastUpdated="2015-06-17T00:19:38.729+0000" id="ZEDZWnl8ITK">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="lushoto dc" name="Lushoto DC" created="2015-06-17T00:40:08.632+0000"
+                          lastUpdated="2015-06-17T00:40:09.218+0000" shortName="Lushoto DC"
+                          uuid="b5b5c658-7de4-4db9-a4c7-b02b06e3bca6" level="4" id="udR4PR4h22w">
+            <externalAccess>false</externalAccess>
+            <parent code="tanga" name="Tanga" created="2015-06-17T00:19:38.054+0000"
+                    lastUpdated="2015-06-17T00:19:38.729+0000" id="ZEDZWnl8ITK">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="mkinga dc" name="Mkinga DC" created="2015-06-17T00:40:08.639+0000"
+                          lastUpdated="2015-06-17T00:40:09.240+0000" shortName="Mkinga DC"
+                          uuid="6472c506-d350-4e50-9d6d-b3aea3efc7fc" level="4" id="EhsRKdzJFTi">
+            <externalAccess>false</externalAccess>
+            <parent code="tanga" name="Tanga" created="2015-06-17T00:19:38.054+0000"
+                    lastUpdated="2015-06-17T00:19:38.729+0000" id="ZEDZWnl8ITK">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="muheza dc" name="Muheza DC" created="2015-06-17T00:40:08.643+0000"
+                          lastUpdated="2015-06-17T00:40:09.250+0000" shortName="Muheza DC"
+                          uuid="d2a55b30-52a6-41ad-adc9-d7687b5a0212" level="4" id="dOjtARdxYY9">
+            <externalAccess>false</externalAccess>
+            <parent code="tanga" name="Tanga" created="2015-06-17T00:19:38.054+0000"
+                    lastUpdated="2015-06-17T00:19:38.729+0000" id="ZEDZWnl8ITK">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="pangani dc" name="Pangani DC" created="2015-06-17T00:40:08.649+0000"
+                          lastUpdated="2015-06-17T00:40:09.259+0000" shortName="Pangani DC"
+                          uuid="20ff1aa1-d1c5-4bad-88eb-a62088b8b641" level="4" id="WupjrPgMc6n">
+            <externalAccess>false</externalAccess>
+            <parent code="tanga" name="Tanga" created="2015-06-17T00:19:38.054+0000"
+                    lastUpdated="2015-06-17T00:19:38.729+0000" id="ZEDZWnl8ITK">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="meru dc" name="Meru DC" created="2015-06-17T00:40:08.638+0000"
+                          lastUpdated="2015-06-17T00:40:09.236+0000" shortName="Meru DC"
+                          uuid="9a35471c-11f2-4262-846d-ea4493e5bf63" level="4" id="Q8lmykMOSaY">
+            <externalAccess>false</externalAccess>
+            <parent code="arusha" name="Arusha" created="2015-06-17T00:19:38.047+0000"
+                    lastUpdated="2015-06-17T00:19:38.700+0000" id="HukszyC6rKB">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="monduli dc" name="Monduli DC" created="2015-06-17T00:40:08.640+0000"
+                          lastUpdated="2015-06-17T00:40:09.242+0000" shortName="Monduli DC"
+                          uuid="51258355-4d78-46ba-92ed-2614d2395ff1" level="4" id="vJ7OluNUzx0">
+            <externalAccess>false</externalAccess>
+            <parent code="arusha" name="Arusha" created="2015-06-17T00:19:38.047+0000"
+                    lastUpdated="2015-06-17T00:19:38.700+0000" id="HukszyC6rKB">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="ngorongoro dc" name="Ngorongoro DC" created="2015-06-17T00:40:08.647+0000"
+                          lastUpdated="2015-06-17T00:40:09.255+0000" shortName="Ngorongoro DC"
+                          uuid="7d3c3364-1945-4b05-95b1-53dace81224c" level="4" id="R7aQ0fL0Zjh">
+            <externalAccess>false</externalAccess>
+            <parent code="arusha" name="Arusha" created="2015-06-17T00:19:38.047+0000"
+                    lastUpdated="2015-06-17T00:19:38.700+0000" id="HukszyC6rKB">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="ilala mc" name="Ilala MC" created="2015-06-17T00:40:08.588+0000"
+                          lastUpdated="2015-06-17T00:40:09.175+0000" shortName="Ilala MC"
+                          uuid="47942623-ecb6-4fe7-b170-4e30daf0dddb" level="4" id="Q5Qz09lqCYb">
+            <externalAccess>false</externalAccess>
+            <parent code="dar es salaam" name="Dar Es Salaam" created="2015-06-17T00:19:38.047+0000"
+                    lastUpdated="2015-06-17T00:19:38.701+0000" id="VYmA2sUaTHw">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kondoa dc" name="Kondoa DC" created="2015-06-17T00:40:08.629+0000"
+                          lastUpdated="2015-06-17T00:40:09.211+0000" shortName="Kondoa DC"
+                          uuid="404b1788-63aa-40b1-9dd4-428547699616" level="4" id="QDMbOh1biht">
+            <externalAccess>false</externalAccess>
+            <parent code="dodoma" name="Dodoma" created="2015-06-17T00:19:38.047+0000"
+                    lastUpdated="2015-06-17T00:19:38.703+0000" id="u999NPzd4LE">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kongwa dc" name="Kongwa DC" created="2015-06-17T00:40:08.629+0000"
+                          lastUpdated="2015-06-17T00:40:09.212+0000" shortName="Kongwa DC"
+                          uuid="9846dc19-08f6-4d49-aa69-9549207b50fc" level="4" id="XNGoAZ3tFm5">
+            <externalAccess>false</externalAccess>
+            <parent code="dodoma" name="Dodoma" created="2015-06-17T00:19:38.047+0000"
+                    lastUpdated="2015-06-17T00:19:38.703+0000" id="u999NPzd4LE">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="mpwapwa dc" name="Mpwapwa DC" created="2015-06-17T00:40:08.642+0000"
+                          lastUpdated="2015-06-17T00:40:09.246+0000" shortName="Mpwapwa DC"
+                          uuid="21c1de4e-83c7-4bb8-939a-9cb7227c9af2" level="4" id="W6orBePSVgQ">
+            <externalAccess>false</externalAccess>
+            <parent code="dodoma" name="Dodoma" created="2015-06-17T00:19:38.047+0000"
+                    lastUpdated="2015-06-17T00:19:38.703+0000" id="u999NPzd4LE">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="bukombe dc" name="Bukombe DC" created="2015-06-17T00:40:08.583+0000"
+                          lastUpdated="2015-06-17T00:40:09.165+0000" shortName="Bukombe DC"
+                          uuid="40051f62-78a6-428e-95ad-ef562f062010" level="4" id="ZU5jHyAKsFw">
+            <externalAccess>false</externalAccess>
+            <parent code="geita" name="Geita" created="2015-06-17T00:19:38.048+0000"
+                    lastUpdated="2015-06-17T00:19:38.704+0000" id="bdGyOlRS9sU">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="chato dc" name="Chato DC" created="2015-06-17T00:40:08.585+0000"
+                          lastUpdated="2015-06-17T00:40:09.167+0000" shortName="Chato DC"
+                          uuid="6b0e5ba5-bec4-4b17-92ff-63aa9f821c11" level="4" id="C89mq9u8qFN">
+            <externalAccess>false</externalAccess>
+            <parent code="geita" name="Geita" created="2015-06-17T00:19:38.048+0000"
+                    lastUpdated="2015-06-17T00:19:38.704+0000" id="bdGyOlRS9sU">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="nyang'wale dc" name="Nyang'wale DC" created="2015-06-17T00:40:08.648+0000"
+                          lastUpdated="2015-06-17T00:40:09.258+0000" shortName="Nyang'wale DC"
+                          uuid="83d1bbd3-5e89-4e45-bc96-e56d082f577b" level="4" id="VAm1swosvl0">
+            <externalAccess>false</externalAccess>
+            <parent code="geita" name="Geita" created="2015-06-17T00:19:38.048+0000"
+                    lastUpdated="2015-06-17T00:19:38.704+0000" id="bdGyOlRS9sU">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="iringa dc" name="Iringa DC" created="2015-06-17T00:40:08.620+0000"
+                          lastUpdated="2015-06-17T00:40:09.176+0000" shortName="Iringa DC"
+                          uuid="01e310cd-40cf-4458-9faf-da6134069672" level="4" id="KHclHjCAKVx">
+            <externalAccess>false</externalAccess>
+            <parent code="iringa" name="Iringa" created="2015-06-17T00:19:38.048+0000"
+                    lastUpdated="2015-06-17T00:19:38.706+0000" id="QoVm5AdCed1">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kilolo dc" name="Kilolo DC" created="2015-06-17T00:40:08.626+0000"
+                          lastUpdated="2015-06-17T00:40:09.186+0000" shortName="Kilolo DC"
+                          uuid="ce9257b8-9172-4b1d-8da9-5c810233a9f9" level="4" id="TsfRsGicScL">
+            <externalAccess>false</externalAccess>
+            <parent code="iringa" name="Iringa" created="2015-06-17T00:19:38.048+0000"
+                    lastUpdated="2015-06-17T00:19:38.706+0000" id="QoVm5AdCed1">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="mufindi dc" name="Mufindi DC" created="2015-06-17T00:40:08.643+0000"
+                          lastUpdated="2015-06-17T00:40:09.249+0000" shortName="Mufindi DC"
+                          uuid="f63af40d-ff74-42e1-992b-7f535108a35a" level="4" id="tziCTpLhG4v">
+            <externalAccess>false</externalAccess>
+            <parent code="iringa" name="Iringa" created="2015-06-17T00:19:38.048+0000"
+                    lastUpdated="2015-06-17T00:19:38.706+0000" id="QoVm5AdCed1">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="iringa mc" name="Iringa MC" created="2015-06-17T00:40:08.621+0000"
+                          lastUpdated="2015-06-17T00:40:09.177+0000" shortName="Iringa MC"
+                          uuid="3168fd89-dcd1-4f7f-bd5a-f2ad82437de3" level="4" id="QAe5zlv1POF">
+            <externalAccess>false</externalAccess>
+            <parent code="iringa" name="Iringa" created="2015-06-17T00:19:38.048+0000"
+                    lastUpdated="2015-06-17T00:19:38.706+0000" id="QoVm5AdCed1">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="mafinga tc" name="Mafinga TC" created="2015-06-17T00:40:08.633+0000"
+                          lastUpdated="2015-06-17T00:40:09.220+0000" shortName="Mafinga TC"
+                          uuid="2fa2fd6e-b641-4149-a655-2a1328121c56" level="4" id="wcegfeau9dU">
+            <externalAccess>false</externalAccess>
+            <parent code="iringa" name="Iringa" created="2015-06-17T00:19:38.048+0000"
+                    lastUpdated="2015-06-17T00:19:38.706+0000" id="QoVm5AdCed1">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="biharamulo dc" name="Biharamulo DC" created="2015-06-17T00:40:08.582+0000"
+                          lastUpdated="2015-06-17T00:40:09.163+0000" shortName="Biharamulo DC"
+                          uuid="e3bc9d76-bbe7-4a8b-995b-36a121561815" level="4" id="GI3LywtozQc">
+            <externalAccess>false</externalAccess>
+            <parent code="kagera" name="Kagera" created="2015-06-17T00:19:38.049+0000"
+                    lastUpdated="2015-06-17T00:19:38.707+0000" id="GVqXoyT7C5K">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="karagwe dc" name="Karagwe DC" created="2015-06-17T00:40:08.623+0000"
+                          lastUpdated="2015-06-17T00:40:09.180+0000" shortName="Karagwe DC"
+                          uuid="bbe89738-702d-460c-8365-05078a967f39" level="4" id="s7j4UFg40IT">
+            <externalAccess>false</externalAccess>
+            <parent code="kagera" name="Kagera" created="2015-06-17T00:19:38.049+0000"
+                    lastUpdated="2015-06-17T00:19:38.707+0000" id="GVqXoyT7C5K">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="ngara dc" name="Ngara DC" created="2015-06-17T00:40:08.646+0000"
+                          lastUpdated="2015-06-17T00:40:09.255+0000" shortName="Ngara DC"
+                          uuid="a5e7c78a-7fb6-4402-a578-2d70cefcd171" level="4" id="gOxY9iYp7QL">
+            <externalAccess>false</externalAccess>
+            <parent code="kagera" name="Kagera" created="2015-06-17T00:19:38.049+0000"
+                    lastUpdated="2015-06-17T00:19:38.707+0000" id="GVqXoyT7C5K">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="bukoba mc" name="Bukoba MC" created="2015-06-17T00:40:08.583+0000"
+                          lastUpdated="2015-06-17T00:40:09.165+0000" shortName="Bukoba MC"
+                          uuid="f9aab815-67ef-40e4-97cf-c310737dac02" level="4" id="m2stEyPfIB8">
+            <externalAccess>false</externalAccess>
+            <parent code="kagera" name="Kagera" created="2015-06-17T00:19:38.049+0000"
+                    lastUpdated="2015-06-17T00:19:38.707+0000" id="GVqXoyT7C5K">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="misenyi mc" name="Misenyi MC" created="2015-06-17T00:40:08.638+0000"
+                          lastUpdated="2015-06-17T00:40:09.237+0000" shortName="Misenyi MC"
+                          uuid="1f1e5898-5194-498a-847a-9367665384bd" level="4" id="pVEG9VaAp2T">
+            <externalAccess>false</externalAccess>
+            <parent code="kagera" name="Kagera" created="2015-06-17T00:19:38.049+0000"
+                    lastUpdated="2015-06-17T00:19:38.707+0000" id="GVqXoyT7C5K">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="mlele dc" name="Mlele DC" created="2015-06-17T00:40:08.640+0000"
+                          lastUpdated="2015-06-17T00:40:09.241+0000" shortName="Mlele DC"
+                          uuid="651297e4-3aad-47b4-9e68-d36c73bf1c63" level="4" id="BZ52L3xFQVN">
+            <externalAccess>false</externalAccess>
+            <parent code="katavi" name="Katavi" created="2015-06-17T00:19:38.049+0000"
+                    lastUpdated="2015-06-17T00:19:38.709+0000" id="AchFhGz5oZx">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kasulu dc" name="Kasulu DC" created="2015-06-17T00:40:08.623+0000"
+                          lastUpdated="2015-06-17T00:40:09.181+0000" shortName="Kasulu DC"
+                          uuid="9927a8ff-9427-4c52-959c-3fcb98949de0" level="4" id="Up0o3akAIbZ">
+            <externalAccess>false</externalAccess>
+            <parent code="kigoma" name="Kigoma" created="2015-06-17T00:19:38.049+0000"
+                    lastUpdated="2015-06-17T00:19:38.710+0000" id="kCWsDrVUQbx">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kibondo dc" name="Kibondo DC" created="2015-06-17T00:40:08.625+0000"
+                          lastUpdated="2015-06-17T00:40:09.182+0000" shortName="Kibondo DC"
+                          uuid="e6ab0f58-85b1-4595-979e-8e58251133ca" level="4" id="tvlPaMERp8K">
+            <externalAccess>false</externalAccess>
+            <parent code="kigoma" name="Kigoma" created="2015-06-17T00:19:38.049+0000"
+                    lastUpdated="2015-06-17T00:19:38.710+0000" id="kCWsDrVUQbx">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kigoma mc" name="Kigoma MC" created="2015-06-17T00:40:08.626+0000"
+                          lastUpdated="2015-06-17T00:40:09.183+0000" shortName="Kigoma MC"
+                          uuid="a3021936-29e5-434c-91f7-aeeaaaa44b10" level="4" id="iHwWbiftlz4">
+            <externalAccess>false</externalAccess>
+            <parent code="kigoma" name="Kigoma" created="2015-06-17T00:19:38.049+0000"
+                    lastUpdated="2015-06-17T00:19:38.710+0000" id="kCWsDrVUQbx">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kasulu tc" name="Kasulu TC" created="2015-06-17T00:40:08.624+0000"
+                          lastUpdated="2015-06-17T00:40:09.181+0000" shortName="Kasulu TC"
+                          uuid="7bf19d0c-65c5-4d97-ac37-f081066a3251" level="4" id="K5V70nSasBj">
+            <externalAccess>false</externalAccess>
+            <parent code="kigoma" name="Kigoma" created="2015-06-17T00:19:38.049+0000"
+                    lastUpdated="2015-06-17T00:19:38.710+0000" id="kCWsDrVUQbx">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="hai dc" name="Hai DC" created="2015-06-17T00:40:08.587+0000"
+                          lastUpdated="2015-06-17T00:40:09.171+0000" shortName="Hai DC"
+                          uuid="32175e47-ba85-463e-bcf7-30246a39b56f" level="4" id="gtl3PyeUpmY">
+            <externalAccess>false</externalAccess>
+            <parent code="kilimanjaro" name="Kilimanjaro" created="2015-06-17T00:19:38.050+0000"
+                    lastUpdated="2015-06-17T00:19:38.712+0000" id="jEA2tCIEUSJ">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="same dc" name="Same DC" created="2015-06-17T00:40:08.650+0000"
+                          lastUpdated="2015-06-17T00:40:09.262+0000" shortName="Same DC"
+                          uuid="cce09928-1a30-4b29-b95c-842f8ce44c67" level="4" id="xvqU9Aqgdar">
+            <externalAccess>false</externalAccess>
+            <parent code="kilimanjaro" name="Kilimanjaro" created="2015-06-17T00:19:38.050+0000"
+                    lastUpdated="2015-06-17T00:19:38.712+0000" id="jEA2tCIEUSJ">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="siha dc" name="Siha DC" created="2015-06-17T00:40:08.652+0000"
+                          lastUpdated="2015-06-17T00:40:09.265+0000" shortName="Siha DC"
+                          uuid="3767e88f-ee33-4919-b697-c4fa8ee17d09" level="4" id="zKw4Ljt6dwx">
+            <externalAccess>false</externalAccess>
+            <parent code="kilimanjaro" name="Kilimanjaro" created="2015-06-17T00:19:38.050+0000"
+                    lastUpdated="2015-06-17T00:19:38.712+0000" id="jEA2tCIEUSJ">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="nachingwea dc" name="Nachingwea DC" created="2015-06-17T00:40:08.645+0000"
+                          lastUpdated="2015-06-17T00:40:09.253+0000" shortName="Nachingwea DC"
+                          uuid="e7aa9e3a-fc74-4ea4-885a-c761d7bd1da4" level="4" id="cWzJgFqtcGw">
+            <externalAccess>false</externalAccess>
+            <parent code="lindi" name="Lindi" created="2015-06-17T00:19:38.050+0000"
+                    lastUpdated="2015-06-17T00:19:38.713+0000" id="tWXdjdfaxrQ">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="ruangwa dc" name="Ruangwa DC" created="2015-06-17T00:40:08.650+0000"
+                          lastUpdated="2015-06-17T00:40:09.261+0000" shortName="Ruangwa DC"
+                          uuid="9dd8c810-1b0c-4138-ad55-b3dc112a2601" level="4" id="pkyW2QckoH1">
+            <externalAccess>false</externalAccess>
+            <parent code="lindi" name="Lindi" created="2015-06-17T00:19:38.050+0000"
+                    lastUpdated="2015-06-17T00:19:38.713+0000" id="tWXdjdfaxrQ">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="lindi mc" name="Lindi MC" created="2015-06-17T00:40:08.631+0000"
+                          lastUpdated="2015-06-17T00:40:09.217+0000" shortName="Lindi MC"
+                          uuid="b226d70e-275e-4d9e-95e4-d1a4b459eab2" level="4" id="U7ewnZdFOQ0">
+            <externalAccess>false</externalAccess>
+            <parent code="lindi" name="Lindi" created="2015-06-17T00:19:38.050+0000"
+                    lastUpdated="2015-06-17T00:19:38.713+0000" id="tWXdjdfaxrQ">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kiteto dc" name="Kiteto DC" created="2015-06-17T00:40:08.628+0000"
+                          lastUpdated="2015-06-17T00:40:09.210+0000" shortName="Kiteto DC"
+                          uuid="08ab4e51-a8c1-4e57-96d9-02844c490dd3" level="4" id="r50C0F00klq">
+            <externalAccess>false</externalAccess>
+            <parent code="manyara" name="Manyara" created="2015-06-17T00:19:38.050+0000"
+                    lastUpdated="2015-06-17T00:19:38.715+0000" id="xN7MrFlwFo9">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="mbulu dc" name="Mbulu DC" created="2015-06-17T00:40:08.637+0000"
+                          lastUpdated="2015-06-17T00:40:09.234+0000" shortName="Mbulu DC"
+                          uuid="3275139b-ab5f-4d6c-96d8-04f762c70660" level="4" id="Fn9O6210WKq">
+            <externalAccess>false</externalAccess>
+            <parent code="manyara" name="Manyara" created="2015-06-17T00:19:38.050+0000"
+                    lastUpdated="2015-06-17T00:19:38.715+0000" id="xN7MrFlwFo9">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="gairo dc" name="Gairo DC" created="2015-06-17T00:40:08.586+0000"
+                          lastUpdated="2015-06-17T00:40:09.170+0000" shortName="Gairo DC"
+                          uuid="418e4968-6a48-45bd-ad03-d6fe7ea1d814" level="4" id="EXNcdklEVl0">
+            <externalAccess>false</externalAccess>
+            <parent code="morogoro" name="Morogoro" created="2015-06-17T00:19:38.051+0000"
+                    lastUpdated="2015-06-17T00:19:38.716+0000" id="M59cfndNs6d">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="morogoro dc" name="Morogoro DC" created="2015-06-17T00:40:08.640+0000"
+                          lastUpdated="2015-06-17T00:40:09.243+0000" shortName="Morogoro DC"
+                          uuid="e9a8ef09-ce89-4e64-a5aa-d940811635cf" level="4" id="CrtdhPyNJKH">
+            <externalAccess>false</externalAccess>
+            <parent code="morogoro" name="Morogoro" created="2015-06-17T00:19:38.051+0000"
+                    lastUpdated="2015-06-17T00:19:38.716+0000" id="M59cfndNs6d">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="mtwara dc" name="Mtwara DC" created="2015-06-17T00:40:08.642+0000"
+                          lastUpdated="2015-06-17T00:40:09.247+0000" shortName="Mtwara DC"
+                          uuid="92597d30-d489-4970-95d1-986d91a80a8a" level="4" id="SuAFQP2udOw">
+            <externalAccess>false</externalAccess>
+            <parent code="mtwara" name="Mtwara" created="2015-06-17T00:19:38.051+0000"
+                    lastUpdated="2015-06-17T00:19:38.718+0000" id="oaNYZUiXlMe">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="newala dc" name="Newala DC" created="2015-06-17T00:40:08.646+0000"
+                          lastUpdated="2015-06-17T00:40:09.254+0000" shortName="Newala DC"
+                          uuid="b4dc0224-0377-4de2-8811-826becfed623" level="4" id="heeMDzR36v1">
+            <externalAccess>false</externalAccess>
+            <parent code="mtwara" name="Mtwara" created="2015-06-17T00:19:38.051+0000"
+                    lastUpdated="2015-06-17T00:19:38.718+0000" id="oaNYZUiXlMe">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="magu dc" name="Magu DC" created="2015-06-17T00:40:08.633+0000"
+                          lastUpdated="2015-06-17T00:40:09.220+0000" shortName="Magu DC"
+                          uuid="f8742fd7-bd4e-4d48-85ee-e029a91dbbea" level="4" id="cT4AqSpeEv0">
+            <externalAccess>false</externalAccess>
+            <parent code="mwanza" name="Mwanza" created="2015-06-17T00:19:38.051+0000"
+                    lastUpdated="2015-06-17T00:19:38.719+0000" id="IzOzVPNIh0c">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="misungwi dc" name="Misungwi DC" created="2015-06-17T00:40:08.638+0000"
+                          lastUpdated="2015-06-17T00:40:09.238+0000" shortName="Misungwi DC"
+                          uuid="ead1f6b4-5b1b-435c-b6aa-c7945a0c2f0f" level="4" id="fq83fjEgj1z">
+            <externalAccess>false</externalAccess>
+            <parent code="mwanza" name="Mwanza" created="2015-06-17T00:19:38.051+0000"
+                    lastUpdated="2015-06-17T00:19:38.719+0000" id="IzOzVPNIh0c">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="sengerema dc" name="Sengerema DC" created="2015-06-17T00:40:08.651+0000"
+                          lastUpdated="2015-06-17T00:40:09.263+0000" shortName="Sengerema DC"
+                          uuid="bb5050b9-a0b1-4bd3-9c11-feae4eea4aa2" level="4" id="O14slFmsiaZ">
+            <externalAccess>false</externalAccess>
+            <parent code="mwanza" name="Mwanza" created="2015-06-17T00:19:38.051+0000"
+                    lastUpdated="2015-06-17T00:19:38.719+0000" id="IzOzVPNIh0c">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="ludewa dc" name="Ludewa DC" created="2015-06-17T00:40:08.632+0000"
+                          lastUpdated="2015-06-17T00:40:09.218+0000" shortName="Ludewa DC"
+                          uuid="579761a7-1588-4a7f-a7a4-50cfdd6dd744" level="4" id="ntpcNh6O4HQ">
+            <externalAccess>false</externalAccess>
+            <parent code="njombe" name="Njombe" created="2015-06-17T00:19:38.052+0000"
+                    lastUpdated="2015-06-17T00:19:38.720+0000" id="spRdsijpf6s">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="makete dc" name="Makete DC" created="2015-06-17T00:40:08.634+0000"
+                          lastUpdated="2015-06-17T00:40:09.222+0000" shortName="Makete DC"
+                          uuid="4bb84467-2804-4328-b832-ac4c8326e596" level="4" id="Kr3J9HetAg8">
+            <externalAccess>false</externalAccess>
+            <parent code="njombe" name="Njombe" created="2015-06-17T00:19:38.052+0000"
+                    lastUpdated="2015-06-17T00:19:38.720+0000" id="spRdsijpf6s">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="njombe dc" name="Njombe DC" created="2015-06-17T00:40:08.647+0000"
+                          lastUpdated="2015-06-17T00:40:09.256+0000" shortName="Njombe DC"
+                          uuid="02376d1d-3aa0-45f5-8dd8-a0931ebf3542" level="4" id="TPj8d4vE1Kq">
+            <externalAccess>false</externalAccess>
+            <parent code="njombe" name="Njombe" created="2015-06-17T00:19:38.052+0000"
+                    lastUpdated="2015-06-17T00:19:38.720+0000" id="spRdsijpf6s">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="makambako tc" name="Makambako TC" created="2015-06-17T00:40:08.634+0000"
+                          lastUpdated="2015-06-17T00:40:09.221+0000" shortName="Makambako TC"
+                          uuid="0ac49ec2-15a2-468c-bb47-9fc4d3592e09" level="4" id="ob8UiDOtwzt">
+            <externalAccess>false</externalAccess>
+            <parent code="njombe" name="Njombe" created="2015-06-17T00:19:38.052+0000"
+                    lastUpdated="2015-06-17T00:19:38.720+0000" id="spRdsijpf6s">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="namtumbo dc" name="Namtumbo DC" created="2015-06-17T00:40:08.645+0000"
+                          lastUpdated="2015-06-17T00:40:09.253+0000" shortName="Namtumbo DC"
+                          uuid="740cd4fe-30aa-4fc9-9128-377119f494bc" level="4" id="OgQ231AIOvm">
+            <externalAccess>false</externalAccess>
+            <parent code="ruvuma" name="Ruvuma" created="2015-06-17T00:19:38.052+0000"
+                    lastUpdated="2015-06-17T00:19:38.723+0000" id="URe55jRkTXV">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="nyasa dc" name="Nyasa DC" created="2015-06-17T00:40:08.648+0000"
+                          lastUpdated="2015-06-17T00:40:09.258+0000" shortName="Nyasa DC"
+                          uuid="949f62f9-4c34-4d54-ad68-75ebbdd6c0e5" level="4" id="FRS6hHD8rwA">
+            <externalAccess>false</externalAccess>
+            <parent code="ruvuma" name="Ruvuma" created="2015-06-17T00:19:38.052+0000"
+                    lastUpdated="2015-06-17T00:19:38.723+0000" id="URe55jRkTXV">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kishapu dc" name="Kishapu DC" created="2015-06-17T00:40:08.628+0000"
+                          lastUpdated="2015-06-17T00:40:09.209+0000" shortName="Kishapu DC"
+                          uuid="8ec03bea-f8a6-4539-a2e1-99b6e5c6bedc" level="4" id="hVy9G3NP2N8">
+            <externalAccess>false</externalAccess>
+            <parent code="shinyanga" name="Shinyanga" created="2015-06-17T00:19:38.053+0000"
+                    lastUpdated="2015-06-17T00:19:38.725+0000" id="umcaQ167e2t">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="shinyanga dc" name="Shinyanga DC" created="2015-06-17T00:40:08.651+0000"
+                          lastUpdated="2015-06-17T00:40:09.264+0000" shortName="Shinyanga DC"
+                          uuid="c9cbad73-fdd6-4244-af75-ea3210f8751b" level="4" id="MKDwv3CXUB3">
+            <externalAccess>false</externalAccess>
+            <parent code="shinyanga" name="Shinyanga" created="2015-06-17T00:19:38.053+0000"
+                    lastUpdated="2015-06-17T00:19:38.725+0000" id="umcaQ167e2t">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="shinyanga mc" name="Shinyanga MC" created="2015-06-17T00:40:08.652+0000"
+                          lastUpdated="2015-06-17T00:40:09.264+0000" shortName="Shinyanga MC"
+                          uuid="28bdf2a7-05f7-4b43-8055-bb060479b6ff" level="4" id="QlExWzf3mbo">
+            <externalAccess>false</externalAccess>
+            <parent code="shinyanga" name="Shinyanga" created="2015-06-17T00:19:38.053+0000"
+                    lastUpdated="2015-06-17T00:19:38.725+0000" id="umcaQ167e2t">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="maswa dc" name="Maswa DC" created="2015-06-17T00:40:08.635+0000"
+                          lastUpdated="2015-06-17T00:40:09.227+0000" shortName="Maswa DC"
+                          uuid="9ac6a0b7-2d99-4c8b-9e8e-4ac40b3a6a37" level="4" id="gGSLLs9mjlq">
+            <externalAccess>false</externalAccess>
+            <parent code="simiyu" name="Simiyu" created="2015-06-17T00:19:38.053+0000"
+                    lastUpdated="2015-06-17T00:19:38.726+0000" id="t5hruFBve7d">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="meatu dc" name="Meatu DC" created="2015-06-17T00:40:08.637+0000"
+                          lastUpdated="2015-06-17T00:40:09.235+0000" shortName="Meatu DC"
+                          uuid="f7573d05-c6da-4114-bf8d-c7b485cc4f29" level="4" id="wmp0LYWJjoQ">
+            <externalAccess>false</externalAccess>
+            <parent code="simiyu" name="Simiyu" created="2015-06-17T00:19:38.053+0000"
+                    lastUpdated="2015-06-17T00:19:38.726+0000" id="t5hruFBve7d">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="singida dc" name="Singida DC" created="2015-06-17T00:40:08.653+0000"
+                          lastUpdated="2015-06-17T00:40:09.266+0000" shortName="Singida DC"
+                          uuid="9871d937-459f-4891-a69a-6cecd1f75f48" level="4" id="npRJKdoalCr">
+            <externalAccess>false</externalAccess>
+            <parent code="singida" name="Singida" created="2015-06-17T00:19:38.053+0000"
+                    lastUpdated="2015-06-17T00:19:38.728+0000" id="TNtd1DnVJ6M">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="singida mc" name="Singida MC" created="2015-06-17T00:40:08.653+0000"
+                          lastUpdated="2015-06-17T00:40:09.266+0000" shortName="Singida MC"
+                          uuid="736ae9d3-1588-4f02-b079-4a79768c5fe3" level="4" id="M1NnnGg0c4b">
+            <externalAccess>false</externalAccess>
+            <parent code="singida" name="Singida" created="2015-06-17T00:19:38.053+0000"
+                    lastUpdated="2015-06-17T00:19:38.728+0000" id="TNtd1DnVJ6M">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="handeni tc" name="Handeni TC" created="2015-06-17T00:40:08.587+0000"
+                          lastUpdated="2015-06-17T00:40:09.173+0000" shortName="Handeni TC"
+                          uuid="56d8e478-5dd5-4ef9-8d72-154cda5476aa" level="4" id="NKhe8TXUupu">
+            <externalAccess>false</externalAccess>
+            <parent code="tanga" name="Tanga" created="2015-06-17T00:19:38.054+0000"
+                    lastUpdated="2015-06-17T00:19:38.729+0000" id="ZEDZWnl8ITK">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="korogwe tc" name="Korogwe TC" created="2015-06-17T00:40:08.630+0000"
+                          lastUpdated="2015-06-17T00:40:09.213+0000" shortName="Korogwe TC"
+                          uuid="ed323709-ffd6-4462-92bc-7f3ce3c5b270" level="4" id="qgQetwJXZKA">
+            <externalAccess>false</externalAccess>
+            <parent code="tanga" name="Tanga" created="2015-06-17T00:19:38.054+0000"
+                    lastUpdated="2015-06-17T00:19:38.729+0000" id="ZEDZWnl8ITK">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="wangingómbe dc" name="Wangingómbe DC" created="2015-06-17T00:40:08.661+0000"
+                          lastUpdated="2015-06-17T00:43:00.398+0000" shortName="Wangingómbe DC"
+                          uuid="49c4407b-f09b-4e00-b5f4-3172e30f0d87" level="4" id="p9mzlkNC5We">
+            <externalAccess>false</externalAccess>
+            <user name="admin admin" created="2015-05-25T16:26:34.125+0000" lastUpdated="2015-06-19T20:45:52.839+0000"
+                  id="Rhh4hsS8wJ9">
+                <externalAccess>false</externalAccess>
+            </user>
+            <parent code="njombe" name="Njombe" created="2015-06-17T00:19:38.052+0000"
+                    lastUpdated="2015-06-17T00:19:38.720+0000" id="spRdsijpf6s">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+    </organisationUnits>
+    <organisationUnitLevels>
+        <organisationUnitLevel name="District" created="2015-07-09T20:57:41.343+0000"
+                               lastUpdated="2015-07-09T21:04:02.817+0000" level="4" id="bIdGJhooKlB">
+            <externalAccess>false</externalAccess>
+        </organisationUnitLevel>
+        <organisationUnitLevel name="Country" created="2015-07-09T20:57:41.393+0000"
+                               lastUpdated="2015-07-09T21:04:02.825+0000" level="1" id="WdrlfD575HU">
+            <externalAccess>false</externalAccess>
+        </organisationUnitLevel>
+        <organisationUnitLevel name="Region" created="2015-07-09T20:57:41.398+0000"
+                               lastUpdated="2015-07-09T21:04:02.831+0000" level="3" id="kuoWS99RwdS">
+            <externalAccess>false</externalAccess>
+        </organisationUnitLevel>
+        <organisationUnitLevel name="Zone" created="2015-07-09T20:57:41.412+0000"
+                               lastUpdated="2015-07-09T21:04:02.837+0000" level="2" id="oPGWtfG2L1V">
+            <externalAccess>false</externalAccess>
+        </organisationUnitLevel>
+    </organisationUnitLevels>
+</metaData>

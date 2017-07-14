@@ -1,0 +1,12 @@
+.alert {
+    padding: 1em;
+    margin-bottom: 1em;
+    border-radius: 0.5em;
+    word-break: normal;
+    &.alert-success {
+        background-color: $color-positive;
+    }
+    &.alert-danger {
+        background-color: $color-negative;
+    }
+}

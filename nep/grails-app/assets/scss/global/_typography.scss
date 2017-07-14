@@ -1,0 +1,82 @@
+body {
+    @include antialiasing;
+    font-family: 'PT Sans', sans-serif;
+    font-size: 18px;
+    color: $grey-darker;
+    min-width: 768px;
+    @include breakpoint($large) {
+      font-size: 16px;
+    }
+    @include breakpoint($medium) {
+      font-size: 15px;
+    }
+}
+
+// List options
+
+@mixin list-unstyled {
+  padding-left: 0;
+  list-style: none;
+}
+
+.list-unstyled {
+  @include list-unstyled;
+  margin: 0;
+  li {
+    margin-bottom: 1em;
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+h1 {
+  margin: 2rem 0 1.25rem 0;
+  font-size: 1.5rem;
+}
+
+h2 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+h3 {
+  margin: 0;
+  font-size: 1em;
+  line-height: 1;
+  font-weight: 700;
+}
+
+.danger {
+  color: $color-negative-dark;
+}
+
+.optional {
+  display: block;
+  margin-top: -1em;
+  margin-bottom: 1em;
+  color: $grey;
+}
+
+a {
+  color: rgba($nep-blue-light, 0.9);
+
+  &:hover,
+  &:active,
+  &:focus {
+    color: $black;
+  }
+}
+
+// Inline turns list items into inline-block
+.list-inline {
+  @include list-unstyled;
+  margin-left: -5px;
+  > li {
+    display: inline-block;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+}

@@ -1,0 +1,324 @@
+/*!
+ * Copyright (c) 2014-2017. Institute for International Programs at Johns Hopkins University.
+ * All rights reserved.
+ *
+ * Redistribution and use in source and binary forms, with or without
+ * modification, are permitted provided that the following conditions are met:
+ * Redistributions of source code must retain the above copyright notice, this
+ * list of conditions and the following disclaimer.
+ * Redistributions in binary form must reproduce the above copyright notice,
+ * this list of conditions and the following disclaimer in the documentation
+ * and/or other materials provided with the distribution.
+ * Neither the name of the NEP project, Institute for International Programs,
+ * Johns Hopkins University nor the names of its contributors may
+ * be used to endorse or promote products derived from this software without
+ * specific prior written permission.
+ *
+ * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+ * ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+ * WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ * DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+ * ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+ * LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ * ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+ * (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ * SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ *
+ */
+
+// Compass reset
+@import "functions/normalize";
+
+// Base variables
+@import "functions/config";
+
+// mixins
+@import "functions/mixins";
+
+@import "functions/utilities";
+
+// Grid & breakpoint
+@import "susy";
+@import "breakpoint";
+
+// Global
+@import "global/typography";
+@import "global/icons";
+@import "global/breadcrumbs";
+@import "global/buttons";
+@import "global/tables";
+@import "global/forms";
+@import "global/tooltip";
+@import "global/alerts";
+@import "global/loading-spinner";
+
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+html {
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+html, body {
+    position: relative;
+    width: 100%;
+    height: 100%;
+}
+
+header {
+    width: 100%;
+    position: relative;
+    height: $header-height;
+    z-index: 25;
+    background-color: white;
+
+    img {
+        max-width: 8em;
+        padding-top: 0.75em;
+        margin-left: 5%;
+    }
+
+    .version {
+        position: absolute;
+        top: 40%;
+        right: 5%;
+        font-size: 0.9em;
+        color: $grey;
+    }
+}
+
+.nav {
+    position: absolute;
+    z-index: 30;
+    top: 0;
+    left: 20%;
+    list-style: none;
+
+    li {
+        display: inline-block;
+        margin-top: 1.25em;
+        padding-right: 1.5em;
+        font-size: 0.85em;
+        font-weight: bold;
+
+        a {
+            text-decoration: none;
+        }
+
+        &.active {
+
+            a {
+                color: $black;
+            }
+        }
+    }
+}
+
+.actions {
+    width: 100%;
+    float: left;
+    position: relative;
+    z-index: 40;
+    margin-bottom: 3rem;
+    padding: 0 5%;
+
+    &.short-spacing {
+        margin-bottom: 1rem;
+    }
+}
+
+.actions-create {
+    // width: 80%;
+    float: left;
+}
+
+.actions-status {
+    // width: 20%;
+    float: right;
+    margin-top: 2.25rem;
+
+    @include breakpoint($xlarge) {
+        float: left;
+        clear: both;
+    }
+}
+
+.check-status {
+    float: right;
+}
+
+.check-status-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    a {
+        display: block;
+        margin-bottom: 0.25rem;
+        font-size: 1rem;
+        font-weight: 600;
+        text-decoration: none;
+    }
+
+    .active {
+
+        a {
+            color: $black;
+        }
+    }
+}
+
+.ui-container {
+    position: relative;
+    padding: 0 5%;
+    clear: both;
+}
+
+.ui-main {
+    width: 60%;
+    float: left;
+
+    &.ui-full-width {
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    &.login {
+        width: 40%;
+        position: static;
+        margin: 0 auto;
+        float: none;
+        text-align: center;
+        padding: $header-height 5% 0 5%;
+
+        .logo img {
+            width: 10em;
+            margin-bottom: 1em;
+        }
+
+        .form-control {
+            width: 100%;
+        }
+
+        ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+
+            li {
+                display: inline;
+                padding: 0 0.5em;
+            }
+        }
+    }
+    &.is-short {
+        padding-top: 6rem;
+    }
+
+    &.has-breadcrumb {
+        padding-top: 10em;
+    }
+}
+
+.sidebar {
+    width: 40%;
+    float: left;
+    padding-left: 5%;
+}
+
+.ui-wrap {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.checklist {
+    list-style: none;
+    margin-bottom: 2em;
+    li {
+        margin-bottom: 0.5em;
+        position: relative;
+        &:before {
+            font-family: 'icomoon';
+            content: "\e602";
+            position: absolute;
+            left: -1.5em;
+            font-size: 1.5em;
+            color: $nep-blue;
+        }
+    }
+}
+
+.import-refresh {
+    margin: 0.5em 0 1.5em 0;
+}
+
+.hidden {
+    display: none;
+}
+
+.exception-toggle {
+    margin-left: 0.5em;
+    padding: 0 1em 0 1.75em;
+    position: relative;
+    border-radius: 0.5em;
+    &:before {
+        content: '+';
+        position: absolute;
+        font-size: 1.5em;
+        margin-top: -0.16em;
+        margin-left: -0.75em;
+    }
+    &.open {
+        &:before {
+            transform: rotate(45deg);
+        }
+    }
+}
+
+#programStage_0_fields,
+#programStage_1_fields,
+#programStage_2_fields {
+    display: none;
+}
+
+hr {
+    margin-bottom: 0.5em;
+}
+
+.small {
+    width: 50%;
+}
+
+.tiny{
+    width: 25%;
+}
+
+.single-row {
+    float: left;
+}
+
+.clear {
+    clear: both;
+}
+
+.form-control.large {
+    width: 95%;
+}
+
+.help-text {
+    font-size: 0.75em;
+    margin-bottom: 0.5em;
+    color: #888;
+}

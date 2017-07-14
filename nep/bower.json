@@ -1,0 +1,20 @@
+{
+  "name": "PEPFAR",
+  "version": "0.0.1",
+  "authors": [
+    "Kim Oxlund"
+  ],
+  "description": "PEPFAR package manager",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "susy": "~2.2.2"
+  },
+  "devDependencies": {
+    "breakpoint-sass": "~2.5.0"
+  }
+}

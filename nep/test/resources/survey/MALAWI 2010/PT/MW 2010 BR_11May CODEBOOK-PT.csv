@@ -1,0 +1,132 @@
+Nome da Variável,Etiqueta variável,Etiqueta da Resposta,Código da Resposta,Tipo de Variável
+v021,primary sampling unit,Abertura Terminada,,Integer
+v022,sample stratum number,Abertura Terminada,,Numeric
+b0,child is twin,,,Numeric
+,,single birth,0,
+,,1st of multiple,1,
+,,2nd of multiple,2,
+,,3rd of multiple,3,
+,,4th of multiple,4,
+,,5th of multiple,5,
+b1,month of birth,Abertura Terminada,,Numeric
+b2,year of birth,Abertura Terminada,,Integer
+b3,date of birth (cmc),Abertura Terminada,,Integer
+b4,sex of child,,,Numeric
+,,male,1,
+,,female,2,
+b5,child is alive,,,Numeric
+,,no,0,
+,,yes,1,
+b6,age at death,,,Integer
+,,died on day of birth,100,
+,,days: 1,101,
+,,days: number missing,199,
+,,months: 1,201,
+,,months: number missing,299,
+,,years: 1,301,
+,,years: number missing,399,
+,,inconsistent,997,
+,,don't know,998,
+b7,age at death (months-imputed),Abertura Terminada,,Integer
+b8,current age of child,Abertura Terminada,,Numeric
+b9,child lives with whom,,,Numeric
+,,respondent,0,
+,,father,1,
+,,other relative,2,
+,,someone else,3,
+,,lives elsewhere,4,
+org_unit,district,,,Integer
+,,chitipa,101,
+,,karonga,102,
+,,nkhatabay,103,
+,,rumphi,104,
+,,mzimba,105,
+,,nkhatabay,106,
+,,kasungu,201,
+,,nkhotakota,202,
+,,ntchisi,203,
+,,dowa,204,
+,,salima,205,
+,,lilongwe,206,
+,,mchinji,207,
+,,dedza,208,
+,,ntcheu,209,
+,,lilongwe,210,
+,,mangochi,301,
+,,machinga,302,
+,,zomba,303,
+,,chiradzulu,304,
+,,blantyre,305,
+,,mwanza,306,
+,,thyolo,307,
+,,mulanje,308,
+,,phalombe,309,
+,,chikwawa,310,
+,,nsanje,311,
+,,balaka,312,
+,,neno,313,
+,,zomba,314,
+,,blantyre,315,
+br_sample_weights,sampling weights,Abertura Terminada,,Numeric
+iron90,90+ days of iron supplementation,Abertura Terminada,,Numeric
+ideliv,facility delivery,Abertura Terminada,,Numeric
+tt,2x TT during most recent preg,Abertura Terminada,,Numeric
+anc12,ANC 1+ visits skilled provider (most recent birth in 2 yrs before survey),,,Numeric
+,,no,0,
+,,yes,1,
+anc42,ANC 4+ visits any provider (births in 2 yrs before survey),,,Numeric
+,,no,0,
+,,yes,1,
+iptp,Intermittent preventive treatment for malaria during pregnancy,,,Numeric
+,,no,0,
+,,yes,1,
+sba2,Skilled birth attendant (births in 2 yrs before survey),,,Numeric
+,,no,0,
+,,yes,1,
+csection2,cesection (births in 2 yrs before survey),,,Numeric
+,,no,0,
+,,yes,1,
+ebreast2,Breastfeeding within 1hr of birth (births in 2 yrs before survey),,,Numeric
+,,no,0,
+,,yes,1,
+pnchome,Postnatal care for babies born at home within 2 days of birth,,,Numeric
+,,no,0,
+,,yes,1,
+pncwm,Postnatal care for mothers within 2 days of delivery,,,Numeric
+,,no,0,
+,,yes,1,
+vita,Vitamin A in past 6 months (age 6-59 months),,,Numeric
+,,no,0,
+,,yes,1,
+itnch,Child slept under ITN last night,,,Numeric
+,,no,0,
+,,yes,1,
+dptv,Received 3 doses of DPT 12-23m,Abertura Terminada,,Numeric
+measlesv,Received 3 doses of measles 12-23m,Abertura Terminada,,Numeric
+ors,ORS for diarrhea,,,Numeric
+,,no,0,
+,,yes,1,
+ort,ORT+continued feeding for children with diarrhoea,,,Numeric
+,,no,0,
+,,yes,1,
+carep,Careseeking for pneumonia,,,Numeric
+,,no,0,
+,,yes,1,
+abari,Antibiotic treatment for pneumonia,,,Numeric
+,,no,0,
+,,yes,1,
+act,"Children 0-59 with fever in past 2 weeks, got an ACT",,,Numeric
+,,no,0,
+,,yes,1,
+antimal_48,"Children 0-59 with fever in past 2 weeks, got any antimalarial ",,,Numeric
+,,no,0,
+,,yes,1,
+zinc,Zinc pour la diarrhée,,,Numeric
+,,no,0,
+,,yes,1,
+antibiotics,Antibiotics pour la diarrhée,,,Numeric
+,,no,0,
+,,yes,1,
+hhid,Household ID,Abertura Terminada,,String
+wmid,Woman ID,Abertura Terminada,,String
+brid,Births ID,Abertura Terminada,,String

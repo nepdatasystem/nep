@@ -1,0 +1,32 @@
+table {
+    width: 100%;
+    margin: 1em auto 2em auto;
+    text-align: left;
+}
+
+th {
+    color: $grey-dark;
+}
+
+tr {
+    border-bottom: 2px solid $grey-light;
+}
+
+td, th {
+    padding: 0.5em 1em;
+    &:first-child {
+        padding-left: 0;
+    }
+}
+
+td {
+    font-size: 0.9em;
+    &.repository {
+        .form-control {
+            width:10em;
+            height:2.3em;
+            display: inline-block;
+            vertical-align: middle;
+        }
+    }
+}

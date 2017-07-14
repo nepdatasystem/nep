@@ -1,0 +1,17 @@
+Nom de l'Élément de Données,Code de l'Élément de Donnée,Nom Court de l'Élément de Donnée,Description de l'Élément de Donnée,Nom du Formulaire de l'Élément de Donnée,Type De Valeur,Type de Nombre,Opérateur d'Agrégation,Catégorie de Combinaison
+Census Date,,Census Date,,,date,,,
+District,,District,,,string,,,
+Year,,Year,,,int,posInt,,
+Population,,Population,,,int,zeroPositiveInt,,
+% of total,,% of total,,,int,number,,
+Rate of growth,,Rate of growth,,,int,number,,
+Sex ratio,,Sex ratio,,,int,number,,
+Median age,,Median age,,,int,number,,
+Births,,Births,,,int,number,,
+CBR,,CBR,,,int,number,,
+Deaths,,Deaths,,,int,zeroPositiveInt,,
+CDR,,CDR,,,int,number,,
+EXPECTATION OF LIFE AT BIRTH (YEARS) By Sex,,EXPECTATION OF LIFE AT BIRTH (YEARS) By Sex,,,int,number,,SEX
+IMR per (1000 live births),,IMR per (1000 live births),,,int,number,,SEX
+TFR,,TFR,,,int,number,,
+Net migration,,Net migration,,,int,number,,

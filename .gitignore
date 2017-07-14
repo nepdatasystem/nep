@@ -1,0 +1,43 @@
+# Eclipe/GGTS
+/mockups/.project
+/mockups/.settings
+
+/nep/.tern-project
+/nep/.classpath
+/nep/.project
+/nep/.settings
+/nep/target-eclipse
+/nep/target
+/nep/out
+
+/nep/bower_components
+/nep/node_modules
+
+/nep-data-import/.tern-project
+/nep-data-import/.classpath
+/nep-data-import/.gradle
+/nep-data-import/.project
+/nep-data-import/.settings
+/nep-data-import/bower_components
+
+# batch-prototype
+/batch-prototype
+
+# IDEA
+.idea/
+/target/
+*.iml
+/.idea/*.log
+/out/
+
+# Generic
+/nep/.sass-cache
+/nep/bin
+/nep/grails-app/assets/javascripts/i18n
+
+
+# NEP Data Import (for now)
+#/nep-data-import/npm-debug.log
+
+# DHIS2
+/dhis2

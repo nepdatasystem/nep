@@ -1,0 +1,16 @@
+{
+  "name": "nep-data-import",
+  "version": "0.0.1",
+  "description": "NEP Data Import App",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "1.11.1"
+   }
+}

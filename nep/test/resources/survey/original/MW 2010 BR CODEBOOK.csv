@@ -1,0 +1,151 @@
+"Variable Name","Variable Label","Answer Label","Answer Code","Variable Type"
+v006,"month of interview","Open ended",,Numeric
+v007,"year of interview","Open ended",,Integer
+v008,"date of interview (cmc)","Open ended",,Integer
+v021,"primary sampling unit","Open ended",,Integer
+v022,"sample stratum number","Open ended",,Numeric
+v023,"sample domain",,,Numeric
+,,northern,1,
+,,central,2,
+,,southern,3,
+v024,region,,,Numeric
+,,northern,1,
+,,central,2,
+,,southern,3,
+v025,"type of place of residence",,,Numeric
+,,urban,1,
+,,rural,2,
+v026,"de facto place of residence",,,Numeric
+,,capital,0,
+,,"major city",1,
+,,town,2,
+,,rural,3,
+b0,"child is twin",,,Numeric
+,,"single birth",0,
+,,"1st of multiple",1,
+,,"2nd of multiple",2,
+,,"3rd of multiple",3,
+,,"4th of multiple",4,
+,,"5th of multiple",5,
+b1,"month of birth","Open ended",,Numeric
+b2,"year of birth","Open ended",,Integer
+b3,"date of birth (cmc)","Open ended",,Integer
+b4,"sex of child",,,Numeric
+,,male,1,
+,,female,2,
+b5,"child is alive",,,Numeric
+,,no,0,
+,,yes,1,
+b6,"age at death",,,Integer
+,,"died on day of birth",100,
+,,"days: 1",101,
+,,"days: number missing",199,
+,,"months: 1",201,
+,,"months: number missing",299,
+,,"years: 1",301,
+,,"years: number missing",399,
+,,inconsistent,997,
+,,"don't know",998,
+b7,"age at death (months-imputed)","Open ended",,Integer
+b8,"current age of child","Open ended",,Numeric
+b9,"child lives with whom",,,Numeric
+,,respondent,0,
+,,father,1,
+,,"other relative",2,
+,,"someone else",3,
+,,"lives elsewhere",4,
+shdist,district,,,Integer
+,,chitipa,101,
+,,karonga,102,
+,,nkhatabay,103,
+,,rumphi,104,
+,,mzimba,105,
+,,nkhatabay,106,
+,,kasungu,201,
+,,"nkhota kota",202,
+,,ntchisi,203,
+,,dowa,204,
+,,salima,205,
+,,lilongwe,206,
+,,mchinji,207,
+,,dedza,208,
+,,ntcheu,209,
+,,lilongwe,210,
+,,mangochi,301,
+,,machinga,302,
+,,zomba,303,
+,,chiradzulu,304,
+,,blantyre,305,
+,,mwanza,306,
+,,thyolo,307,
+,,mulanje,308,
+,,phalombe,309,
+,,chikwawa,310,
+,,nsanje,311,
+,,balaka,312,
+,,neno,313,
+,,zomba,314,
+,,blantyre,315,
+br_sample_weights,"sampling weights","Open ended",,Numeric
+iron90,"90+ days of iron supplementation","Open ended",,Numeric
+ideliv,"facility delivery","Open ended",,Numeric
+tt,"2x TT during most recent preg","Open ended",,Numeric
+anc12,"ANC 1+ visits skilled provider (most recent birth in 2 yrs before survey)",,,Numeric
+,,no,0,
+,,yes,1,
+anc42,"ANC 4+ visits any provider (births in 2 yrs before survey)",,,Numeric
+,,no,0,
+,,yes,1,
+iptp,"Intermittent preventive treatment for malaria during pregnancy",,,Numeric
+,,no,0,
+,,yes,1,
+sba2,"Skilled birth attendant (births in 2 yrs before survey)",,,Numeric
+,,no,0,
+,,yes,1,
+csection2,"cesection (births in 2 yrs before survey)",,,Numeric
+,,no,0,
+,,yes,1,
+ebreast2,"Breastfeeding within 1hr of birth (births in 2 yrs before survey)",,,Numeric
+,,no,0,
+,,yes,1,
+pnchome,"Postnatal care for babies born at home within 2 days of birth",,,Numeric
+,,no,0,
+,,yes,1,
+pncwm,"Postnatal care for mothers within 2 days of delivery",,,Numeric
+,,no,0,
+,,yes,1,
+vita,"Vitamin A in past 6 months (age 6-59 months)",,,Numeric
+,,no,0,
+,,yes,1,
+itnch,"Child slept under ITN last night",,,Numeric
+,,no,0,
+,,yes,1,
+dptv,"Received 3 doses of DPT 12-23m","Open ended",,Numeric
+measlesv,"Received 3 doses of measles 12-23m","Open ended",,Numeric
+ors,"ORS for diarrhea",,,Numeric
+,,no,0,
+,,yes,1,
+ort,"ORT+continued feeding for children with diarrhoea",,,Numeric
+,,no,0,
+,,yes,1,
+carep,"Careseeking for pneumonia",,,Numeric
+,,no,0,
+,,yes,1,
+abari,"Antibiotic treatment for pneumonia",,,Numeric
+,,no,0,
+,,yes,1,
+act,"Children 0-59 with fever in past 2 weeks, got an ACT",,,Numeric
+,,no,0,
+,,yes,1,
+antimal_48,"Children 0-59 with fever in past 2 weeks, got any antimalarial ",,,Numeric
+,,no,0,
+,,yes,1,
+zinc,"Zinc pour la diarrhée",,,Numeric
+,,no,0,
+,,yes,1,
+antibiotics,"Antibiotics pour la diarrhée",,,Numeric
+,,no,0,
+,,yes,1,
+hhid,"Household ID","Open ended",,String
+wmid,"Woman ID","Open ended",,String
+brid,"Births ID","Open ended",,String

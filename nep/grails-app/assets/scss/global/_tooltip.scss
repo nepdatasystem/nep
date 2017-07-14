@@ -1,0 +1,66 @@
+.tooltip {
+    display: inline-block;
+    position: relative;
+    -webkit-transform: translateZ(0);
+    cursor: help;
+    width: 18px;
+    height: 18px;
+    cursor: help;
+    font-size: 20px;
+    line-height: 0.75;
+    vertical-align: middle;
+    &:before {
+        position: absolute;
+        left: 0;
+        font-family: icomoon;
+        content: "\e609";
+        color: $grey;
+        font-weight: normal;
+    }
+    .tooltip-content {
+        display: block;
+        top: 50%;
+        left: 30px;
+        padding: 0.5em;
+        pointer-events: none;
+        position: absolute;
+        white-space: pre;
+        font-size: 0.75em;
+        line-height: 1.25em;
+        font-weight: 700;
+        color: $white;
+        background: $grey-darker;
+        border-radius: 5px;
+        transform: translateY(-50%);
+        transition: 0.25s cubic-bezier(0.23, 1, 0.32, 1);
+        opacity: 0;
+        -webkit-font-smoothing: antialiased;
+        &:after {
+            border-top: solid transparent 6px;
+            border-bottom: solid transparent 6px;
+            border-right: solid $grey-darker 6px;
+            content: " ";
+            height: 0;
+            top:50%;
+            left: -6px;
+            position: absolute;
+            width: 0;
+            transform: translateY(-50%);
+        }
+    }
+    &:hover {
+        .tooltip-content {
+            opacity: 1;
+            pointer-events: auto;
+        }
+    }
+}
+
+/* IE can just show/hide with no transition */
+.lte8 .tooltip .tooltip-content {
+  display: none;
+}
+
+.lte8 .tooltip:hover .tooltip-content {
+  display: block;
+}

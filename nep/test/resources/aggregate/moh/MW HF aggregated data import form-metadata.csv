@@ -1,0 +1,4 @@
+Data Element Name,Data Element Code,Data Element Short Name,Data Element Description,Data Element Form Name,Value Type,Number Type,Aggregation Operator,Category Combination
+Number Health Facilities ,,Health facilities,Reported by IMCI-MOH,,int,posInt,,
+Number of Health Facility Workers,,Facility health workers ,Reported by IMCI-MOH,,int,posInt,,
+Number of HSAs ,,HSAs,Cell phone IS study 2013,,int,posInt,,

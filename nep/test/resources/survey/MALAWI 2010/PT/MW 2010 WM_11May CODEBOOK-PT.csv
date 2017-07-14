@@ -1,0 +1,80 @@
+Nome da Variável,Etiqueta variável,Etiqueta da Resposta,Código da Resposta,Tipo de Variável
+v009,respondent's month of birth,Abertura Terminada,,Numeric
+v010,respondent's year of birth,Abertura Terminada,,Integer
+v011,date of birth (cmc),Abertura Terminada,,Integer
+v012,current age - respondent,Abertura Terminada,,Numeric
+v013,age 5-year groups,,,Numeric
+,,15-19,1,
+,,20-24,2,
+,,25-29,3,
+,,30-34,4,
+,,35-39,5,
+,,40-44,6,
+,,45-49,7,
+v021,primary sampling unit,Abertura Terminada,,Integer
+v022,sample stratum number,Abertura Terminada,,Numeric
+v155,literacy,,,Numeric
+,,cannot read at all,0,
+,,able to read only parts of sentence,1,
+,,able to read whole sentence,2,
+,,no card with required language,3,
+,,blind/visually impaired,4,
+v156,ever participated in a literacy program outside of primary,,,Numeric
+,,no,0,
+,,yes,1,
+ml101,type of bednet(s) slept under last night,,,Numeric
+,,no bednet,0,
+,,only treated bednets,1,
+,,both treated and untreated bednets,2,
+,,only untreated bednets,3,
+v201,total children ever born,Abertura Terminada,,Numeric
+v202,sons at home,Abertura Terminada,,Numeric
+v203,daughters at home,Abertura Terminada,,Numeric
+v204,sons elsewhere,Abertura Terminada,,Numeric
+v205,daughters elsewhere,Abertura Terminada,,Numeric
+v206,sons who have died,Abertura Terminada,,Numeric
+v207,daughters who have died,Abertura Terminada,,Numeric
+v208,births in last five years,Abertura Terminada,,Numeric
+v209,births in past year,Abertura Terminada,,Numeric
+v211,date of first birth (cmc),Abertura Terminada,,Integer
+v212,age of respondent at 1st birth,Abertura Terminada,,Numeric
+v213,currently pregnant,,,Numeric
+,,no or unsure,0,
+,,yes,1,
+org_unit,district,,,Integer
+,,chitipa,101,
+,,karonga,102,
+,,nkhatabay,103,
+,,rumphi,104,
+,,mzimba,105,
+,,nkhatabay,106,
+,,kasungu,201,
+,,nkhotakota,202,
+,,ntchisi,203,
+,,dowa,204,
+,,salima,205,
+,,lilongwe,206,
+,,mchinji,207,
+,,dedza,208,
+,,ntcheu,209,
+,,lilongwe,210,
+,,mangochi,301,
+,,machinga,302,
+,,zomba,303,
+,,chiradzulu,304,
+,,blantyre,305,
+,,mwanza,306,
+,,thyolo,307,
+,,mulanje,308,
+,,phalombe,309,
+,,chikwawa,310,
+,,nsanje,311,
+,,balaka,312,
+,,neno,313,
+,,zomba,314,
+,,blantyre,315,
+wm_sample_weights,sampling weights,Abertura Terminada,,Numeric
+hhid,Household unique ID,Abertura Terminada,,String
+wmid,Woman ID,Abertura Terminada,,String
+cpmt,Contraceptive prevalence - modern methods,,,Numeric
+fps,Family planning need satisfied,,,Numeric

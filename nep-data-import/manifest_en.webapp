@@ -1,0 +1,13 @@
+{
+    "version":"1.0"
+    ,"name":"NEP Data Import"
+    ,"description":"NEP Data Import"
+    ,"icons":{"16":"icons/nep-logo-16.png","48":"icons/nep-logo-48.png","128":"icons/nep-logo-128.png"}
+    ,"developer":{"url":"http://www.2paths.com","name":"2Paths","company":"2Paths","email":"info@2paths.com"}
+    ,"launch_path":"index.html"
+    ,"installs_allowed_from":null
+    ,"default_locale":"en"
+    ,"activities": {
+      "dhis": { "href": "*" }
+    }
+}

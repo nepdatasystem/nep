@@ -1,0 +1,99 @@
+"Variable Name","Variable Label","Answer Label","Answer Code","Variable Type"
+v006,"month of interview","Open ended",,Numeric
+v007,"year of interview","Open ended",,Integer
+v008,"date of interview (cmc)","Open ended",,Integer
+v009,"respondent's month of birth","Open ended",,Numeric
+v010,"respondent's year of birth","Open ended",,Integer
+v011,"date of birth (cmc)","Open ended",,Integer
+v012,"current age - respondent","Open ended",,Numeric
+v013,"age 5-year groups",,,Numeric
+,,15-19,1,
+,,20-24,2,
+,,25-29,3,
+,,30-34,4,
+,,35-39,5,
+,,40-44,6,
+,,45-49,7,
+v021,"primary sampling unit","Open ended",,Integer
+v022,"sample stratum number","Open ended",,Numeric
+v023,"sample domain",,,Numeric
+,,northern,1,
+,,central,2,
+,,southern,3,
+v024,region,,,Numeric
+,,northern,1,
+,,central,2,
+,,southern,3,
+v025,"type of place of residence",,,Numeric
+,,urban,1,
+,,rural,2,
+v026,"de facto place of residence",,,Numeric
+,,capital,0,
+,,"major city",1,
+,,town,2,
+,,rural,3,
+v155,literacy,,,Numeric
+,,"cannot read at all",0,
+,,"able to read only parts of sentence",1,
+,,"able to read whole sentence",2,
+,,"no card with required language",3,
+,,"blind/visually impaired",4,
+v156,"ever participated in a literacy program outside of primary",,,Numeric
+,,no,0,
+,,yes,1,
+ml101,"type of bednet(s) slept under last night",,,Numeric
+,,"no bednet",0,
+,,"only treated bednets",1,
+,,"both treated and untreated bednets",2,
+,,"only untreated bednets",3,
+v201,"total children ever born","Open ended",,Numeric
+v202,"sons at home","Open ended",,Numeric
+v203,"daughters at home","Open ended",,Numeric
+v204,"sons elsewhere","Open ended",,Numeric
+v205,"daughters elsewhere","Open ended",,Numeric
+v206,"sons who have died","Open ended",,Numeric
+v207,"daughters who have died","Open ended",,Numeric
+v208,"births in last five years","Open ended",,Numeric
+v209,"births in past year","Open ended",,Numeric
+v211,"date of first birth (cmc)","Open ended",,Integer
+v212,"age of respondent at 1st birth","Open ended",,Numeric
+v213,"currently pregnant",,,Numeric
+,,"no or unsure",0,
+,,yes,1,
+shdist,district,,,Integer
+,,chitipa,101,
+,,karonga,102,
+,,nkhatabay,103,
+,,rumphi,104,
+,,mzimba,105,
+,,nkhatabay,106,
+,,kasungu,201,
+,,"nkhota kota",202,
+,,ntchisi,203,
+,,dowa,204,
+,,salima,205,
+,,lilongwe,206,
+,,mchinji,207,
+,,dedza,208,
+,,ntcheu,209,
+,,lilongwe,210,
+,,mangochi,301,
+,,machinga,302,
+,,zomba,303,
+,,chiradzulu,304,
+,,blantyre,305,
+,,mwanza,306,
+,,thyolo,307,
+,,mulanje,308,
+,,phalombe,309,
+,,chikwawa,310,
+,,nsanje,311,
+,,balaka,312,
+,,neno,313,
+,,zomba,314,
+,,blantyre,315,
+wm_sample_weights,"sampling weights","Open ended",,Numeric
+hhid,"Household unique ID","Open ended",,String
+wmid,"Woman ID","Open ended",,String
+cpmt,"Contraceptive prevalence - modern methods",,,Numeric
+fps,"Family planning need satisfied",,,Numeric

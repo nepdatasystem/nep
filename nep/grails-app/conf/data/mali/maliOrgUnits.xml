@@ -1,0 +1,1647 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<!--
+  ~ Copyright (c) 2014-2017. Institute for International Programs at Johns Hopkins University.
+  ~ All rights reserved.
+  ~
+  ~ Redistribution and use in source and binary forms, with or without
+  ~ modification, are permitted provided that the following conditions are met:
+  ~ Redistributions of source code must retain the above copyright notice, this
+  ~ list of conditions and the following disclaimer.
+  ~ Redistributions in binary form must reproduce the above copyright notice,
+  ~ this list of conditions and the following disclaimer in the documentation
+  ~ and/or other materials provided with the distribution.
+  ~ Neither the name of the NEP project, Institute for International Programs,
+  ~ Johns Hopkins University nor the names of its contributors may
+  ~ be used to endorse or promote products derived from this software without
+  ~ specific prior written permission.
+  ~
+  ~ THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS" AND
+  ~ ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED
+  ~ WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+  ~ DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE LIABLE FOR
+  ~ ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+  ~ (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;
+  ~ LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+  ~ ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+  ~ (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+  ~ SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+  ~
+  -->
+
+<metaData xmlns="http://dhis2.org/schema/dxf/2.0" created="2015-07-15T18:12:46.008+0000">
+    <organisationUnits>
+        <organisationUnit code="mali" name="Mali" created="2015-06-16T17:32:13.536+0000"
+                          lastUpdated="2015-06-16T17:32:13.568+0000" shortName="Mali"
+                          uuid="00709356-e112-4f8a-979c-134e47ecc126" level="1" id="t4hEvAYpxOf">
+            <externalAccess>false</externalAccess>
+            <user name="admin admin" created="2015-05-25T16:31:05.859+0000" lastUpdated="2015-06-16T17:37:02.310+0000"
+                  id="dOgpPOjOt31">
+                <externalAccess>false</externalAccess>
+            </user>
+            <description></description>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kayes" name="Kayes" created="2015-06-16T17:33:25.359+0000"
+                          lastUpdated="2015-06-16T17:33:25.373+0000" shortName="Kayes"
+                          uuid="1e728010-8185-4eb9-8c4f-004fcf6e5bad" level="2" id="vbRwXr2Y9On">
+            <externalAccess>false</externalAccess>
+            <user name="admin admin" created="2015-05-25T16:31:05.859+0000" lastUpdated="2015-06-16T17:37:02.310+0000"
+                  id="dOgpPOjOt31">
+                <externalAccess>false</externalAccess>
+            </user>
+            <description></description>
+            <parent code="mali" name="Mali" created="2015-06-16T17:32:13.536+0000"
+                    lastUpdated="2015-06-16T17:32:13.568+0000" id="t4hEvAYpxOf">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="koulikoro" name="Koulikoro" created="2015-06-16T17:34:14.519+0000"
+                          lastUpdated="2015-06-16T17:34:14.546+0000" shortName="Koulikoro"
+                          uuid="2cb5f48a-412f-42e9-af85-8f271bfa631f" level="2" id="TaLPuLDxhhD">
+            <externalAccess>false</externalAccess>
+            <user name="admin admin" created="2015-05-25T16:31:05.859+0000" lastUpdated="2015-06-16T17:37:02.310+0000"
+                  id="dOgpPOjOt31">
+                <externalAccess>false</externalAccess>
+            </user>
+            <description></description>
+            <parent code="mali" name="Mali" created="2015-06-16T17:32:13.536+0000"
+                    lastUpdated="2015-06-16T17:32:13.568+0000" id="t4hEvAYpxOf">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="sikasso" name="Sikasso" created="2015-06-16T17:34:32.766+0000"
+                          lastUpdated="2015-06-16T17:34:32.782+0000" shortName="Sikasso"
+                          uuid="5272afac-8bdf-42e8-a3bb-76f8aed75746" level="2" id="t5hcM4JoQIx">
+            <externalAccess>false</externalAccess>
+            <user name="admin admin" created="2015-05-25T16:31:05.859+0000" lastUpdated="2015-06-16T17:37:02.310+0000"
+                  id="dOgpPOjOt31">
+                <externalAccess>false</externalAccess>
+            </user>
+            <description></description>
+            <parent code="mali" name="Mali" created="2015-06-16T17:32:13.536+0000"
+                    lastUpdated="2015-06-16T17:32:13.568+0000" id="t4hEvAYpxOf">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="segou" name="Segou" created="2015-06-16T17:34:49.643+0000"
+                          lastUpdated="2015-06-16T17:34:49.658+0000" shortName="Segou"
+                          uuid="ef482de5-5479-4387-b2de-5701f4fdbd66" level="2" id="ZRNy2VdlXvO">
+            <externalAccess>false</externalAccess>
+            <user name="admin admin" created="2015-05-25T16:31:05.859+0000" lastUpdated="2015-06-16T17:37:02.310+0000"
+                  id="dOgpPOjOt31">
+                <externalAccess>false</externalAccess>
+            </user>
+            <description></description>
+            <parent code="mali" name="Mali" created="2015-06-16T17:32:13.536+0000"
+                    lastUpdated="2015-06-16T17:32:13.568+0000" id="t4hEvAYpxOf">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="bamako" name="Bamako" created="2015-06-16T17:35:06.809+0000"
+                          lastUpdated="2015-06-16T17:35:06.819+0000" shortName="Bamako"
+                          uuid="559828a1-c411-444a-9d00-7986798004d5" level="2" id="dFiVpq6a9tr">
+            <externalAccess>false</externalAccess>
+            <user name="admin admin" created="2015-05-25T16:31:05.859+0000" lastUpdated="2015-06-16T17:37:02.310+0000"
+                  id="dOgpPOjOt31">
+                <externalAccess>false</externalAccess>
+            </user>
+            <description></description>
+            <parent code="mali" name="Mali" created="2015-06-16T17:32:13.536+0000"
+                    lastUpdated="2015-06-16T17:32:13.568+0000" id="t4hEvAYpxOf">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kidal" name="Kidal" created="2015-06-16T17:35:18.993+0000"
+                          lastUpdated="2015-06-16T17:35:19.010+0000" shortName="Kidal"
+                          uuid="e4e74899-c048-447e-ad61-4fd5eec57b54" level="2" id="dj6WtYcXNNG">
+            <externalAccess>false</externalAccess>
+            <user name="admin admin" created="2015-05-25T16:31:05.859+0000" lastUpdated="2015-06-16T17:37:02.310+0000"
+                  id="dOgpPOjOt31">
+                <externalAccess>false</externalAccess>
+            </user>
+            <description></description>
+            <parent code="mali" name="Mali" created="2015-06-16T17:32:13.536+0000"
+                    lastUpdated="2015-06-16T17:32:13.568+0000" id="t4hEvAYpxOf">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="gao" name="Gao" created="2015-06-16T17:35:34.102+0000"
+                          lastUpdated="2015-06-16T17:35:34.122+0000" shortName="Gao"
+                          uuid="ac6341e3-018a-4601-8f7c-06d4905870fc" level="2" id="qWB1PgKi5mU">
+            <externalAccess>false</externalAccess>
+            <user name="admin admin" created="2015-05-25T16:31:05.859+0000" lastUpdated="2015-06-16T17:37:02.310+0000"
+                  id="dOgpPOjOt31">
+                <externalAccess>false</externalAccess>
+            </user>
+            <description></description>
+            <parent code="mali" name="Mali" created="2015-06-16T17:32:13.536+0000"
+                    lastUpdated="2015-06-16T17:32:13.568+0000" id="t4hEvAYpxOf">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kayes_cercle" name="Kayes_cercle" created="2015-07-15T18:05:58.057+0000"
+                          lastUpdated="2015-07-15T18:05:59.347+0000" shortName="Kayes_cercle" level="3"
+                          id="zYOmxeq5yQC">
+            <externalAccess>false</externalAccess>
+            <parent code="kayes" name="Kayes" created="2015-06-16T17:33:25.359+0000"
+                    lastUpdated="2015-06-16T17:33:25.373+0000" id="vbRwXr2Y9On">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="mopti" name="Mopti" created="2015-06-16T17:36:11.414+0000"
+                          lastUpdated="2015-06-16T17:36:11.426+0000" shortName="Mopti"
+                          uuid="c2571320-f0ab-4105-826e-53378d82faab" level="2" id="ZGsarrbcv9M">
+            <externalAccess>false</externalAccess>
+            <user name="admin admin" created="2015-05-25T16:31:05.859+0000" lastUpdated="2015-06-16T17:37:02.310+0000"
+                  id="dOgpPOjOt31">
+                <externalAccess>false</externalAccess>
+            </user>
+            <description></description>
+            <parent code="mali" name="Mali" created="2015-06-16T17:32:13.536+0000"
+                    lastUpdated="2015-06-16T17:32:13.568+0000" id="t4hEvAYpxOf">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="tombouctou" name="Tombouctou" created="2015-06-16T17:35:55.079+0000"
+                          lastUpdated="2015-07-14T20:50:09.712+0000" shortName="Tombouctou"
+                          uuid="6fe55cb6-2f27-4178-88f2-5e6815eca52d" level="2" id="AjyRYxdc8pb">
+            <externalAccess>false</externalAccess>
+            <user name="admin admin" created="2015-05-25T16:31:05.859+0000" lastUpdated="2015-06-16T17:37:02.310+0000"
+                  id="dOgpPOjOt31">
+                <externalAccess>false</externalAccess>
+            </user>
+            <parent code="mali" name="Mali" created="2015-06-16T17:32:13.536+0000"
+                    lastUpdated="2015-06-16T17:32:13.568+0000" id="t4hEvAYpxOf">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="diema_cercle" name="Diema_cercle" created="2015-07-15T18:05:58.059+0000"
+                          lastUpdated="2015-07-15T18:05:59.350+0000" shortName="Diema_cercle" level="3"
+                          id="lrNtoUgwol4">
+            <externalAccess>false</externalAccess>
+            <parent code="kayes" name="Kayes" created="2015-06-16T17:33:25.359+0000"
+                    lastUpdated="2015-06-16T17:33:25.373+0000" id="vbRwXr2Y9On">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="yelimane_cercle" name="Yelimane_cercle" created="2015-07-15T18:05:58.060+0000"
+                          lastUpdated="2015-07-15T18:05:59.366+0000" shortName="Yelimane_cercle" level="3"
+                          id="o9cZQn0JTsB">
+            <externalAccess>false</externalAccess>
+            <parent code="kayes" name="Kayes" created="2015-06-16T17:33:25.359+0000"
+                    lastUpdated="2015-06-16T17:33:25.373+0000" id="vbRwXr2Y9On">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="diolila_cercle" name="Diolila_cercle" created="2015-07-15T18:05:58.061+0000"
+                          lastUpdated="2015-07-15T18:05:59.371+0000" shortName="Diolila_cercle" level="3"
+                          id="dTF0h7jL5bg">
+            <externalAccess>false</externalAccess>
+            <parent code="koulikoro" name="Koulikoro" created="2015-06-16T17:34:14.519+0000"
+                    lastUpdated="2015-06-16T17:34:14.546+0000" id="TaLPuLDxhhD">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kolokani_cercle" name="Kolokani_cercle" created="2015-07-15T18:05:58.062+0000"
+                          lastUpdated="2015-07-15T18:05:59.377+0000" shortName="Kolokani_cercle" level="3"
+                          id="EcwHnT2fg0j">
+            <externalAccess>false</externalAccess>
+            <parent code="koulikoro" name="Koulikoro" created="2015-06-16T17:34:14.519+0000"
+                    lastUpdated="2015-06-16T17:34:14.546+0000" id="TaLPuLDxhhD">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="nara_cercle" name="Nara_cercle" created="2015-07-15T18:05:58.062+0000"
+                          lastUpdated="2015-07-15T18:05:59.379+0000" shortName="Nara_cercle" level="3" id="oxojxDa8LFv">
+            <externalAccess>false</externalAccess>
+            <parent code="koulikoro" name="Koulikoro" created="2015-06-16T17:34:14.519+0000"
+                    lastUpdated="2015-06-16T17:34:14.546+0000" id="TaLPuLDxhhD">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kadiolo_cercle" name="Kadiolo_cercle" created="2015-07-15T18:05:58.062+0000"
+                          lastUpdated="2015-07-15T18:05:59.385+0000" shortName="Kadiolo_cercle" level="3"
+                          id="sYbMQ4Nm4Ab">
+            <externalAccess>false</externalAccess>
+            <parent code="sikasso" name="Sikasso" created="2015-06-16T17:34:32.766+0000"
+                    lastUpdated="2015-06-16T17:34:32.782+0000" id="t5hcM4JoQIx">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="selingue_cercle" name="Selingue_cercle" created="2015-07-15T18:05:58.064+0000"
+                          lastUpdated="2015-07-15T18:05:59.399+0000" shortName="Selingue_cercle" level="3"
+                          id="r5awbseJmUa">
+            <externalAccess>false</externalAccess>
+            <parent code="sikasso" name="Sikasso" created="2015-06-16T17:34:32.766+0000"
+                    lastUpdated="2015-06-16T17:34:32.782+0000" id="t5hcM4JoQIx">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="macina_cercle" name="Macina_cercle" created="2015-07-15T18:05:58.065+0000"
+                          lastUpdated="2015-07-15T18:05:59.409+0000" shortName="Macina_cercle" level="3"
+                          id="wXRCY8Z953S">
+            <externalAccess>false</externalAccess>
+            <parent code="segou" name="Segou" created="2015-06-16T17:34:49.643+0000"
+                    lastUpdated="2015-06-16T17:34:49.658+0000" id="ZRNy2VdlXvO">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="san_cercle" name="San_cercle" created="2015-07-15T18:05:58.065+0000"
+                          lastUpdated="2015-07-15T18:05:59.417+0000" shortName="San_cercle" level="3" id="PU4mkkVlcsJ">
+            <externalAccess>false</externalAccess>
+            <parent code="segou" name="Segou" created="2015-06-16T17:34:49.643+0000"
+                    lastUpdated="2015-06-16T17:34:49.658+0000" id="ZRNy2VdlXvO">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="tominian_cercle" name="Tominian_cercle" created="2015-07-15T18:05:58.065+0000"
+                          lastUpdated="2015-07-15T18:05:59.418+0000" shortName="Tominian_cercle" level="3"
+                          id="Ka2qWzKsNiZ">
+            <externalAccess>false</externalAccess>
+            <parent code="segou" name="Segou" created="2015-06-16T17:34:49.643+0000"
+                    lastUpdated="2015-06-16T17:34:49.658+0000" id="ZRNy2VdlXvO">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="mopti_cercle" name="Mopti_cercle" created="2015-07-15T18:05:58.066+0000"
+                          lastUpdated="2015-07-15T18:05:59.425+0000" shortName="Mopti_cercle" level="3"
+                          id="WEXbv2d2EXo">
+            <externalAccess>false</externalAccess>
+            <parent code="mopti" name="Mopti" created="2015-06-16T17:36:11.414+0000"
+                    lastUpdated="2015-06-16T17:36:11.426+0000" id="ZGsarrbcv9M">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="bankas_cercle" name="Bankas_cercle" created="2015-07-15T18:05:58.066+0000"
+                          lastUpdated="2015-07-15T18:05:59.428+0000" shortName="Bankas_cercle" level="3"
+                          id="EKknzBjWSvK">
+            <externalAccess>false</externalAccess>
+            <parent code="mopti" name="Mopti" created="2015-06-16T17:36:11.414+0000"
+                    lastUpdated="2015-06-16T17:36:11.426+0000" id="ZGsarrbcv9M">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="youwarou_cercle" name="Youwarou_cercle" created="2015-07-15T18:05:58.067+0000"
+                          lastUpdated="2015-07-15T18:05:59.440+0000" shortName="Youwarou_cercle" level="3"
+                          id="puEzprPkw6Q">
+            <externalAccess>false</externalAccess>
+            <parent code="mopti" name="Mopti" created="2015-06-16T17:36:11.414+0000"
+                    lastUpdated="2015-06-16T17:36:11.426+0000" id="ZGsarrbcv9M">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="tombouctou_cercle" name="Tombouctou_cercle" created="2015-07-15T18:05:58.068+0000"
+                          lastUpdated="2015-07-15T18:05:59.441+0000" shortName="Tombouctou_cercle" level="3"
+                          id="d7lxlpWcfww">
+            <externalAccess>false</externalAccess>
+            <parent code="tombouctou" name="Tombouctou" created="2015-06-16T17:35:55.079+0000"
+                    lastUpdated="2015-07-14T20:50:09.712+0000" id="AjyRYxdc8pb">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="bafoulabe_cercle" name="Bafoulabe_cercle" created="2015-07-15T18:05:58.059+0000"
+                          lastUpdated="2015-07-15T18:05:59.348+0000" shortName="Bafoulabe_cercle" level="3"
+                          id="MOaGMVaSzrF">
+            <externalAccess>false</externalAccess>
+            <parent code="kayes" name="Kayes" created="2015-06-16T17:33:25.359+0000"
+                    lastUpdated="2015-06-16T17:33:25.373+0000" id="vbRwXr2Y9On">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kinieba_cercle" name="Kinieba_cercle" created="2015-07-15T18:05:58.060+0000"
+                          lastUpdated="2015-07-15T18:05:59.354+0000" shortName="Kinieba_cercle" level="3"
+                          id="OWIAn2d1km3">
+            <externalAccess>false</externalAccess>
+            <parent code="kayes" name="Kayes" created="2015-06-16T17:33:25.359+0000"
+                    lastUpdated="2015-06-16T17:33:25.373+0000" id="vbRwXr2Y9On">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kita_cercle" name="Kita_cercle" created="2015-07-15T18:05:58.060+0000"
+                          lastUpdated="2015-07-15T18:05:59.357+0000" shortName="Kita_cercle" level="3" id="mJh5r6YcNRw">
+            <externalAccess>false</externalAccess>
+            <parent code="kayes" name="Kayes" created="2015-06-16T17:33:25.359+0000"
+                    lastUpdated="2015-06-16T17:33:25.373+0000" id="vbRwXr2Y9On">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="nioro_cercle" name="Nioro_cercle" created="2015-07-15T18:05:58.060+0000"
+                          lastUpdated="2015-07-15T18:05:59.365+0000" shortName="Nioro_cercle" level="3"
+                          id="M6QhL87vaTP">
+            <externalAccess>false</externalAccess>
+            <parent code="kayes" name="Kayes" created="2015-06-16T17:33:25.359+0000"
+                    lastUpdated="2015-06-16T17:33:25.373+0000" id="vbRwXr2Y9On">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="koulikoro_cercle" name="Koulikoro_cercle" created="2015-07-15T18:05:58.061+0000"
+                          lastUpdated="2015-07-15T18:05:59.368+0000" shortName="Koulikoro_cercle" level="3"
+                          id="cHGBXuLZ0SD">
+            <externalAccess>false</externalAccess>
+            <parent code="koulikoro" name="Koulikoro" created="2015-06-16T17:34:14.519+0000"
+                    lastUpdated="2015-06-16T17:34:14.546+0000" id="TaLPuLDxhhD">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="banamba_cercle" name="Banamba_cercle" created="2015-07-15T18:05:58.061+0000"
+                          lastUpdated="2015-07-15T18:05:59.370+0000" shortName="Banamba_cercle" level="3"
+                          id="CfNZ03eyQG3">
+            <externalAccess>false</externalAccess>
+            <parent code="koulikoro" name="Koulikoro" created="2015-06-16T17:34:14.519+0000"
+                    lastUpdated="2015-06-16T17:34:14.546+0000" id="TaLPuLDxhhD">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kangaba_cercle" name="Kangaba_cercle" created="2015-07-15T18:05:58.061+0000"
+                          lastUpdated="2015-07-15T18:05:59.373+0000" shortName="Kangaba_cercle" level="3"
+                          id="M5eu3MloO9F">
+            <externalAccess>false</externalAccess>
+            <parent code="koulikoro" name="Koulikoro" created="2015-06-16T17:34:14.519+0000"
+                    lastUpdated="2015-06-16T17:34:14.546+0000" id="TaLPuLDxhhD">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kati_cercle" name="Kati_cercle" created="2015-07-15T18:05:58.061+0000"
+                          lastUpdated="2015-07-15T18:05:59.375+0000" shortName="Kati_cercle" level="3" id="qltE5jVDd72">
+            <externalAccess>false</externalAccess>
+            <parent code="koulikoro" name="Koulikoro" created="2015-06-16T17:34:14.519+0000"
+                    lastUpdated="2015-06-16T17:34:14.546+0000" id="TaLPuLDxhhD">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="sikasso_cercle" name="Sikasso_cercle" created="2015-07-15T18:05:58.062+0000"
+                          lastUpdated="2015-07-15T18:05:59.383+0000" shortName="Sikasso_cercle" level="3"
+                          id="amKxzcJoPlt">
+            <externalAccess>false</externalAccess>
+            <parent code="sikasso" name="Sikasso" created="2015-06-16T17:34:32.766+0000"
+                    lastUpdated="2015-06-16T17:34:32.782+0000" id="t5hcM4JoQIx">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="bougouni_cercle" name="Bougouni_cercle" created="2015-07-15T18:05:58.062+0000"
+                          lastUpdated="2015-07-15T18:05:59.384+0000" shortName="Bougouni_cercle" level="3"
+                          id="HwF1ECkYJ5K">
+            <externalAccess>false</externalAccess>
+            <parent code="sikasso" name="Sikasso" created="2015-06-16T17:34:32.766+0000"
+                    lastUpdated="2015-06-16T17:34:32.782+0000" id="t5hcM4JoQIx">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kolondieba_cercle" name="Kolondieba_cercle" created="2015-07-15T18:05:58.063+0000"
+                          lastUpdated="2015-07-15T18:05:59.387+0000" shortName="Kolondieba_cercle" level="3"
+                          id="DrF5XNOAkNW">
+            <externalAccess>false</externalAccess>
+            <parent code="sikasso" name="Sikasso" created="2015-06-16T17:34:32.766+0000"
+                    lastUpdated="2015-06-16T17:34:32.782+0000" id="t5hcM4JoQIx">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="koutiala_cercle" name="Koutiala_cercle" created="2015-07-15T18:05:58.063+0000"
+                          lastUpdated="2015-07-15T18:05:59.388+0000" shortName="Koutiala_cercle" level="3"
+                          id="pdev3cSf3ui">
+            <externalAccess>false</externalAccess>
+            <parent code="sikasso" name="Sikasso" created="2015-06-16T17:34:32.766+0000"
+                    lastUpdated="2015-06-16T17:34:32.782+0000" id="t5hcM4JoQIx">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="goundam_cercle" name="Goundam_cercle" created="2015-07-15T18:05:58.068+0000"
+                          lastUpdated="2015-07-15T18:05:59.450+0000" shortName="Goundam_cercle" level="3"
+                          id="tPW9S7M1kDT">
+            <externalAccess>false</externalAccess>
+            <parent code="tombouctou" name="Tombouctou" created="2015-06-16T17:35:55.079+0000"
+                    lastUpdated="2015-07-14T20:50:09.712+0000" id="AjyRYxdc8pb">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="gourma-rharous_cercle" name="Gourma-rharous_cercle"
+                          created="2015-07-15T18:05:58.068+0000" lastUpdated="2015-07-15T18:05:59.451+0000"
+                          shortName="Gourma-rharous_cercle" level="3" id="fl496W2czFV">
+            <externalAccess>false</externalAccess>
+            <parent code="tombouctou" name="Tombouctou" created="2015-06-16T17:35:55.079+0000"
+                    lastUpdated="2015-07-14T20:50:09.712+0000" id="AjyRYxdc8pb">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="niafunke_cercle" name="Niafunke_cercle" created="2015-07-15T18:05:58.068+0000"
+                          lastUpdated="2015-07-15T18:05:59.452+0000" shortName="Niafunke_cercle" level="3"
+                          id="HeQFnTCSXFI">
+            <externalAccess>false</externalAccess>
+            <parent code="tombouctou" name="Tombouctou" created="2015-06-16T17:35:55.079+0000"
+                    lastUpdated="2015-07-14T20:50:09.712+0000" id="AjyRYxdc8pb">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="gao_cercle" name="Gao_cercle" created="2015-07-15T18:05:58.069+0000"
+                          lastUpdated="2015-07-15T18:05:59.453+0000" shortName="Gao_cercle" level="3" id="ZyoHHKfdCj9">
+            <externalAccess>false</externalAccess>
+            <parent code="gao" name="Gao" created="2015-06-16T17:35:34.102+0000"
+                    lastUpdated="2015-06-16T17:35:34.122+0000" id="qWB1PgKi5mU">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="ansongo_cercle" name="Ansongo_cercle" created="2015-07-15T18:05:58.069+0000"
+                          lastUpdated="2015-07-15T18:05:59.454+0000" shortName="Ansongo_cercle" level="3"
+                          id="UWKx0YA1Z3b">
+            <externalAccess>false</externalAccess>
+            <parent code="gao" name="Gao" created="2015-06-16T17:35:34.102+0000"
+                    lastUpdated="2015-06-16T17:35:34.122+0000" id="qWB1PgKi5mU">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="bourem_cercle" name="Bourem_cercle" created="2015-07-15T18:05:58.069+0000"
+                          lastUpdated="2015-07-15T18:05:59.455+0000" shortName="Bourem_cercle" level="3"
+                          id="rzgB92s4klR">
+            <externalAccess>false</externalAccess>
+            <parent code="gao" name="Gao" created="2015-06-16T17:35:34.102+0000"
+                    lastUpdated="2015-06-16T17:35:34.122+0000" id="qWB1PgKi5mU">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="menaka_cercle" name="Menaka_cercle" created="2015-07-15T18:05:58.069+0000"
+                          lastUpdated="2015-07-15T18:05:59.456+0000" shortName="Menaka_cercle" level="3"
+                          id="So5z2E7COA3">
+            <externalAccess>false</externalAccess>
+            <parent code="gao" name="Gao" created="2015-06-16T17:35:34.102+0000"
+                    lastUpdated="2015-06-16T17:35:34.122+0000" id="qWB1PgKi5mU">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kidal_cercle" name="Kidal_cercle" created="2015-07-15T18:05:58.070+0000"
+                          lastUpdated="2015-07-15T18:05:59.457+0000" shortName="Kidal_cercle" level="3"
+                          id="KsLIFqhgL0p">
+            <externalAccess>false</externalAccess>
+            <parent code="kidal" name="Kidal" created="2015-06-16T17:35:18.993+0000"
+                    lastUpdated="2015-06-16T17:35:19.010+0000" id="dj6WtYcXNNG">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="abeibara_cercle" name="Abeibara_cercle" created="2015-07-15T18:05:58.070+0000"
+                          lastUpdated="2015-07-15T18:05:59.458+0000" shortName="Abeibara_cercle" level="3"
+                          id="wrp0jjyIHGk">
+            <externalAccess>false</externalAccess>
+            <parent code="kidal" name="Kidal" created="2015-06-16T17:35:18.993+0000"
+                    lastUpdated="2015-06-16T17:35:19.010+0000" id="dj6WtYcXNNG">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="tessalit_cercle" name="Tessalit_cercle" created="2015-07-15T18:05:58.070+0000"
+                          lastUpdated="2015-07-15T18:05:59.459+0000" shortName="Tessalit_cercle" level="3"
+                          id="lwM9mE2SzsA">
+            <externalAccess>false</externalAccess>
+            <parent code="kidal" name="Kidal" created="2015-06-16T17:35:18.993+0000"
+                    lastUpdated="2015-06-16T17:35:19.010+0000" id="dj6WtYcXNNG">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="tin-essako_cercle" name="Tin-essako_cercle" created="2015-07-15T18:05:58.070+0000"
+                          lastUpdated="2015-07-15T18:05:59.460+0000" shortName="Tin-essako_cercle" level="3"
+                          id="PsjEc2Hsk3o">
+            <externalAccess>false</externalAccess>
+            <parent code="kidal" name="Kidal" created="2015-06-16T17:35:18.993+0000"
+                    lastUpdated="2015-06-16T17:35:19.010+0000" id="dj6WtYcXNNG">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="commune2" name="Commune2" created="2015-07-15T18:05:58.071+0000"
+                          lastUpdated="2015-07-15T18:05:59.463+0000" shortName="Commune2" level="3" id="X6qHuy7EJsv">
+            <externalAccess>false</externalAccess>
+            <parent code="bamako" name="Bamako" created="2015-06-16T17:35:06.809+0000"
+                    lastUpdated="2015-06-16T17:35:06.819+0000" id="dFiVpq6a9tr">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="commune4" name="Commune4" created="2015-07-15T18:05:58.071+0000"
+                          lastUpdated="2015-07-15T18:05:59.466+0000" shortName="Commune4" level="3" id="ia6rqdsOYmU">
+            <externalAccess>false</externalAccess>
+            <parent code="bamako" name="Bamako" created="2015-06-16T17:35:06.809+0000"
+                    lastUpdated="2015-06-16T17:35:06.819+0000" id="dFiVpq6a9tr">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="commune6" name="Commune6" created="2015-07-15T18:05:58.071+0000"
+                          lastUpdated="2015-07-15T18:05:59.469+0000" shortName="Commune6" level="3" id="XtqoIyA8wIF">
+            <externalAccess>false</externalAccess>
+            <parent code="bamako" name="Bamako" created="2015-06-16T17:35:06.809+0000"
+                    lastUpdated="2015-06-16T17:35:06.819+0000" id="dFiVpq6a9tr">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="yanfolila_cercle" name="Yanfolila_cercle" created="2015-07-15T18:05:58.063+0000"
+                          lastUpdated="2015-07-15T18:05:59.391+0000" shortName="Yanfolila_cercle" level="3"
+                          id="zzbquwjZZyo">
+            <externalAccess>false</externalAccess>
+            <parent code="sikasso" name="Sikasso" created="2015-06-16T17:34:32.766+0000"
+                    lastUpdated="2015-06-16T17:34:32.782+0000" id="t5hcM4JoQIx">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="yorosso_cercle" name="Yorosso_cercle" created="2015-07-15T18:05:58.063+0000"
+                          lastUpdated="2015-07-15T18:05:59.398+0000" shortName="Yorosso_cercle" level="3"
+                          id="nYouCFEz15w">
+            <externalAccess>false</externalAccess>
+            <parent code="sikasso" name="Sikasso" created="2015-06-16T17:34:32.766+0000"
+                    lastUpdated="2015-06-16T17:34:32.782+0000" id="t5hcM4JoQIx">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="segou_cercle" name="Segou_cercle" created="2015-07-15T18:05:58.064+0000"
+                          lastUpdated="2015-07-15T18:05:59.401+0000" shortName="Segou_cercle" level="3"
+                          id="lBNukfYBfGX">
+            <externalAccess>false</externalAccess>
+            <parent code="segou" name="Segou" created="2015-06-16T17:34:49.643+0000"
+                    lastUpdated="2015-06-16T17:34:49.658+0000" id="ZRNy2VdlXvO">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="baraoueli_cercle" name="Baraoueli_cercle" created="2015-07-15T18:05:58.064+0000"
+                          lastUpdated="2015-07-15T18:05:59.406+0000" shortName="Baraoueli_cercle" level="3"
+                          id="I2Wkw479PbJ">
+            <externalAccess>false</externalAccess>
+            <parent code="segou" name="Segou" created="2015-06-16T17:34:49.643+0000"
+                    lastUpdated="2015-06-16T17:34:49.658+0000" id="ZRNy2VdlXvO">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="bla_cercle" name="Bla_cercle" created="2015-07-15T18:05:58.064+0000"
+                          lastUpdated="2015-07-15T18:05:59.408+0000" shortName="Bla_cercle" level="3" id="fL60AdOuyox">
+            <externalAccess>false</externalAccess>
+            <parent code="segou" name="Segou" created="2015-06-16T17:34:49.643+0000"
+                    lastUpdated="2015-06-16T17:34:49.658+0000" id="ZRNy2VdlXvO">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="niono_cercle" name="Niono_cercle" created="2015-07-15T18:05:58.065+0000"
+                          lastUpdated="2015-07-15T18:05:59.415+0000" shortName="Niono_cercle" level="3"
+                          id="e8Q9T8hdNyp">
+            <externalAccess>false</externalAccess>
+            <parent code="segou" name="Segou" created="2015-06-16T17:34:49.643+0000"
+                    lastUpdated="2015-06-16T17:34:49.658+0000" id="ZRNy2VdlXvO">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="markala_cercle" name="Markala_cercle" created="2015-07-15T18:05:58.066+0000"
+                          lastUpdated="2015-07-15T18:05:59.424+0000" shortName="Markala_cercle" level="3"
+                          id="DW3bBWGhvC0">
+            <externalAccess>false</externalAccess>
+            <parent code="segou" name="Segou" created="2015-06-16T17:34:49.643+0000"
+                    lastUpdated="2015-06-16T17:34:49.658+0000" id="ZRNy2VdlXvO">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="bandiagara_cercle" name="Bandiagara_cercle" created="2015-07-15T18:05:58.066+0000"
+                          lastUpdated="2015-07-15T18:05:59.427+0000" shortName="Bandiagara_cercle" level="3"
+                          id="wwrel3dP1e6">
+            <externalAccess>false</externalAccess>
+            <parent code="mopti" name="Mopti" created="2015-06-16T17:36:11.414+0000"
+                    lastUpdated="2015-06-16T17:36:11.426+0000" id="ZGsarrbcv9M">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="djenne_cercle" name="Djenne_cercle" created="2015-07-15T18:05:58.066+0000"
+                          lastUpdated="2015-07-15T18:05:59.432+0000" shortName="Djenne_cercle" level="3"
+                          id="kPYiXNPoaXp">
+            <externalAccess>false</externalAccess>
+            <parent code="mopti" name="Mopti" created="2015-06-16T17:36:11.414+0000"
+                    lastUpdated="2015-06-16T17:36:11.426+0000" id="ZGsarrbcv9M">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="douentza_cercle" name="Douentza_cercle" created="2015-07-15T18:05:58.067+0000"
+                          lastUpdated="2015-07-15T18:05:59.436+0000" shortName="Douentza_cercle" level="3"
+                          id="c6NT87pkeGd">
+            <externalAccess>false</externalAccess>
+            <parent code="mopti" name="Mopti" created="2015-06-16T17:36:11.414+0000"
+                    lastUpdated="2015-06-16T17:36:11.426+0000" id="ZGsarrbcv9M">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="koro_cercle" name="Koro_cercle" created="2015-07-15T18:05:58.067+0000"
+                          lastUpdated="2015-07-15T18:05:59.438+0000" shortName="Koro_cercle" level="3" id="R7h3ybsQSXE">
+            <externalAccess>false</externalAccess>
+            <parent code="mopti" name="Mopti" created="2015-06-16T17:36:11.414+0000"
+                    lastUpdated="2015-06-16T17:36:11.426+0000" id="ZGsarrbcv9M">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="tenenkou_cercle" name="Tenenkou_cercle" created="2015-07-15T18:05:58.067+0000"
+                          lastUpdated="2015-07-15T18:05:59.439+0000" shortName="Tenenkou_cercle" level="3"
+                          id="zFrKC3LAyMQ">
+            <externalAccess>false</externalAccess>
+            <parent code="mopti" name="Mopti" created="2015-06-16T17:36:11.414+0000"
+                    lastUpdated="2015-06-16T17:36:11.426+0000" id="ZGsarrbcv9M">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="dire_cercle" name="Dire_cercle" created="2015-07-15T18:05:58.068+0000"
+                          lastUpdated="2015-07-15T18:05:59.448+0000" shortName="Dire_cercle" level="3" id="J6POBp8koNh">
+            <externalAccess>false</externalAccess>
+            <parent code="tombouctou" name="Tombouctou" created="2015-06-16T17:35:55.079+0000"
+                    lastUpdated="2015-07-14T20:50:09.712+0000" id="AjyRYxdc8pb">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="commune1" name="Commune1" created="2015-07-15T18:05:58.070+0000"
+                          lastUpdated="2015-07-15T18:05:59.462+0000" shortName="Commune1" level="3" id="uiOhG6l8S4N">
+            <externalAccess>false</externalAccess>
+            <parent code="bamako" name="Bamako" created="2015-06-16T17:35:06.809+0000"
+                    lastUpdated="2015-06-16T17:35:06.819+0000" id="dFiVpq6a9tr">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="commune3" name="Commune3" created="2015-07-15T18:05:58.071+0000"
+                          lastUpdated="2015-07-15T18:05:59.465+0000" shortName="Commune3" level="3" id="hBUBsOUmZfD">
+            <externalAccess>false</externalAccess>
+            <parent code="bamako" name="Bamako" created="2015-06-16T17:35:06.809+0000"
+                    lastUpdated="2015-06-16T17:35:06.819+0000" id="dFiVpq6a9tr">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="commune5" name="Commune5" created="2015-07-15T18:05:58.071+0000"
+                          lastUpdated="2015-07-15T18:05:59.468+0000" shortName="Commune5" level="3" id="WAHAzjlH065">
+            <externalAccess>false</externalAccess>
+            <parent code="bamako" name="Bamako" created="2015-06-16T17:35:06.809+0000"
+                    lastUpdated="2015-06-16T17:35:06.819+0000" id="dFiVpq6a9tr">
+                <externalAccess>false</externalAccess>
+                <user name="admin admin" created="2015-05-25T16:31:05.859+0000"
+                      lastUpdated="2015-06-16T17:37:02.310+0000" id="dOgpPOjOt31">
+                    <externalAccess>false</externalAccess>
+                </user>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kinieba_district" name="Kinieba_district" created="2015-07-15T18:06:42.036+0000"
+                          lastUpdated="2015-07-15T18:06:43.205+0000" shortName="Kinieba_district" level="4"
+                          id="utiKGMQ36sj">
+            <externalAccess>false</externalAccess>
+            <parent code="kinieba_cercle" name="Kinieba_cercle" created="2015-07-15T18:05:58.060+0000"
+                    lastUpdated="2015-07-15T18:05:59.354+0000" id="OWIAn2d1km3">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kita_district" name="Kita_district" created="2015-07-15T18:06:42.036+0000"
+                          lastUpdated="2015-07-15T18:06:43.206+0000" shortName="Kita_district" level="4"
+                          id="iu0A16PIEFc">
+            <externalAccess>false</externalAccess>
+            <parent code="kita_cercle" name="Kita_cercle" created="2015-07-15T18:05:58.060+0000"
+                    lastUpdated="2015-07-15T18:05:59.357+0000" id="mJh5r6YcNRw">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="sagabari_district" name="Sagabari_district" created="2015-07-15T18:06:42.036+0000"
+                          lastUpdated="2015-07-15T18:06:43.207+0000" shortName="Sagabari_district" level="4"
+                          id="iQ3cXqAgozi">
+            <externalAccess>false</externalAccess>
+            <parent code="kita_cercle" name="Kita_cercle" created="2015-07-15T18:05:58.060+0000"
+                    lastUpdated="2015-07-15T18:05:59.357+0000" id="mJh5r6YcNRw">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="sefeto_district" name="Sefeto_district" created="2015-07-15T18:06:42.036+0000"
+                          lastUpdated="2015-07-15T18:06:43.208+0000" shortName="Sefeto_district" level="4"
+                          id="d0F4r0b8QZ0">
+            <externalAccess>false</externalAccess>
+            <parent code="kita_cercle" name="Kita_cercle" created="2015-07-15T18:05:58.060+0000"
+                    lastUpdated="2015-07-15T18:05:59.357+0000" id="mJh5r6YcNRw">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="nioro_district" name="Nioro_district" created="2015-07-15T18:06:42.037+0000"
+                          lastUpdated="2015-07-15T18:06:43.209+0000" shortName="Nioro_district" level="4"
+                          id="Ak3QUKCmV2H">
+            <externalAccess>false</externalAccess>
+            <parent code="nioro_cercle" name="Nioro_cercle" created="2015-07-15T18:05:58.060+0000"
+                    lastUpdated="2015-07-15T18:05:59.365+0000" id="M6QhL87vaTP">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="yelimane_district" name="Yelimane_district" created="2015-07-15T18:06:42.037+0000"
+                          lastUpdated="2015-07-15T18:06:43.210+0000" shortName="Yelimane_district" level="4"
+                          id="q4yKyDdkEm0">
+            <externalAccess>false</externalAccess>
+            <parent code="yelimane_cercle" name="Yelimane_cercle" created="2015-07-15T18:05:58.060+0000"
+                    lastUpdated="2015-07-15T18:05:59.366+0000" id="o9cZQn0JTsB">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="banamba_district" name="Banamba_district" created="2015-07-15T18:06:42.037+0000"
+                          lastUpdated="2015-07-15T18:06:43.213+0000" shortName="Banamba_district" level="4"
+                          id="nwFMnSQdHyu">
+            <externalAccess>false</externalAccess>
+            <parent code="banamba_cercle" name="Banamba_cercle" created="2015-07-15T18:05:58.061+0000"
+                    lastUpdated="2015-07-15T18:05:59.370+0000" id="CfNZ03eyQG3">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kolokani_district" name="Kolokani_district" created="2015-07-15T18:06:42.038+0000"
+                          lastUpdated="2015-07-15T18:06:43.221+0000" shortName="Kolokani_district" level="4"
+                          id="lFtxXoinmNm">
+            <externalAccess>false</externalAccess>
+            <parent code="kolokani_cercle" name="Kolokani_cercle" created="2015-07-15T18:05:58.062+0000"
+                    lastUpdated="2015-07-15T18:05:59.377+0000" id="EcwHnT2fg0j">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="nara_district" name="Nara_district" created="2015-07-15T18:06:42.038+0000"
+                          lastUpdated="2015-07-15T18:06:43.222+0000" shortName="Nara_district" level="4"
+                          id="xeMIPbZxUKT">
+            <externalAccess>false</externalAccess>
+            <parent code="nara_cercle" name="Nara_cercle" created="2015-07-15T18:05:58.062+0000"
+                    lastUpdated="2015-07-15T18:05:59.379+0000" id="oxojxDa8LFv">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="fana_district" name="Fana_district" created="2015-07-15T18:06:42.039+0000"
+                          lastUpdated="2015-07-15T18:06:43.223+0000" shortName="Fana_district" level="4"
+                          id="zPfhavc8H9N">
+            <externalAccess>false</externalAccess>
+            <parent code="diolila_cercle" name="Diolila_cercle" created="2015-07-15T18:05:58.061+0000"
+                    lastUpdated="2015-07-15T18:05:59.371+0000" id="dTF0h7jL5bg">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="sikasso_district" name="Sikasso_district" created="2015-07-15T18:06:42.039+0000"
+                          lastUpdated="2015-07-15T18:06:43.229+0000" shortName="Sikasso_district" level="4"
+                          id="utdkOcjtf6G">
+            <externalAccess>false</externalAccess>
+            <parent code="sikasso_cercle" name="Sikasso_cercle" created="2015-07-15T18:05:58.062+0000"
+                    lastUpdated="2015-07-15T18:05:59.383+0000" id="amKxzcJoPlt">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="bougouni_district" name="Bougouni_district" created="2015-07-15T18:06:42.039+0000"
+                          lastUpdated="2015-07-15T18:06:43.230+0000" shortName="Bougouni_district" level="4"
+                          id="xKAQVdHPmnX">
+            <externalAccess>false</externalAccess>
+            <parent code="bougouni_cercle" name="Bougouni_cercle" created="2015-07-15T18:05:58.062+0000"
+                    lastUpdated="2015-07-15T18:05:59.384+0000" id="HwF1ECkYJ5K">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kadiolo_district" name="Kadiolo_district" created="2015-07-15T18:06:42.040+0000"
+                          lastUpdated="2015-07-15T18:06:43.230+0000" shortName="Kadiolo_district" level="4"
+                          id="OCyIO7bfZk5">
+            <externalAccess>false</externalAccess>
+            <parent code="kadiolo_cercle" name="Kadiolo_cercle" created="2015-07-15T18:05:58.062+0000"
+                    lastUpdated="2015-07-15T18:05:59.385+0000" id="sYbMQ4Nm4Ab">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kolondieba_district" name="Kolondieba_district" created="2015-07-15T18:06:42.040+0000"
+                          lastUpdated="2015-07-15T18:06:43.231+0000" shortName="Kolondieba_district" level="4"
+                          id="GLfIQVq203e">
+            <externalAccess>false</externalAccess>
+            <parent code="kolondieba_cercle" name="Kolondieba_cercle" created="2015-07-15T18:05:58.063+0000"
+                    lastUpdated="2015-07-15T18:05:59.387+0000" id="DrF5XNOAkNW">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="yanfolila_district" name="Yanfolila_district" created="2015-07-15T18:06:42.040+0000"
+                          lastUpdated="2015-07-15T18:06:43.232+0000" shortName="Yanfolila_district" level="4"
+                          id="DK87xgG6Sq9">
+            <externalAccess>false</externalAccess>
+            <parent code="yanfolila_cercle" name="Yanfolila_cercle" created="2015-07-15T18:05:58.063+0000"
+                    lastUpdated="2015-07-15T18:05:59.391+0000" id="zzbquwjZZyo">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="yorosso_district" name="Yorosso_district" created="2015-07-15T18:06:42.041+0000"
+                          lastUpdated="2015-07-15T18:06:43.233+0000" shortName="Yorosso_district" level="4"
+                          id="JKq3Kh84fqI">
+            <externalAccess>false</externalAccess>
+            <parent code="yorosso_cercle" name="Yorosso_cercle" created="2015-07-15T18:05:58.063+0000"
+                    lastUpdated="2015-07-15T18:05:59.398+0000" id="nYouCFEz15w">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="segou_district" name="Segou_district" created="2015-07-15T18:06:42.041+0000"
+                          lastUpdated="2015-07-15T18:06:43.240+0000" shortName="Segou_district" level="4"
+                          id="lELMALR6V3H">
+            <externalAccess>false</externalAccess>
+            <parent code="segou_cercle" name="Segou_cercle" created="2015-07-15T18:05:58.064+0000"
+                    lastUpdated="2015-07-15T18:05:59.401+0000" id="lBNukfYBfGX">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kayes_district" name="Kayes_district" created="2015-07-15T18:06:42.035+0000"
+                          lastUpdated="2015-07-15T18:06:43.203+0000" shortName="Kayes_district" level="4"
+                          id="WGFnOnsADrZ">
+            <externalAccess>false</externalAccess>
+            <parent code="kayes_cercle" name="Kayes_cercle" created="2015-07-15T18:05:58.057+0000"
+                    lastUpdated="2015-07-15T18:05:59.347+0000" id="zYOmxeq5yQC">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="bafoulabe_district" name="Bafoulabe_district" created="2015-07-15T18:06:42.035+0000"
+                          lastUpdated="2015-07-15T18:06:43.204+0000" shortName="Bafoulabe_district" level="4"
+                          id="GeZxMBpmeql">
+            <externalAccess>false</externalAccess>
+            <parent code="bafoulabe_cercle" name="Bafoulabe_cercle" created="2015-07-15T18:05:58.059+0000"
+                    lastUpdated="2015-07-15T18:05:59.348+0000" id="MOaGMVaSzrF">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="diema_district" name="Diema_district" created="2015-07-15T18:06:42.036+0000"
+                          lastUpdated="2015-07-15T18:06:43.205+0000" shortName="Diema_district" level="4"
+                          id="nJQmuF1WpPe">
+            <externalAccess>false</externalAccess>
+            <parent code="diema_cercle" name="Diema_cercle" created="2015-07-15T18:05:58.059+0000"
+                    lastUpdated="2015-07-15T18:05:59.350+0000" id="lrNtoUgwol4">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="macina_district" name="Macina_district" created="2015-07-15T18:06:42.042+0000"
+                          lastUpdated="2015-07-15T18:06:43.247+0000" shortName="Macina_district" level="4"
+                          id="ahSQ7dvDbwT">
+            <externalAccess>false</externalAccess>
+            <parent code="macina_cercle" name="Macina_cercle" created="2015-07-15T18:05:58.065+0000"
+                    lastUpdated="2015-07-15T18:05:59.409+0000" id="wXRCY8Z953S">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="san_district" name="San_district" created="2015-07-15T18:06:42.042+0000"
+                          lastUpdated="2015-07-15T18:06:43.250+0000" shortName="San_district" level="4"
+                          id="j3F895TdLda">
+            <externalAccess>false</externalAccess>
+            <parent code="san_cercle" name="San_cercle" created="2015-07-15T18:05:58.065+0000"
+                    lastUpdated="2015-07-15T18:05:59.417+0000" id="PU4mkkVlcsJ">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="markala_district" name="Markala_district" created="2015-07-15T18:06:42.043+0000"
+                          lastUpdated="2015-07-15T18:06:43.253+0000" shortName="Markala_district" level="4"
+                          id="hHyB5QIor3h">
+            <externalAccess>false</externalAccess>
+            <parent code="markala_cercle" name="Markala_cercle" created="2015-07-15T18:05:58.066+0000"
+                    lastUpdated="2015-07-15T18:05:59.424+0000" id="DW3bBWGhvC0">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="bandiagara_district" name="Bandiagara_district" created="2015-07-15T18:06:42.043+0000"
+                          lastUpdated="2015-07-15T18:06:43.259+0000" shortName="Bandiagara_district" level="4"
+                          id="b35ZFUsDW2j">
+            <externalAccess>false</externalAccess>
+            <parent code="bandiagara_cercle" name="Bandiagara_cercle" created="2015-07-15T18:05:58.066+0000"
+                    lastUpdated="2015-07-15T18:05:59.427+0000" id="wwrel3dP1e6">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="djenne_district" name="Djenne_district" created="2015-07-15T18:06:42.044+0000"
+                          lastUpdated="2015-07-15T18:06:43.262+0000" shortName="Djenne_district" level="4"
+                          id="tdUnvyTdUaE">
+            <externalAccess>false</externalAccess>
+            <parent code="djenne_cercle" name="Djenne_cercle" created="2015-07-15T18:05:58.066+0000"
+                    lastUpdated="2015-07-15T18:05:59.432+0000" id="kPYiXNPoaXp">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="douentza_district" name="Douentza_district" created="2015-07-15T18:06:42.044+0000"
+                          lastUpdated="2015-07-15T18:06:43.263+0000" shortName="Douentza_district" level="4"
+                          id="LepQluqc5zg">
+            <externalAccess>false</externalAccess>
+            <parent code="douentza_cercle" name="Douentza_cercle" created="2015-07-15T18:05:58.067+0000"
+                    lastUpdated="2015-07-15T18:05:59.436+0000" id="c6NT87pkeGd">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="koro_district" name="Koro_district" created="2015-07-15T18:06:42.044+0000"
+                          lastUpdated="2015-07-15T18:06:43.264+0000" shortName="Koro_district" level="4"
+                          id="KxSf47iDfKf">
+            <externalAccess>false</externalAccess>
+            <parent code="koro_cercle" name="Koro_cercle" created="2015-07-15T18:05:58.067+0000"
+                    lastUpdated="2015-07-15T18:05:59.438+0000" id="R7h3ybsQSXE">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="youwarou_district" name="Youwarou_district" created="2015-07-15T18:06:42.044+0000"
+                          lastUpdated="2015-07-15T18:06:43.267+0000" shortName="Youwarou_district" level="4"
+                          id="XaFGe0KvfM6">
+            <externalAccess>false</externalAccess>
+            <parent code="youwarou_cercle" name="Youwarou_cercle" created="2015-07-15T18:05:58.067+0000"
+                    lastUpdated="2015-07-15T18:05:59.440+0000" id="puEzprPkw6Q">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="tombouctou_district" name="Tombouctou_district" created="2015-07-15T18:06:42.045+0000"
+                          lastUpdated="2015-07-15T18:06:43.270+0000" shortName="Tombouctou_district" level="4"
+                          id="cLAZsFm7ScH">
+            <externalAccess>false</externalAccess>
+            <parent code="tombouctou_cercle" name="Tombouctou_cercle" created="2015-07-15T18:05:58.068+0000"
+                    lastUpdated="2015-07-15T18:05:59.441+0000" id="d7lxlpWcfww">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="goundam_district" name="Goundam_district" created="2015-07-15T18:06:42.045+0000"
+                          lastUpdated="2015-07-15T18:06:43.273+0000" shortName="Goundam_district" level="4"
+                          id="PEIFEx69LfK">
+            <externalAccess>false</externalAccess>
+            <parent code="goundam_cercle" name="Goundam_cercle" created="2015-07-15T18:05:58.068+0000"
+                    lastUpdated="2015-07-15T18:05:59.450+0000" id="tPW9S7M1kDT">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="gourma-rharous_district" name="Gourma-rharous_district"
+                          created="2015-07-15T18:06:42.045+0000" lastUpdated="2015-07-15T18:06:43.274+0000"
+                          shortName="Gourma-rharous_district" level="4" id="kR5UoHHWKAf">
+            <externalAccess>false</externalAccess>
+            <parent code="gourma-rharous_cercle" name="Gourma-rharous_cercle" created="2015-07-15T18:05:58.068+0000"
+                    lastUpdated="2015-07-15T18:05:59.451+0000" id="fl496W2czFV">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="gao_district" name="Gao_district" created="2015-07-15T18:06:42.046+0000"
+                          lastUpdated="2015-07-15T18:06:43.277+0000" shortName="Gao_district" level="4"
+                          id="g0Q6B2a0WdX">
+            <externalAccess>false</externalAccess>
+            <parent code="gao_cercle" name="Gao_cercle" created="2015-07-15T18:05:58.069+0000"
+                    lastUpdated="2015-07-15T18:05:59.453+0000" id="ZyoHHKfdCj9">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="bourem_district" name="Bourem_district" created="2015-07-15T18:06:42.046+0000"
+                          lastUpdated="2015-07-15T18:06:43.280+0000" shortName="Bourem_district" level="4"
+                          id="lwY4HlqNCYC">
+            <externalAccess>false</externalAccess>
+            <parent code="bourem_cercle" name="Bourem_cercle" created="2015-07-15T18:05:58.069+0000"
+                    lastUpdated="2015-07-15T18:05:59.455+0000" id="rzgB92s4klR">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="abeibara_district" name="Abeibara_district" created="2015-07-15T18:06:42.047+0000"
+                          lastUpdated="2015-07-15T18:06:43.284+0000" shortName="Abeibara_district" level="4"
+                          id="lRvh7uIrSXw">
+            <externalAccess>false</externalAccess>
+            <parent code="abeibara_cercle" name="Abeibara_cercle" created="2015-07-15T18:05:58.070+0000"
+                    lastUpdated="2015-07-15T18:05:59.458+0000" id="wrp0jjyIHGk">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="tessalit_district" name="Tessalit_district" created="2015-07-15T18:06:42.047+0000"
+                          lastUpdated="2015-07-15T18:06:43.289+0000" shortName="Tessalit_district" level="4"
+                          id="dvU8BjWDwLd">
+            <externalAccess>false</externalAccess>
+            <parent code="tessalit_cercle" name="Tessalit_cercle" created="2015-07-15T18:05:58.070+0000"
+                    lastUpdated="2015-07-15T18:05:59.459+0000" id="lwM9mE2SzsA">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="commune1_district" name="Commune1_district" created="2015-07-15T18:06:42.047+0000"
+                          lastUpdated="2015-07-15T18:06:43.292+0000" shortName="Commune1_district" level="4"
+                          id="mlxM3VOJUUP">
+            <externalAccess>false</externalAccess>
+            <parent code="commune1" name="Commune1" created="2015-07-15T18:05:58.070+0000"
+                    lastUpdated="2015-07-15T18:05:59.462+0000" id="uiOhG6l8S4N">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="commune6_district" name="Commune6_district" created="2015-07-15T18:06:42.048+0000"
+                          lastUpdated="2015-07-15T18:06:43.302+0000" shortName="Commune6_district" level="4"
+                          id="Xq1XnSFzP5U">
+            <externalAccess>false</externalAccess>
+            <parent code="commune6" name="Commune6" created="2015-07-15T18:05:58.071+0000"
+                    lastUpdated="2015-07-15T18:05:59.469+0000" id="XtqoIyA8wIF">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="diolila_district" name="Diolila_district" created="2015-07-15T18:06:42.038+0000"
+                          lastUpdated="2015-07-15T18:06:43.219+0000" shortName="Diolila_district" level="4"
+                          id="Gv11AUXaeIP">
+            <externalAccess>false</externalAccess>
+            <parent code="diolila_cercle" name="Diolila_cercle" created="2015-07-15T18:05:58.061+0000"
+                    lastUpdated="2015-07-15T18:05:59.371+0000" id="dTF0h7jL5bg">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="koulikoro_district" name="Koulikoro_district" created="2015-07-15T18:06:42.037+0000"
+                          lastUpdated="2015-07-15T18:06:43.212+0000" shortName="Koulikoro_district" level="4"
+                          id="D94cftk9LH4">
+            <externalAccess>false</externalAccess>
+            <parent code="koulikoro_cercle" name="Koulikoro_cercle" created="2015-07-15T18:05:58.061+0000"
+                    lastUpdated="2015-07-15T18:05:59.368+0000" id="cHGBXuLZ0SD">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kangaba_district" name="Kangaba_district" created="2015-07-15T18:06:42.038+0000"
+                          lastUpdated="2015-07-15T18:06:43.220+0000" shortName="Kangaba_district" level="4"
+                          id="bhcNTj1uABq">
+            <externalAccess>false</externalAccess>
+            <parent code="kangaba_cercle" name="Kangaba_cercle" created="2015-07-15T18:05:58.061+0000"
+                    lastUpdated="2015-07-15T18:05:59.373+0000" id="M5eu3MloO9F">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kati_district" name="Kati_district" created="2015-07-15T18:06:42.038+0000"
+                          lastUpdated="2015-07-15T18:06:43.221+0000" shortName="Kati_district" level="4"
+                          id="apwNq1zORJP">
+            <externalAccess>false</externalAccess>
+            <parent code="kati_cercle" name="Kati_cercle" created="2015-07-15T18:05:58.061+0000"
+                    lastUpdated="2015-07-15T18:05:59.375+0000" id="qltE5jVDd72">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="ouelessebougou_district" name="Ouelessebougou_district"
+                          created="2015-07-15T18:06:42.039+0000" lastUpdated="2015-07-15T18:06:43.229+0000"
+                          shortName="Ouelessebougou_district" level="4" id="ZQ5gB1Pdu6y">
+            <externalAccess>false</externalAccess>
+            <parent code="kati_cercle" name="Kati_cercle" created="2015-07-15T18:05:58.061+0000"
+                    lastUpdated="2015-07-15T18:05:59.375+0000" id="qltE5jVDd72">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="koutiala_district" name="Koutiala_district" created="2015-07-15T18:06:42.040+0000"
+                          lastUpdated="2015-07-15T18:06:43.232+0000" shortName="Koutiala_district" level="4"
+                          id="xDHj1V798ai">
+            <externalAccess>false</externalAccess>
+            <parent code="koutiala_cercle" name="Koutiala_cercle" created="2015-07-15T18:05:58.063+0000"
+                    lastUpdated="2015-07-15T18:05:59.388+0000" id="pdev3cSf3ui">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="selingue_district" name="Selingue_district" created="2015-07-15T18:06:42.041+0000"
+                          lastUpdated="2015-07-15T18:06:43.237+0000" shortName="Selingue_district" level="4"
+                          id="rL9xn6tkaDh">
+            <externalAccess>false</externalAccess>
+            <parent code="selingue_cercle" name="Selingue_cercle" created="2015-07-15T18:05:58.064+0000"
+                    lastUpdated="2015-07-15T18:05:59.399+0000" id="r5awbseJmUa">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kignan_district" name="Kignan_district" created="2015-07-15T18:06:42.041+0000"
+                          lastUpdated="2015-07-15T18:06:43.238+0000" shortName="Kignan_district" level="4"
+                          id="wY7MkXnp0lt">
+            <externalAccess>false</externalAccess>
+            <parent code="sikasso_cercle" name="Sikasso_cercle" created="2015-07-15T18:05:58.062+0000"
+                    lastUpdated="2015-07-15T18:05:59.383+0000" id="amKxzcJoPlt">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="niena_district" name="Niena_district" created="2015-07-15T18:06:42.041+0000"
+                          lastUpdated="2015-07-15T18:06:43.239+0000" shortName="Niena_district" level="4"
+                          id="yv35uXqA5at">
+            <externalAccess>false</externalAccess>
+            <parent code="sikasso_cercle" name="Sikasso_cercle" created="2015-07-15T18:05:58.062+0000"
+                    lastUpdated="2015-07-15T18:05:59.383+0000" id="amKxzcJoPlt">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="baraoueli_district" name="Baraoueli_district" created="2015-07-15T18:06:42.042+0000"
+                          lastUpdated="2015-07-15T18:06:43.242+0000" shortName="Baraoueli_district" level="4"
+                          id="QM3EbY1bUXO">
+            <externalAccess>false</externalAccess>
+            <parent code="baraoueli_cercle" name="Baraoueli_cercle" created="2015-07-15T18:05:58.064+0000"
+                    lastUpdated="2015-07-15T18:05:59.406+0000" id="I2Wkw479PbJ">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="bla_district" name="Bla_district" created="2015-07-15T18:06:42.042+0000"
+                          lastUpdated="2015-07-15T18:06:43.246+0000" shortName="Bla_district" level="4"
+                          id="FpTA5ztjuw6">
+            <externalAccess>false</externalAccess>
+            <parent code="bla_cercle" name="Bla_cercle" created="2015-07-15T18:05:58.064+0000"
+                    lastUpdated="2015-07-15T18:05:59.408+0000" id="fL60AdOuyox">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="niono_district" name="Niono_district" created="2015-07-15T18:06:42.042+0000"
+                          lastUpdated="2015-07-15T18:06:43.249+0000" shortName="Niono_district" level="4"
+                          id="Fy77Akpi0Sz">
+            <externalAccess>false</externalAccess>
+            <parent code="niono_cercle" name="Niono_cercle" created="2015-07-15T18:05:58.065+0000"
+                    lastUpdated="2015-07-15T18:05:59.415+0000" id="e8Q9T8hdNyp">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="tominian_district" name="Tominian_district" created="2015-07-15T18:06:42.043+0000"
+                          lastUpdated="2015-07-15T18:06:43.252+0000" shortName="Tominian_district" level="4"
+                          id="m3b1QhvWFV1">
+            <externalAccess>false</externalAccess>
+            <parent code="tominian_cercle" name="Tominian_cercle" created="2015-07-15T18:05:58.065+0000"
+                    lastUpdated="2015-07-15T18:05:59.418+0000" id="Ka2qWzKsNiZ">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="mopti_district" name="Mopti_district" created="2015-07-15T18:06:42.043+0000"
+                          lastUpdated="2015-07-15T18:06:43.258+0000" shortName="Mopti_district" level="4"
+                          id="Rb7zzFKd3Ws">
+            <externalAccess>false</externalAccess>
+            <parent code="mopti_cercle" name="Mopti_cercle" created="2015-07-15T18:05:58.066+0000"
+                    lastUpdated="2015-07-15T18:05:59.425+0000" id="WEXbv2d2EXo">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="bankas_district" name="Bankas_district" created="2015-07-15T18:06:42.043+0000"
+                          lastUpdated="2015-07-15T18:06:43.261+0000" shortName="Bankas_district" level="4"
+                          id="I7IgLVcM2GH">
+            <externalAccess>false</externalAccess>
+            <parent code="bankas_cercle" name="Bankas_cercle" created="2015-07-15T18:05:58.066+0000"
+                    lastUpdated="2015-07-15T18:05:59.428+0000" id="EKknzBjWSvK">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="tenenkou_district" name="Tenenkou_district" created="2015-07-15T18:06:42.044+0000"
+                          lastUpdated="2015-07-15T18:06:43.266+0000" shortName="Tenenkou_district" level="4"
+                          id="yrWLnEmMqxo">
+            <externalAccess>false</externalAccess>
+            <parent code="tenenkou_cercle" name="Tenenkou_cercle" created="2015-07-15T18:05:58.067+0000"
+                    lastUpdated="2015-07-15T18:05:59.439+0000" id="zFrKC3LAyMQ">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="dire_district" name="Dire_district" created="2015-07-15T18:06:42.045+0000"
+                          lastUpdated="2015-07-15T18:06:43.272+0000" shortName="Dire_district" level="4"
+                          id="hBtNNPeHDdb">
+            <externalAccess>false</externalAccess>
+            <parent code="dire_cercle" name="Dire_cercle" created="2015-07-15T18:05:58.068+0000"
+                    lastUpdated="2015-07-15T18:05:59.448+0000" id="J6POBp8koNh">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="niafunke_district" name="Niafunke_district" created="2015-07-15T18:06:42.045+0000"
+                          lastUpdated="2015-07-15T18:06:43.276+0000" shortName="Niafunke_district" level="4"
+                          id="XCoDHWqoGAk">
+            <externalAccess>false</externalAccess>
+            <parent code="niafunke_cercle" name="Niafunke_cercle" created="2015-07-15T18:05:58.068+0000"
+                    lastUpdated="2015-07-15T18:05:59.452+0000" id="HeQFnTCSXFI">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="ansongo_district" name="Ansongo_district" created="2015-07-15T18:06:42.046+0000"
+                          lastUpdated="2015-07-15T18:06:43.279+0000" shortName="Ansongo_district" level="4"
+                          id="plGvculNkTV">
+            <externalAccess>false</externalAccess>
+            <parent code="ansongo_cercle" name="Ansongo_cercle" created="2015-07-15T18:05:58.069+0000"
+                    lastUpdated="2015-07-15T18:05:59.454+0000" id="UWKx0YA1Z3b">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="menaka_district" name="Menaka_district" created="2015-07-15T18:06:42.046+0000"
+                          lastUpdated="2015-07-15T18:06:43.282+0000" shortName="Menaka_district" level="4"
+                          id="JOWIclxWQYH">
+            <externalAccess>false</externalAccess>
+            <parent code="menaka_cercle" name="Menaka_cercle" created="2015-07-15T18:05:58.069+0000"
+                    lastUpdated="2015-07-15T18:05:59.456+0000" id="So5z2E7COA3">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="kidal_district" name="Kidal_district" created="2015-07-15T18:06:42.046+0000"
+                          lastUpdated="2015-07-15T18:06:43.283+0000" shortName="Kidal_district" level="4"
+                          id="k2CGTt8IaLO">
+            <externalAccess>false</externalAccess>
+            <parent code="kidal_cercle" name="Kidal_cercle" created="2015-07-15T18:05:58.070+0000"
+                    lastUpdated="2015-07-15T18:05:59.457+0000" id="KsLIFqhgL0p">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="tin-essako_district" name="Tin-essako_district" created="2015-07-15T18:06:42.047+0000"
+                          lastUpdated="2015-07-15T18:06:43.291+0000" shortName="Tin-essako_district" level="4"
+                          id="m7rpiHszsgC">
+            <externalAccess>false</externalAccess>
+            <parent code="tin-essako_cercle" name="Tin-essako_cercle" created="2015-07-15T18:05:58.070+0000"
+                    lastUpdated="2015-07-15T18:05:59.460+0000" id="PsjEc2Hsk3o">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="commune2_district" name="Commune2_district" created="2015-07-15T18:06:42.047+0000"
+                          lastUpdated="2015-07-15T18:06:43.294+0000" shortName="Commune2_district" level="4"
+                          id="yYg3r7GoJvv">
+            <externalAccess>false</externalAccess>
+            <parent code="commune2" name="Commune2" created="2015-07-15T18:05:58.071+0000"
+                    lastUpdated="2015-07-15T18:05:59.463+0000" id="X6qHuy7EJsv">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="commune3_district" name="Commune3_district" created="2015-07-15T18:06:42.048+0000"
+                          lastUpdated="2015-07-15T18:06:43.296+0000" shortName="Commune3_district" level="4"
+                          id="E45cS9HlT0A">
+            <externalAccess>false</externalAccess>
+            <parent code="commune3" name="Commune3" created="2015-07-15T18:05:58.071+0000"
+                    lastUpdated="2015-07-15T18:05:59.465+0000" id="hBUBsOUmZfD">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="commune4_district" name="Commune4_district" created="2015-07-15T18:06:42.048+0000"
+                          lastUpdated="2015-07-15T18:06:43.299+0000" shortName="Commune4_district" level="4"
+                          id="ULxpEMFvBOq">
+            <externalAccess>false</externalAccess>
+            <parent code="commune4" name="Commune4" created="2015-07-15T18:05:58.071+0000"
+                    lastUpdated="2015-07-15T18:05:59.466+0000" id="ia6rqdsOYmU">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+        <organisationUnit code="commune5_district" name="Commune5_district" created="2015-07-15T18:06:42.048+0000"
+                          lastUpdated="2015-07-15T18:06:43.301+0000" shortName="Commune5_district" level="4"
+                          id="lvVcPeiLMvi">
+            <externalAccess>false</externalAccess>
+            <parent code="commune5" name="Commune5" created="2015-07-15T18:05:58.071+0000"
+                    lastUpdated="2015-07-15T18:05:59.468+0000" id="WAHAzjlH065">
+                <externalAccess>false</externalAccess>
+            </parent>
+            <openingDate>1970-01-01</openingDate>
+        </organisationUnit>
+    </organisationUnits>
+    <organisationUnitLevels>
+        <organisationUnitLevel name="District" created="2015-07-15T18:12:11.934+0000"
+                               lastUpdated="2015-07-15T18:12:11.934+0000" level="4" id="GTF5pwqVm4l">
+            <externalAccess>false</externalAccess>
+        </organisationUnitLevel>
+        <organisationUnitLevel name="Pays" created="2014-09-18T23:05:02.165+0000"
+                               lastUpdated="2015-07-15T18:12:11.966+0000" level="1" id="KbVeP59ZtYF">
+            <externalAccess>false</externalAccess>
+        </organisationUnitLevel>
+        <organisationUnitLevel name="Cercle" created="2015-07-15T18:12:11.970+0000"
+                               lastUpdated="2015-07-15T18:12:11.970+0000" level="3" id="BsDJZH1FUsm">
+            <externalAccess>false</externalAccess>
+        </organisationUnitLevel>
+        <organisationUnitLevel name="Région" created="2014-09-18T23:05:02.172+0000"
+                               lastUpdated="2015-07-15T18:12:11.974+0000" level="2" id="PQwKdRGNP0K">
+            <externalAccess>false</externalAccess>
+        </organisationUnitLevel>
+    </organisationUnitLevels>
+</metaData>

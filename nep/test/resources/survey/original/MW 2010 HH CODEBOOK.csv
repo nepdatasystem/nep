@@ -1,0 +1,320 @@
+"Variable Name","Variable Label","Answer Label","Answer Code","Variable Type"
+hv006,"month of interview","Open ended",,Numeric
+hv007,"year of interview","Open ended",,Integer
+hv008,"date of interview (cmc)","Open ended",,Integer
+hv009,"number of household members","Open ended",,Numeric
+hv010,"number of eligible women in hh","Open ended",,Numeric
+hv011,"number of eligible men in hh","Open ended",,Numeric
+hv012,"number of de jure members","Open ended",,Numeric
+hv013,"number of de facto members","Open ended",,Numeric
+hv014,"number of children 5 and under","Open ended",,Numeric
+hv021,"primary sampling unit","Open ended",,Integer
+hv022,"sample stratum number","Open ended",,Numeric
+hv023,"sample domain",,,Numeric
+,,northern,1,
+,,central,2,
+,,southern,3,
+hv024,region,,,Numeric
+,,northern,1,
+,,central,2,
+,,southern,3,
+hv025,"type of place of residence",,,Numeric
+,,urban,1,
+,,rural,2,
+hv201,"source of drinking water",,,Numeric
+,,"piped water",10,
+,,"piped into dwelling",11,
+,,"piped to yard/plot",12,
+,,"public tap/standpipe",13,
+,,"tube well water",20,
+,,"tube well or borehole",21,
+,,"dug well (open/protected)",30,
+,,"protected well",31,
+,,"unprotected well",32,
+,,"surface water",40,
+,,"protected spring",41,
+,,"unprotected spring",42,
+,,"river/dam/lake/ponds/stream/canal/irirgation channel",43,
+,,rainwater,51,
+,,"tanker truck",61,
+,,"cart with small tank",62,
+,,"bottled water",71,
+,,other,96,
+hv204,"time to get to water source",,,Integer
+,,"on premises",996,
+,,"don't know",998,
+hv205,"type of toilet facility",,,Numeric
+,,"flush toilet",10,
+,,"flush toilet",11,
+,,"pit toilet latrine",20,
+,,"pit latrine - ventilated improved pit (vip)",21,
+,,"pit latrine - with slab",22,
+,,"pit latrine - without slab / open pit",23,
+,,"no facility",30,
+,,"no facility/bush/field",31,
+,,"composting toilet",41,
+,,"bucket toilet",42,
+,,"hanging toilet/latrine",43,
+,,other,96,
+hv206,"has electricity",,,Numeric
+,,no,0,
+,,yes,1,
+hv207,"has radio",,,Numeric
+,,no,0,
+,,yes,1,
+hv208,"has television",,,Numeric
+,,no,0,
+,,yes,1,
+hv209,"has refrigerator",,,Numeric
+,,no,0,
+,,yes,1,
+hv210,"has bicycle",,,Numeric
+,,no,0,
+,,yes,1,
+hv211,"has motorcycle/scooter",,,Numeric
+,,no,0,
+,,yes,1,
+hv212,"has car/truck",,,Numeric
+,,no,0,
+,,yes,1,
+hv213,"main floor material",,,Numeric
+,,natural,10,
+,,"earth, sand",11,
+,,dung,12,
+,,rudimentary,20,
+,,"wood planks",21,
+,,"palm, bamboo",22,
+,,"broken bricks",23,
+,,finished,30,
+,,"parquet, polished wood",31,
+,,"vinyl, asphalt strips",32,
+,,"ceramic tiles",33,
+,,cement,34,
+,,carpet,35,
+,,other,96,
+hv214,"main wall material",,,Numeric
+,,natural,10,
+,,"no walls",11,
+,,"cane / palm / trunks",12,
+,,dirt,13,
+,,rudimentary,20,
+,,"bamboo / tree trunk with mud",21,
+,,"stone with mud",22,
+,,"uncovered adobe",23,
+,,plywood,24,
+,,cardboard,25,
+,,"reused wood",26,
+,,finished,30,
+,,cement,31,
+,,"stone with lime / cement",32,
+,,"burnt bricks",33,
+,,"unburnt bricks",34,
+,,"cement blocks",35,
+,,"wood planks/shingles",36,
+,,other,96,
+hv215,"main roof material",,,Numeric
+,,natural,10,
+,,"no roof",11,
+,,"thatch / palm leaf",12,
+,,sod,13,
+,,rudimentary,20,
+,,"rustic mat",21,
+,,"palm / bamboo / grass",22,
+,,"wood planks",23,
+,,cardboard,24,
+,,finished,30,
+,,"iron sheets",31,
+,,wood,32,
+,,"calamine / cement fiber",33,
+,,"ceramic tiles",34,
+,,cement,35,
+,,"roofing shingles",36,
+,,other,96,
+hv216,"rooms used for sleeping","Open ended",,Numeric
+hv219,"sex of head of household",,,Numeric
+,,male,1,
+,,female,2,
+hv220,"age of head of household",,,Numeric
+,,97+,97,
+,,dk,98,
+hv221,"has a landline telephone",,,Numeric
+,,no,0,
+,,yes,1,
+hv225,"share toilet with other households",,,Numeric
+,,no,0,
+,,yes,1,
+hv226,"type of cooking fuel",,,Numeric
+,,electricity,1,
+,,"lpg/natural gas",2,
+,,"natural gas",3,
+,,biogas,4,
+,,kerosene,5,
+,,"coal, lignite",6,
+,,charcoal,7,
+,,wood,8,
+,,"straw / shrubs / grass",9,
+,,"agricultural crop",10,
+,,"animal dung",11,
+,,"no food cooked in hh",95,
+,,other,96,
+hv227,"have bednet for sleeping",,,Numeric
+,,no,0,
+,,yes,1,
+hv228,"children under 5 slept under bednet last night",,,Numeric
+,,no,0,
+,,"all children",1,
+,,"some children",2,
+,,"no bednet in hh",3,
+hv234,"test salt for iodine",,,Integer
+,,"0 ppm (no iodine)",0,
+,,"below 15 ppm",7,
+,,"15 ppm and above",15,
+,,"30 ppm",30,
+,,"salt not tested",994,
+,,"no salt in household",995,
+hv238,"number of households sharing toilet",,,Numeric
+,,"10 or more households",95,
+,,"don't know",98,
+hv239,"food cooked on stove or open fire",,,Numeric
+,,"open fire",1,
+,,"open stove",2,
+,,"closed stove with chimney",3,
+,,other,6,
+hv240,"household has a chimney, hood or neither",,,Numeric
+,,"neither chimney or hood",0,
+,,chimney,1,
+,,hood,2,
+hv241,"food cooked in the house / in separate building / outdoors",,,Numeric
+,,"in the house",1,
+,,"in a separate building",2,
+,,outdoors,3,
+,,other,6,
+hv242,"household has separate room used as kitchen",,,Numeric
+,,no,0,
+,,yes,1,
+hv243a,"has a mobile telephone",,,Numeric
+,,no,0,
+,,yes,1,
+hv243b,"has a watch",,,Numeric
+,,no,0,
+,,yes,1,
+hv243c,"has an animal-drawn cart",,,Numeric
+,,no,0,
+,,yes,1,
+hv244,"own land usable for agriculture",,,Numeric
+,,no,0,
+,,yes,1,
+hv245,"hectares for agricultural land",,,Numeric
+,,"95 or more",95,
+,,unknown,98,
+hv246,"livestock, herds or farm animals",,,Numeric
+,,no,0,
+,,yes,1,
+hv246a,"cattle own",,,Numeric
+,,none,0,
+,,"more than 95",95,
+,,unknown,98,
+hv246d,"goats own",,,Numeric
+,,none,0,
+,,"more than 95",95,
+,,unknown,98,
+hv246e,"sheep own",,,Numeric
+,,none,0,
+,,"more than 95",95,
+,,unknown,98,
+hv246f,"poultry own",,,Numeric
+,,none,0,
+,,"more than 95",95,
+,,unknown,98,
+hv246g,"pigs own",,,Numeric
+,,none,0,
+,,"more than 95",95,
+,,unknown,98,
+hv247,"owns a bank account",,,Numeric
+,,no,0,
+,,yes,1,
+hv248,"number of sick people 18-59","Open ended",,Numeric
+hv249,"member of the hh died last 12 months",,,Numeric
+,,no,0,
+,,yes,1,
+,,dk,8,
+,,missing,9,
+hv250,"number of members who died last 12 months",,,Numeric
+,,dk,8,
+hv251,"number of orphans and vulnerable children","Open ended",,Numeric
+hv270,"wealth index",,,Numeric
+,,poorest,1,
+,,poorer,2,
+,,middle,3,
+,,richer,4,
+,,richest,5,
+hv271,"wealth index factor score (5 decimals)","Open ended",,long
+shdist,district,,,Integer
+,,chitipa,101,
+,,karonga,102,
+,,nkhatabay,103,
+,,rumphi,104,
+,,mzimba,105,
+,,nkhatabay,106,
+,,kasungu,201,
+,,"nkhota kota",202,
+,,ntchisi,203,
+,,dowa,204,
+,,salima,205,
+,,lilongwe,206,
+,,mchinji,207,
+,,dedza,208,
+,,ntcheu,209,
+,,lilongwe,210,
+,,mangochi,301,
+,,machinga,302,
+,,zomba,303,
+,,chiradzulu,304,
+,,blantyre,305,
+,,mwanza,306,
+,,thyolo,307,
+,,mulanje,308,
+,,phalombe,309,
+,,chikwawa,310,
+,,nsanje,311,
+,,balaka,312,
+,,neno,313,
+,,zomba,314,
+,,blantyre,315,
+shlresp,"native language of respondent",,,Numeric
+,,chichewa,1,
+,,tumbuka,2,
+,,yao,3,
+,,english,4,
+,,other,6,
+sh111a2,koloboyi,,,Numeric
+,,no,0,
+,,yes,1,
+sh111b,"paraffin lamp other than koloboyi",,,Numeric
+,,no,0,
+,,yes,1,
+sh111g,"bed with mattress",,,Numeric
+,,no,0,
+,,yes,1,
+sh111h,"sofa set",,,Numeric
+,,no,0,
+,,yes,1,
+sh111i,"table and chairs",,,Numeric
+,,no,0,
+,,yes,1,
+sh123,"amount of agricultural land owned",,,Numeric
+pweight,"Normalized sample weight","Open ended",,Numeric
+hhid,"Household unique ID","Open ended",,String
+itn,"HH owns a treated mosquito net",,,Numeric
+,,no,0,
+,,yes,1,
+itn_irs,"HH owns a treated mosquito net/IRS previous 12m","Open ended",,Numeric
+sanit,"Improved sanitary facility - not shared: LiST",,,Numeric
+,,no,0,
+,,yes,1,
+piped,"Water connection in the household",,,Numeric
+,,no,0,
+,,yes,1,
+water,"Improved drinking water source",,,Numeric
+,,no,0,
+,,yes,1,

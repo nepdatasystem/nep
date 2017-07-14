@@ -1,0 +1,287 @@
+"Variable Name","Variable Label","Answer Label","Answer Code","Variable Type"
+v021,"primary sampling unit","Open ended",,Integer
+v022,"sample stratum number","Open ended",,Integer
+v101,region,,,Numeric
+,,northern,1,
+,,central,2,
+,,southern,3,
+v102,"type of place of residence",,,Numeric
+,,urban,1,
+,,rural,2,
+v103,"childhood place of residence",,,Numeric
+,,"capital, large city",0,
+,,city,1,
+,,town,2,
+,,countryside,3,
+,,abroad,4,
+v104,"years lived in place of res.",,,Numeric
+,,always,95,
+,,visitor,96,
+,,inconsistent,97,
+,,"don't know",98,
+v106,"highest educational level",,,Numeric
+,,"no education",0,
+,,primary,1,
+,,secondary,2,
+,,higher,3,
+v107,"highest year of education","Open ended",,Numeric
+v113,"source of drinking water",,,Numeric
+,,"piped water",10,
+,,"well water",20,
+,,"covered well/borehole",30,
+,,"surface water",40,
+,,rainwater,51,
+,,"tanker truck",61,
+,,"bottled water",71,
+,,other,96,
+,,"not dejure resident",97,
+v115,"time to get to water source",,,Integer
+,,"on premises",996,
+,,"not dejure resident",997,
+v116,"type of toilet facility",,,Numeric
+,,"flush toilet",10,
+,,"pit toilet latrine",20,
+,,"no facility",30,
+,,,31,
+,,other,96,
+,,"not dejure resident",97,
+v119,"has electricity",,,Numeric
+,,no,0,
+,,yes,1,
+,,"not dejure resident",7,
+v120,"has radio",,,Numeric
+,,no,0,
+,,yes,1,
+,,"not dejure resident",7,
+v121,"has television",,,Numeric
+,,no,0,
+,,yes,1,
+,,"not dejure resident",7,
+v122,"has refrigerator",,,Numeric
+,,no,0,
+,,yes,1,
+,,"not dejure resident",7,
+v123,"has bicycle",,,Numeric
+,,no,0,
+,,yes,1,
+,,"not dejure resident",7,
+v124,"has motorcycle/scooter",,,Numeric
+,,no,0,
+,,yes,1,
+,,"not dejure resident",7,
+v125,"has car/truck",,,Numeric
+,,no,0,
+,,yes,1,
+,,"not dejure resident",7,
+v127,"main floor material",,,Numeric
+,,natural,10,
+,,rudimentary,20,
+,,finished,30,
+,,other,96,
+,,"not dejure resident",97,
+v128,"main wall material",,,Numeric
+,,natural,10,
+,,rudimentary,20,
+,,finished,30,
+,,,31,
+,,other,96,
+,,"not dejure resident",97,
+v129,"main roof material",,,Numeric
+,,natural,10,
+,,rudimentary,20,
+,,finished,30,
+,,,31,
+,,other,96,
+,,"not dejure resident",97,
+v130,religion,,,Numeric
+,,catholic,1,
+,,ccap,2,
+,,anglican,3,
+,,"seventh day adventist/baptist",4,
+,,"other christian",5,
+,,muslim,6,
+,,"no religion",7,
+,,other,8,
+v131,ethnicity,,,Numeric
+,,chewa,1,
+,,tumbuka,2,
+,,lomwe,3,
+,,tonga,4,
+,,yao,5,
+,,sena,6,
+,,nkonde,7,
+,,ngoni,8,
+,,other,96,
+v133,"education in single years",,,Numeric
+,,inconsistent,97,
+v134,"de facto place of residence",,,Numeric
+,,"capital, large city",0,
+,,"small city",1,
+,,town,2,
+,,countryside,3,
+v135,"usual resident or visitor",,,Numeric
+,,"usual resident",1,
+,,visitor,2,
+v136,"number of household members","Open ended",,Numeric
+v137,"number of children 5 and under","Open ended",,Numeric
+v138,"number of eligible women in hh","Open ended",,Numeric
+v150,"relationship to household head",,,Numeric
+,,head,1,
+,,wife,2,
+,,daughter,3,
+,,daughter-in-law,4,
+,,grand-daughter,5,
+,,mother,6,
+,,mother-in-law,7,
+,,sister,8,
+,,co-spouse,9,
+,,"other relative",10,
+,,"adopted/foster child",11,
+,,"not related",12,
+,,dk,98,
+v151,"sex of household head",,,Numeric
+,,male,1,
+,,female,2,
+v152,"age of household head",,,Numeric
+,,97+,97,
+,,dk,98,
+v153,"has telephone",,,Numeric
+,,no,0,
+,,yes,1,
+,,"not dejure resident",7,
+v155,literacy,,,Numeric
+,,"cannot read at all",0,
+,,"able to read only parts of sentence",1,
+,,"able to read whole sentence",2,
+,,"no card with required language",3,
+v160,"toilet facilities shared",,,Numeric
+,,no,0,
+,,yes,1,
+,,"not dejure resident",7,
+v161,"type of cooking fuel",,,Numeric
+,,electricity,1,
+,,"lpg/natural gas",2,
+,,biogas,3,
+,,kerosene,4,
+,,coal/lignite,5,
+,,charcoal,6,
+,,firewood/straw,7,
+,,dung,8,
+,,other,96,
+,,"not dejure resident",97,
+v162,"place for hand washing",,,Numeric
+,,nowhere,0,
+,,"in dwelling/yard/plot",1,
+,,"somewhere else",2,
+,,"not dejure resident",7,
+v163,"presence of water/tap in household",,,Numeric
+,,no,0,
+,,yes,1,
+,,"not dejure resident",7,
+v164,"presence of soap/ash/other cleansing agent in household",,,Numeric
+,,no,0,
+,,yes,1,
+,,"not dejure resident",7,
+v165,"presence of basin in household",,,Numeric
+,,no,0,
+,,yes,1,
+,,"not dejure resident",7,
+v166,"results of salt iodine test",,,Integer
+,,"0 ppm (no iodine)",0,
+,,"7 ppm",7,
+,,"15 ppm",15,
+,,"30 ppm",30,
+,,"salt not tested",994,
+,,"no salt",995,
+,,"not dejure resident",997,
+v201,"total children ever born","Open ended",,Numeric
+b0,"child is twin",,,Numeric
+,,"single birth",0,
+,,"1st of multiple",1,
+,,"2nd of multiple",2,
+,,"3rd of multiple",3,
+,,"4th of multiple",4,
+,,"5th of multiple",5,
+b1,"month of birth","Open ended",,Numeric
+b2,"year of birth","Open ended",,Integer
+b3,"date of birth (cmc)","Open ended",,Integer
+b4,"sex of child",,,Numeric
+,,male,1,
+,,female,2,
+b5,"child is alive",,,Numeric
+,,no,0,
+,,yes,1,
+b6,"age at death",,,Integer
+,,inconsistent,997,
+,,"don't know",998,
+b7,"age at death (months-imputed)","Open ended",,Integer
+b8,"current age of child","Open ended",,Numeric
+b9,"child lives with whom",,,Numeric
+,,respondent,0,
+,,father,1,
+,,"other relative",2,
+,,"someone else",3,
+,,"lives elsewhere",4,
+org_unit,"program district",,,Numeric
+,,blantyre,1,
+,,kasungu,2,
+,,machinga,3,
+,,mangochi,4,
+,,mzimba,5,
+,,salima,6,
+,,thyolo,7,
+,,zomba,8,
+,,lilongwe,9,
+,,mulanje,10,
+,,"other districts",11,
+ml0,"type of bednet(s) child slept under last night",,,Numeric
+,,"no bednet",0,
+,,"only treated bednets",1,
+,,"both treated and untreated bednets",2,
+,,"only untreated bednets",3,
+br_sample_weights,"sampling weights","Open ended",,Numeric
+iron90,"90+ days of iron supplementation","Open ended",,Numeric
+iptp,"Intermittent preventive treatment for malaria during pregnancy",,,Numeric
+,,no,0,
+,,yes,1,
+ideliv,"facility delivery","Open ended",,Numeric
+tt,"2x TT during most recent preg","Open ended",,Numeric
+pncwm,"Postnatal care for mothers within 2 days of delivery (births in 5 yrs before sur",,,Numeric
+,,no,0,
+,,yes,1,
+anc42,"ANC 4+ visits any provider (births in 2 yrs before survey)",,,Numeric
+,,no,0,
+,,yes,1,
+sba2,"Skilled birth attendant (births in 2 yrs before survey)",,,Numeric
+,,no,0,
+,,yes,1,
+anc12,"ANC 1+ visits skilled provider (most recent birth in 2 yrs before survey)",,,Numeric
+,,no,0,
+,,yes,1,
+csection2,"cesection (births in 2 yrs before survey)",,,Numeric
+,,no,0,
+,,yes,1,
+ebreast2,"Breastfeeding within 1hr of birth (births in 2 yrs before survey)",,,Numeric
+,,no,0,
+,,yes,1,
+vita,"Vitamin A in past 6 months (age 6-59 months)",,,Numeric
+,,no,0,
+,,yes,1,
+carep,"Careseeking for pneumonia",,,Numeric
+,,no,0,
+,,yes,1,
+antimal_48,"Rec'd antimalarial for fever within 48 hours of symptom onset","Open ended",,Numeric
+dptv,"Rec'd dpt3 vaccine 12-23m","Open ended",,Numeric
+measlesv,"Rec'd measles vaccine 12-23m","Open ended",,Numeric
+ors,"ORS for diarrhea",,,Numeric
+,,no,0,
+,,yes,1,
+ort,"ORT+continued feeding for children with diarrhoea",,,Numeric
+,,no,0,
+,,yes,1,
+itnch,"Child slept under ITN last night",,,Numeric
+,,no,0,
+,,yes,1,
+hhid,"Household ID","Open ended",,String
+wmid,"Woman ID","Open ended",,String
+brid,"Births ID","Open ended",,String

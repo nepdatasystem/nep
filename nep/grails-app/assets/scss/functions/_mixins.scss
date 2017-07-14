@@ -1,0 +1,84 @@
+// -----------------------------------------------------------------
+// TYPOGRAPHY
+// -----------------------------------------------------------------
+
+// An easy way to fetch a deep value in a multi-level map. Works much like
+// map-get() except that you pass multiple keys as the second parameter to
+// go down multiple levels in the nested map.
+@function map-fetch($map, $keys) {
+  $key: nth($keys, 1);
+  $length: length($keys);
+  $value: map-get($map, $key);
+  @if ($length > 1) {
+    $rest: ();
+    @for $i from 2 through $length {
+      $rest: append($rest, nth($keys, $i))
+    }
+    @return map-fetch($value, $rest)
+  } @else {
+    @return $value;
+  }
+}
+
+// A mixin for scaling type that utilises the $type-scale map with the predefined values
+@mixin type-scale($scale, $map: $type-scale) {
+    $font-size: map-fetch($map, $scale font-size);
+    $base-lines: map-fetch($map, $scale base-lines);
+    @include adjust-font-size-to($font-size, $base-lines);
+}
+@mixin type-weight($weight) {
+    font-weight: map-get($type-weight, $weight);
+}
+
+// A quick ligature mixin, to be updated with a more modular one
+@mixin type-ligatures() {
+    -moz-font-feature-settings: "liga=1, dlig=1";
+    -ms-font-feature-settings: "liga", "dlig";
+    -webkit-font-feature-settings: "liga", "dlig";
+    -o-font-feature-settings: "liga", "dlig";
+    font-feature-settings: "liga", "dlig";
+}
+
+// px to em conversion
+@function emify($target, $context) {
+   @if $target == 0 { @return 0 }
+   @return $target / $context + 0em;
+}
+
+// Make px to ems using base-font-size
+// echo as: font-size: em-font(#px);
+@function em-font($target, $context: $base-font-size) {
+   @return emify($target, $context);
+}
+
+// Make px to ems using base-line-height
+// echo as: font-size: em-base(#px);
+@function em-base($target, $context: $base-line-height) {
+   @return emify($target, $context);
+}
+
+// Font aliasing helper
+@mixin antialiasing {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+// Vertically center an element
+@mixin inline-vertical {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+// Force a hardware render
+@mixin gpu-rendering {
+    @include translate;
+}
+
+@mixin tab-focus() {
+  // Default
+  outline: thin dotted;
+  // WebKit
+  outline: 5px auto -webkit-focus-ring-color;
+  outline-offset: -2px;
+}

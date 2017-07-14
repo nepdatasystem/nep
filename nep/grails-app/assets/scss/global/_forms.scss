@@ -1,0 +1,91 @@
+label {
+    display: block;
+    color: $grey-darker;
+    text-align: left;
+    font-weight: 700;
+}
+
+input[type="search"] {
+    box-sizing: border-box;
+}
+
+// Position radios and checkboxes better
+input[type="radio"],
+input[type="checkbox"] {
+    width: auto;
+    margin: 4px 0 0;
+    margin-top: 1px \9; // IE8-9
+    line-height: normal;
+}
+
+// Set the height of file controls to match text inputs
+input[type="file"] {
+    display: block;
+    width: 80%;
+    margin: 0;
+    padding: .35em 0 0 0;
+    line-height: 1;
+    @include breakpoint($large) {
+        width: 100%;
+    }
+}
+
+// Make range inputs behave like textual form controls
+input[type="range"] {
+    display: block;
+    width: 100%;
+}
+
+// Focus for file, radio, and checkbox
+input[type="file"]:focus,
+input[type="radio"]:focus,
+input[type="checkbox"]:focus {
+    @include tab-focus;
+}
+
+select[multiple],
+select[size] {
+    height: auto;
+}
+
+form {
+    margin-bottom: 2em;
+}
+
+.field-group {
+    margin-bottom: 1em;
+    & ~ h2 {
+        margin-top: 1.5em;
+    }
+}
+
+.form-control {
+    display: block;
+    width: 80%;
+    height: 2em;
+    padding: 0 0.5em;
+    color: #555555;
+    background-color: #ffffff;
+    background-image: none;
+    border: 1px solid #cccccc;
+    border-radius: 0.25em;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075);
+    transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+    &[disabled],
+    &[readonly],
+    fieldset[disabled] & {
+        background-color: $grey-light;
+        opacity: 1;
+    }
+    &[disabled],
+    fieldset[disabled] & {
+        cursor: none;
+    }
+    @include breakpoint($large) {
+        width: 100%;
+    }
+}
+
+button[type="submit"] {
+    margin-left: 10em;
+}

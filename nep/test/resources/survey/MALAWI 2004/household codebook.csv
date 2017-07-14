@@ -1,0 +1,223 @@
+"Variable Name","Variable Label","Answer Label","Answer Code","Variable Type"
+hhid,"case identification","Open ended",,String
+year,"year of interview","Open ended",,Integer
+v008,"date of interview (cmc)","Open ended",,Integer
+v009,"number of household members","Open ended",,Numeric
+v010,"number of eligible women in hh","Open ended",,Numeric
+v011,"number of eligible men in hh","Open ended",,Numeric
+v012,"number of de jure members","Open ended",,Numeric
+v013,"number of de facto members","Open ended",,Numeric
+v014,"number of children 5 and under","Open ended",,Numeric
+v021,"primary sampling unit","Open ended",,Integer
+v022,"sample stratum number","Open ended",,Integer
+v023,"sample domain",,,Numeric
+,,national,0,
+,,"country specific",1,
+v024,region,,,Numeric
+,,northern,1,
+,,central,2,
+,,southern,3,
+v025,"type of place of residence",,,Numeric
+,,urban,1,
+,,rural,2,
+v201,"source of drinking water",,,Numeric
+,,"piped water",10,
+,,"piped into dwelling",11,
+,,"piped into yard/plot",12,
+,,"public tap",13,
+,,"open well water",20,
+,,"open well in yard/plot",22,
+,,"open public well",23,
+,,"covered well/borehole",30,
+,,"protected well in yard/plot",32,
+,,"protected public well",33,
+,,"surface water",40,
+,,spring,41,
+,,"river, stream",42,
+,,"pond, lake",43,
+,,dam,44,
+,,rainwater,51,
+,,"tanker truck",61,
+,,"bottled water",71,
+,,other,96,
+v204,"time to get to water source",,,Integer
+,,"on premises",996,
+v205,"type of toilet facility",,,Numeric
+,,"flush toilet",10,
+,,"flush toilet",11,
+,,"pit toilet latrine",20,
+,,"traditional pit toilet",21,
+,,"vip latrine",22,
+,,"no facility",30,
+,,"no facility/bush, field",31,
+,,other,96,
+v206,"has electricity",,,Numeric
+,,no,0,
+,,yes,1,
+v207,"has radio",,,Numeric
+,,no,0,
+,,yes,1,
+v208,"has television",,,Numeric
+,,no,0,
+,,yes,1,
+v209,"has refrigerator",,,Numeric
+,,no,0,
+,,yes,1,
+v210,"has bicycle",,,Numeric
+,,no,0,
+,,yes,1,
+v211,"has motorcycle/scooter",,,Numeric
+,,no,0,
+,,yes,1,
+v212,"has car/truck",,,Numeric
+,,no,0,
+,,yes,1,
+v213,"main floor material",,,Numeric
+,,natural,10,
+,,"earth, sand",11,
+,,dung,12,
+,,rudimentary,20,
+,,"wood planks",21,
+,,"palm, bamboo",22,
+,,"broken bricks",23,
+,,finished,30,
+,,"parquet, polished wood",31,
+,,"vinyl, linoleum",32,
+,,"ceramic tiles",33,
+,,cement,34,
+,,carpet,35,
+,,other,96,
+v214,"main wall material",,,Numeric
+,,natural,10,
+,,rudimentary,20,
+,,finished,30,
+,,,31,
+,,other,96,
+v215,"main roof material",,,Numeric
+,,natural,10,
+,,rudimentary,20,
+,,finished,30,
+,,,31,
+,,other,96,
+v219,"sex of head of household",,,Numeric
+,,male,1,
+,,female,2,
+v220,"age of head of household",,,Numeric
+,,97+,97,
+,,dk,98,
+v221,"has telephone",,,Numeric
+,,no,0,
+,,yes,1,
+v225,"share toilet with other households",,,Numeric
+,,no,0,
+,,yes,1,
+v226,"type of cooking fuel",,,Numeric
+,,electricity,1,
+,,"lpg, natural gas",2,
+,,biogas,3,
+,,kerosene,4,
+,,"coal, lignite",5,
+,,charcoal,6,
+,,"firewood, straw",7,
+,,dung,8,
+,,other,96,
+v227,"have bednet for sleeping",,,Numeric
+,,no,0,
+,,yes,1,
+v228,"children under 5 slept under bednet last night",,,Numeric
+,,no,0,
+,,"all children",1,
+,,"some children",2,
+,,"no bednet in hh",3,
+v234,"test salt for iodine",,,Numeric
+,,"0 ppm (no iodine)",0,
+,,"7 ppm",7,
+,,"15 ppm",15,
+,,"30 ppm",30,
+,,"salt not tested",994,
+,,"no salt in household",995,
+shdist,"program districts",,,Numeric
+,,blantyre,1,
+,,kasungu,2,
+,,machinga,3,
+,,mangochi,4,
+,,mzimba,5,
+,,salima,6,
+,,thyolo,7,
+,,zomba,8,
+,,lilongwe,9,
+,,mulanje,10,
+,,"other districts",11,
+shdist2,"original district number","Open ended",,Integer
+slrespond,"native language of respondent",,,Numeric
+,,chichewa,1,
+,,tumbuka,2,
+,,english,3,
+,,other,4,
+v270,"wealth index",,,Numeric
+,,poorest,1,
+,,poorer,2,
+,,middle,3,
+,,richer,4,
+,,richest,5,
+v271,"wealth index factor score (5 decimals)","Open ended",,long
+hml1,"number of mosquito nets",,,Numeric
+,,"don't know",98,
+hml2,"number of children under bednet previous night","Open ended",,Numeric
+s27b,"own parafin lamp",,,Numeric
+,,no,0,
+,,yes,1,
+s27e,"own cellular phone",,,Numeric
+,,no,0,
+,,yes,1,
+s27f,"own standard (land line) telephone",,,Numeric
+,,no,0,
+,,yes,1,
+s27g,"own a bed with a mattress",,,Numeric
+,,no,0,
+,,yes,1,
+s27h,"own a sofa set",,,Numeric
+,,no,0,
+,,yes,1,
+s27i,"own a table and chairs",,,Numeric
+,,no,0,
+,,yes,1,
+s36,"preferred color of net",,,Numeric
+,,blue,1,
+,,green,2,
+,,white,3,
+,,other,4,
+,,"don't know/ no preference",8,
+s37,"preferred shape of net",,,Numeric
+,,conical,1,
+,,rectangular,2,
+,,"dk/ no preference",8,
+s29a,"number of rooms for sleeping","Open ended",,Numeric
+s29b,"own any agricultural land",,,Numeric
+,,no,0,
+,,yes,1,
+s29c,"quantity of agricultural land",,,Integer
+,,"don't know",9998,
+s29d,"own any livestock",,,Numeric
+,,no,0,
+,,yes,1,
+s29ea,"number of goats owned","Open ended",,Numeric
+s29eb,"number of pigs owned","Open ended",,Numeric
+s29ec,"number of cattle owned","Open ended",,Numeric
+s29ed,"number of sheep owned","Open ended",,Numeric
+s29ee,"number of chickens owned","Open ended",,Integer
+pweight,"Normalized sample weight","Open ended",,Numeric
+itn,"HH owns a treated mosquito net",,,Numeric
+,,no,0,
+,,yes,1,
+sanit,"Improved sanitary facility - not shared: LiST",,,Numeric
+,,no,0,
+,,yes,1,
+piped,"Water connection in the household",,,Numeric
+,,no,0,
+,,yes,1,
+water,"Improved drinking water source",,,Numeric
+,,no,0,
+,,yes,1,
+month,"Median month of interview",,,Numeric
+,,November,11,

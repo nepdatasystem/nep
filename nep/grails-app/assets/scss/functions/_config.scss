@@ -1,0 +1,135 @@
+// ----------------------------------------------
+// Colours
+//-----------------------------------------------
+
+//greyscale
+$white:                            #fdffff;
+$grey-lighter:                     #edf1f4;
+$grey-light:                       #DEE5EA;
+$grey:                             #939CA0;
+$grey-dark:                        #6a6e72;
+$grey-darker:                      #393f46;
+$black:                            #1E2021;
+
+//brand colours
+$nep-purple:                       #702c5a;
+$nep-teal:                         #02687a;
+$nep-blue:                         #00517c;
+$nep-blue-light:                   #246F96;
+
+//brand colours
+$color-positive:                   #d4ece6;
+$color-positive-dark:              #45AF94;
+$color-negative:                   #f8d0c8;
+$color-negative-dark:              #D1493F;
+$color-neutral:                    #f8d0c8;
+$color-neutral-dark:               #C5A364;
+
+$link-color:                       $nep-blue-light;
+
+// ------------------------------------------------------------
+// Typography
+// ------------------------------------------------------------
+
+// Compass Vertical Rhythm setup
+$base-font-size:                  15px;
+$base-line-height:                21px;
+$rhythm-unit:                     "em";
+$rem-with-px-fallback:            false;
+
+// ------------------------------------------------------------
+// Breakpoints
+// ------------------------------------------------------------
+
+$container-width:                  90em;
+
+$xxlarge:                          max-width 90em; // 1400px
+$xlarge:                           max-width 80em; // 1200px
+$large:                            max-width 70em; // 1050px
+$medium:                           max-width 55em; //  825px
+$small:                            max-width 40em; //  600px
+$xsmall:                           max-width 24em; //  360px
+
+// ------------------------------------------------------------
+// Borders
+// ------------------------------------------------------------
+
+$border-width:                    2px;
+$border-color:                    $grey-light;
+$border-radius-base:              0.25em;
+
+// ------------------------------------------------------------
+// Grid setup
+// ------------------------------------------------------------
+
+$susy: (
+  flow: ltr,
+  math: fluid,
+  output: float,
+  gutter-position: outside,
+  container: 960px,
+  container-position: center,
+  columns: 12,
+  gutters: 0.5,
+  column-width: false,
+  global-box-sizing: content-box,
+  last-flow: to,
+  debug: (
+    image: hide,
+    color: rgba(#66f, .25),
+    output: background,
+    toggle: top right,
+  ),
+  use-custom: (
+    background-image: true,
+    background-options: false,
+    box-sizing: true,
+    clearfix: false,
+    rem: true,
+  )
+);
+
+// ------------------------------------------------------------
+// Type scale
+// ------------------------------------------------------------
+
+$type-scale: (
+    tiny: (
+        font-size: 11px,
+        base-lines: 1
+    ),
+    xsmall: (
+        font-size: 12px,
+        base-lines: 1
+    ),
+    small: (
+        font-size: 13px,
+        base-lines: 1
+    ),
+    base: (
+        font-size: $base-font-size,
+        base-lines: 1
+    ),
+    medium: (
+        font-size: 16px,
+        base-lines: 1
+    ),
+    large: (
+        font-size: 18px,
+        base-lines: 1
+    ),
+    xlarge: (
+        font-size: 2.827em,
+        base-lines: 1
+    ),
+    huge: (
+        font-size: 3.998em,
+        base-lines: 1
+    ),
+);
+
+// ------------------------------------------------------------
+// Element sizes
+// ------------------------------------------------------------
+
+$header-height:                    5em;
